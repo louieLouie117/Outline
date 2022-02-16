@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 function HeroBanner(props) {
 
-const [hidden, setHidden] = useState(true);
-const [mainButton, setMainButton] = useState(true);
+const [hidden] = useState(true);
+const [mainButton] = useState(true);
 
 
 
