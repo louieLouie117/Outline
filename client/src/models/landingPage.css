@@ -1,0 +1,61 @@
+body{
+    background: whitesmoke;
+    display: grid;
+    justify-items: center;
+}
+
+h1, h2, h3, h4, p{
+    margin: 0;
+    padding: 0;
+}
+
+.LandingPage-Container{
+    display: grid;
+    width: 100vw;
+}
+
+.Hero-Container{
+    display: grid;
+    height: 100vh;
+}
+
+.Hero-Container header{
+    background: white;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.229);
+    height: 150px;
+    padding-top: 30px;
+    font: 1em sans-serif;
+
+}
+@media screen and (min-width: 1100px) {
+    .LandingPage-Container{
+        max-width: none;
+        grid-template-columns: 25em 1fr;
+    }
+    
+}
+
+.Hero-Container header p:first-of-type{
+    padding-top: 10px;
+    color: black;
+    font: 1.3em sans-serif;
+}
+
+.Hero-Container header p:last-of-type{
+    font-size: 2.5em;
+    color: #136DC0;
+}
+
+.Hero-Container footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: flex-end;
+}
+
+.Hero-Container footer button{
+    font: 1.1em sans-serif;
+    border: none;
+    background: none;
+    height: 55px;
+}
+
