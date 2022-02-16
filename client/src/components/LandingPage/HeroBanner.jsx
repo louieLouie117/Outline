@@ -12,7 +12,7 @@ const [mainButton] = useState(true);
       <header>
         <h1 style={{display: hidden ? "none" : "gird"}}>Outline</h1>
         <img  src="/assets/Logo.png" alt="" />
-        <p >Helping businesses get a</p>
+        <p >Helping businesses grow with a</p>
         <p >mobile website</p>
         </header>
 

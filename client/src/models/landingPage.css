@@ -35,14 +35,15 @@ h1, h2, h3, h4, p{
 }
 
 .Hero-Container header p:first-of-type{
-    padding-top: 10px;
+    padding-top: 20px;
     color: black;
-    font: 1.3em sans-serif;
+    font: 1.1em sans-serif;
 }
 
 .Hero-Container header p:last-of-type{
     font-size: 2.5em;
     color: #136DC0;
+    margin-top: -5px;
 }
 
 .Hero-Container footer {
