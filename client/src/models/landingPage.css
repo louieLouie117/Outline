@@ -17,12 +17,13 @@ h1, h2, h3, h4, p{
 .Hero-Container{
     display: grid;
     height: 100vh;
+    grid-template-rows: 200px 1fr auto;
+    row-gap: 20px;
 }
 
 .Hero-Container header{
     background: white;
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.229);
-    height: 150px;
     padding-top: 30px;
     font: 1em sans-serif;
 
@@ -58,4 +59,6 @@ h1, h2, h3, h4, p{
     background: none;
     height: 55px;
 }
+
+
 
