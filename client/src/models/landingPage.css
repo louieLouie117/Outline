@@ -52,7 +52,7 @@ h1, h2, h3, h4, p{
 
 
 .Hero-Container main picture{
-    max-width: 22.5em;
+    max-width: 90vw;
     display: flex;
     overflow: scroll;
     padding-left: 55px;
