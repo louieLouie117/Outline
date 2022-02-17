@@ -12,24 +12,30 @@ const [mainButton] = useState(true);
       <header>
         <h1 style={{display: hidden ? "none" : "gird"}}>Outline</h1>
         <img  src="/assets/Logo.png" alt="" />
-        <p >Helping businesses grow with a</p>
-        <p >mobile website</p>
-        </header>
+      </header>
 
-        <main>
+      <aside>
+        <p >Outline your business with a</p>
+        <p >mobile website</p>
+      </aside>
+
+      <main>
         <picture> 
-            <img  src="/assets/showCase/Design1.png" alt="" />
+            <img  src="/assets/showCase/website1.png" alt="" />
+            <img  src="/assets/showCase/website2.png" alt="" />
+            <img  src="/assets/showCase/website3.png" alt="" />
+            <img  src="/assets/showCase/website4.png" alt="" />
         </picture>
         <p>swipe to see more &#62; &#62;</p>
-        </main>
+      </main>
 
-        <footer>
+      <footer>
           <button style={{
             background: mainButton ? "#136DC0" : "black", 
             color: mainButton ? "white": "black",
             borderRadius: mainButton ? "10px 10px 0px 0px" : "10px 10px 0px 0px"}}>Learn to code</button>
           <button>Services</button>
-        </footer>
+      </footer>
     </div>
   )
 }
