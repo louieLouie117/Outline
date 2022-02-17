@@ -15,7 +15,7 @@ h1, h2, h3, h4, p{
 .Hero-Container{
     display: grid;
     /* height: 100vh; */
-    grid-template-rows: 200px 1fr auto;
+    grid-template-rows: 100px 1fr auto;
     row-gap: 20px;
 }
 
@@ -34,16 +34,37 @@ h1, h2, h3, h4, p{
     
 }
 
-.Hero-Container header p:first-of-type{
+.Hero-Container  aside p:first-of-type{
     padding-top: 10px;
     color: black;
-    font: 1.3em sans-serif;
+    font: 1.1em sans-serif;
 }
 
-.Hero-Container header p:last-of-type{
+.Hero-Container  aside p:last-of-type{
     font-size: 2.5em;
     color: #136DC0;
+    margin-top: -10px;
 }
+
+.Hero-Container main{
+    padding-bottom: 20px;
+}
+
+
+.Hero-Container main picture{
+    max-width: 22.5em;
+    display: flex;
+    overflow: scroll;
+    padding-left: 55px;
+    column-gap: 40px;
+}
+
+.Hero-Container main picture img{
+    margin: 15px 0;
+    /* box-shadow: 0px -7px 5px rgba(0, 0, 0, 0.247); */
+    border-radius: 40px;
+}
+
 
 .Hero-Container footer {
     display: grid;
@@ -57,6 +78,7 @@ h1, h2, h3, h4, p{
     background: none;
     height: 55px;
 }
+
 
 
 
