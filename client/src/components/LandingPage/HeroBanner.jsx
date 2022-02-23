@@ -49,7 +49,6 @@ function HeroBanner(props) {
       <h1 style={{display : hidden ? "grid" : "none"}} >align</h1>
 
       <header>
-        <button onClick={LogoOptions}>{buttonText}</button>
 
         <div style={{display: alignLogo ? "grid":"none"}} onClick={LogoOptions}>
         <svg xmlns="http://www.w3.org/2000/svg" width="139" height="64" viewBox="0 0 139 64"><g transform="translate(-130 -417)"><circle cx="5" cy="5" r="5" transform="translate(135 471)" fill="#136dc0"/><circle cx="5" cy="5" r="5" transform="translate(164 471)" fill="#136dc0"/><circle cx="5" cy="5" r="5" transform="translate(190 471)" fill="#136dc0"/><circle cx="5" cy="5" r="5" transform="translate(220 471)" fill="#136dc0"/><text transform="translate(130 456)" fontSize="41" fontFamily="Cambria" letterSpacing="0.344em"><tspan x="0" y="0">a</tspan></text><text transform="translate(246 456)" fontSize="41" fontFamily="Cambria" letterSpacing="0.344em"><tspan x="0" y="0">n</tspan></text><circle cx="5" cy="5" r="5" transform="translate(253 471)" fill="#136dc0"/><text transform="translate(164 456)" fontSize="41" fontFamily="Cambria" letterSpacing="0.344em"><tspan x="0" y="0">l</tspan></text><text transform="translate(189 456)" fontSize="41" fontFamily="Cambria" letterSpacing="0.344em"><tspan x="0" y="0">i</tspan></text><text transform="translate(215 456)" fontSize="41" fontFamily="Cambria" letterSpacing="0.344em"><tspan x="0" y="0">g</tspan></text></g></svg>
@@ -73,17 +72,45 @@ function HeroBanner(props) {
       </aside>
 
       <main>
-        <picture> 
-            <img  src="/assets/showCase/website1.png" alt="" />
-      {/* <iframe src="https://www.deltabarandgrill.com/" frameborder="0"></iframe> */}
+      {/* <p>swipe to see more &#62; &#62;</p> */}
 
+        <header>
+          <picture> 
+
+            <img  src="/assets/showCase/website1.png" alt="" />
+            <footer>
+            <button onClick={LogoOptions}>{buttonText}</button>
+            </footer>
+
+
+          </picture>
+
+            <picture>
             <img  src="/assets/showCase/website2.png" alt="" />
+            <footer>
+            <button onClick={LogoOptions}> <a href="https://icy-flower-0ac939810.1.azurestaticapps.net/"> view and purchase </a></button>
+            </footer>
+
+            </picture>
+
+            <picture>
             <img  src="/assets/showCase/website3.png" alt="" />
+            <footer>
+            <button onClick={LogoOptions}> <a href="https://www.jrprolandscaping.com/"> view </a></button>
+            </footer>
+            </picture>
+            
+            <picture>
             <img  src="/assets/showCase/website4.png" alt="" />
-        </picture>
-        <p>swipe to see more &#62; &#62;</p>
+            <footer>
+            <button onClick={LogoOptions}><a href="https://www.ibupholstery.com/"> view </a></button>
+            </footer>
+
+            </picture>
+            </header>
       </main>
 
+      {/* <iframe src="https://www.deltabarandgrill.com/" frameborder="0"></iframe> */}
     
 
     </div>
