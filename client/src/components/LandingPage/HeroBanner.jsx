@@ -105,7 +105,27 @@ function HeroBanner(props) {
             <footer>
             <button onClick={LogoOptions}><a href="https://www.ibupholstery.com/"> view </a></button>
             </footer>
+            </picture>
 
+            <picture>
+            <img  src="/assets/showCase/GarageSallyWebsite.png" alt="" />
+            <footer>
+            <button onClick={LogoOptions}><a href="https://garagesallyapp.com/"> view </a></button>
+            </footer>
+            </picture>
+
+            <picture>
+            <img  src="/assets/showCase/LeeWebsite.png" alt="" />
+            <footer>
+            <button onClick={LogoOptions}><a href="https://calendly.com/cardona-luis/15min">Make an Appointment</a></button>
+            </footer>
+            </picture>
+
+            <picture>
+            <img  src="/assets/showCase/PizzaWebsite.png" alt="" />
+            <footer>
+            <button onClick={LogoOptions}><a href="https://calendly.com/cardona-luis/15min">Make an Appointment</a></button>
+            </footer>
             </picture>
             </header>
       </main>
