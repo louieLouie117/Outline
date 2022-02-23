@@ -5,6 +5,8 @@ function HeroBanner(props) {
   const [hidden]= useState(false)
   const [alignLogo, setAlignLogo]= useState(true)
   const [outlineLogo, setOutlineLogo]= useState(false)
+  const [outlineLogo2, setOutlineLogo2]= useState(false)
+
   const [buttonText, setButtonText]= useState("outline")
 
 
@@ -15,6 +17,8 @@ function HeroBanner(props) {
       if(e.target.innerText === "align"){
         setAlignLogo(true);
         setOutlineLogo(false);
+        setOutlineLogo2(false);
+
         return setButtonText("outline")
 
       }
@@ -22,10 +26,21 @@ function HeroBanner(props) {
       if(e.target.innerText === "outline"){
         setAlignLogo(false);
         setOutlineLogo(true);
+        setOutlineLogo2(false);
+        return setButtonText("outline2")
+
+      }
+
+      if(e.target.innerText === "outline2"){
+        setAlignLogo(false);
+        setOutlineLogo(false);
+        setOutlineLogo2(true);
+
         return setButtonText("align")
 
       }
   }
+
   
 
 
@@ -44,6 +59,11 @@ function HeroBanner(props) {
         <svg xmlns="http://www.w3.org/2000/svg" width="265" height="47" viewBox="0 0 165 47"><g transform="translate(-122 -274)"><text transform="translate(172 312)" fontSize="41" fontFamily="MS-UIGothic, MS UI Gothic"><tspan x="0" y="0">outline</tspan></text><rect width="48" height="47" rx="6" transform="translate(122 274)" fill="#136dc0"/><g transform="translate(-2.917 -2.718)"><line x2="24.015" transform="translate(136.917 294.567)" fill="none" stroke="#fff" strokeWidth="1.5"/><line x2="24.015" transform="translate(136.917 300.218)" fill="none" stroke="#fff" strokeWidth="1.5"/><line x2="24.015" transform="translate(136.917 305.868)" fill="none" stroke="#fff" strokeWidth="1.5"/><line x2="24.015" transform="translate(136.917 311.519)" fill="none" stroke="#fff" strokeWidth="1.5"/><path d="M0,0H11.3" transform="translate(136.917 288.917)" fill="none" stroke="#fff" strokeWidth="1.5"/></g></g></svg>
 
         </div>
+        
+        <div style={{display: outlineLogo2 ? "grid":"none"}} onClick={LogoOptions}>
+        <svg xmlns="http://www.w3.org/2000/svg" width="215" height="48" viewBox="0 0 115 48"><g transform="translate(-175 -605)"><text transform="translate(175 640)" font-size="41" font-family="MS-UIGothic, MS UI Gothic"><tspan x="0" y="0">outline</tspan></text><rect width="56" height="7" rx="3.5" transform="translate(233 646)" fill="#136dc0"/><circle cx="3.5" cy="3.5" r="3.5" transform="translate(182 646)" fill="#136dc0"/><circle cx="3.5" cy="3.5" r="3.5" transform="translate(202 646)" fill="#136dc0"/><circle cx="3.5" cy="3.5" r="3.5" transform="translate(220 646)" fill="#136dc0"/></g></svg>
+        </div>
+
 
       </header>
 
