@@ -61,7 +61,7 @@ function HeroBanner(props) {
         </div>
         
         <div style={{display: outlineLogo2 ? "grid":"none"}} onClick={LogoOptions}>
-        <svg xmlns="http://www.w3.org/2000/svg" width="215" height="48" viewBox="0 0 115 48"><g transform="translate(-175 -605)"><text transform="translate(175 640)" font-size="41" font-family="MS-UIGothic, MS UI Gothic"><tspan x="0" y="0">outline</tspan></text><rect width="56" height="7" rx="3.5" transform="translate(233 646)" fill="#136dc0"/><circle cx="3.5" cy="3.5" r="3.5" transform="translate(182 646)" fill="#136dc0"/><circle cx="3.5" cy="3.5" r="3.5" transform="translate(202 646)" fill="#136dc0"/><circle cx="3.5" cy="3.5" r="3.5" transform="translate(220 646)" fill="#136dc0"/></g></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="115" height="48" viewBox="0 0 115 48"><g transform="translate(-175 -605)"><text transform="translate(175 640)" font-size="41" font-family="MS-UIGothic, MS UI Gothic"><tspan x="0" y="0">outline</tspan></text><rect width="56" height="7" rx="3.5" transform="translate(233 646)" fill="#136dc0"/><circle cx="3.5" cy="3.5" r="3.5" transform="translate(182 646)" fill="#136dc0"/><circle cx="3.5" cy="3.5" r="3.5" transform="translate(202 646)" fill="#136dc0"/><circle cx="3.5" cy="3.5" r="3.5" transform="translate(220 646)" fill="#136dc0"/></g></svg>
         </div>
 
 
