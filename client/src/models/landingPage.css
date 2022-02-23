@@ -17,18 +17,20 @@ h1, h2, h3, h4, p{
     /* height: 100vh; */
     grid-template-rows: 100px 1fr auto;
     row-gap: 20px;
+    justify-items: center;
 }
 
 .Hero-Container header{
     display: grid;
-    justify-self: center;
-    align-items: center;
-    justify-self: center;
     font: 1em sans-serif;
+    width: 100%;
+    justify-items: center;
+
 
 }
 
 .Hero-Container header button {
+    height: 30px;
     color: whitesmoke;
     background: whitesmoke;
     border: none;
