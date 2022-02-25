@@ -42,6 +42,8 @@ a:active { text-decoration: none; }
     font: 1em sans-serif;
     width: 100%;
     justify-items: center;
+    align-content: center;
+
 
 
 }
