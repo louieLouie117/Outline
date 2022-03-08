@@ -31,7 +31,7 @@ function HeroBanner(props) {
       </header>
 
       <aside>
-        <p >get your business a</p>
+        <p >outline your business with a</p>
         <p >mobile website</p>
       </aside>
 
