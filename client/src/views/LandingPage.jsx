@@ -42,11 +42,11 @@ const OptionsHandler = e =>{
 
       <nav>
           <button style={{
-            background: LearnButton ? "#136DC0" : "none", 
+            background: LearnButton ? "#136DC0" : "whitesmoke", 
             color: LearnButton ? "white": "black",
             borderRadius: LearnButton ? "10px 10px 0px 0px" : "10px 10px 0px 0px"}} onClick={OptionsHandler}>Learn to code</button>
           <button style={{
-            background: ServiceButton ? "#136DC0" : "none", 
+            background: ServiceButton ? "#136DC0" : "whitesmoke", 
             color: ServiceButton ? "white": "black",
             borderRadius: ServiceButton ? "10px 10px 0px 0px" : "10px 10px 0px 0px"}} onClick={OptionsHandler}>Services</button>
       </nav>

@@ -1,5 +1,6 @@
 body{
     background: whitesmoke;
+    max-width: 45em;
 }
 
 h1, h2, h3, h4, p{
@@ -7,6 +8,11 @@ h1, h2, h3, h4, p{
     padding: 0;
     text-align: unset;
 
+}
+
+ul{
+    list-style: none;
+    padding: 0;
 }
 
 
@@ -56,13 +62,7 @@ a:active { text-decoration: none; }
     font-weight: normal;
     padding-left: 5px;
 }
-@media screen and (min-width: 1100px) {
-    .LandingPage-Container{
-        max-width: none;
-        grid-template-columns: 25em 1fr;
-    }
-    
-}
+
 
 .Hero-Container  aside p:first-of-type{
     color: black;
@@ -151,7 +151,34 @@ a:active { text-decoration: none; }
     font: 1.1em sans-serif;
     border: none;
     background: none;
-    height: 55px;
+    height: 45px;
+   
+}
+
+@media screen and (min-width: 1100px) {
+    .LandingPage-Container nav {
+        display: flex;
+        max-width: 75em;
+        justify-content: left;
+        justify-content: center;
+        justify-self: center;
+        z-index: 45;
+        margin-top: 50px;
+
+    }
+    
+    .LandingPage-Container nav button{
+        max-width: 200px;
+        min-width: 200px;
+        height: 45px;
+    }
+
+
+    .Hero-Container main header{
+        padding-left: 0;
+        max-width: 95vw;
+    }
+
 }
 
 .Hero-Container iframe{
@@ -187,6 +214,9 @@ iframe ::-webkit-scrollbar{
 .LearnToCode-Container{
     display: grid;
     text-align: left;
+    max-width: 75em; 
+    justify-self: center;
+    z-index: 0;
 }
 
 .LearnToCode-Container>header{
@@ -196,9 +226,9 @@ iframe ::-webkit-scrollbar{
     color: white;
     padding: 20px;
     text-align: left;
-
-
 }
+
+
 
 
 .LearnToCode-Container>header p{
@@ -208,14 +238,45 @@ iframe ::-webkit-scrollbar{
 .LearnToCode-Container>main {
     display: grid;
     padding: 20px;
+    background: white;
+
+
+}
+
+
+@media screen and (min-width: 1100px) {
+    .LearnToCode-Container{
+    border-radius: 10px;
+    margin-bottom: 40px;
+    box-shadow: 0px 40px 70px rgba(0, 0, 0, 0.235);
+
+        
+    }
+
+    .LearnToCode-Container>header{
+        border-radius: 10px 10px 0 0;
+    
+    
+    }
+
+
+.LearnToCode-Container>main {
+    grid-template-columns: 1fr 1fr;
+    padding: 40px;
+    
+}
+
+
+
+
 }
 
 .LearnToCode-Container>main>header{
     padding-top: 20px;
     padding-bottom: 20px;
-
-    
-
+    padding: 40px;
+    align-self: center;
+    max-width: 35em;
 
 }
 
@@ -271,8 +332,8 @@ iframe ::-webkit-scrollbar{
     row-gap: 20px;
     grid-column: 2;
     grid-column: auto;
-    /* background: blue; */
     grid-column: 2;
+
 }
 
 
@@ -280,6 +341,26 @@ iframe ::-webkit-scrollbar{
     padding-bottom: 30px;
 }
 
+
+.LearnTabs{
+    display: grid;
+    row-gap: 10px;
+    padding-bottom: 20px;
+}
+
+.LearnTabs li{
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    background: white;
+    max-width: 250px;
+    height: 40px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.397);
+    border-radius: 3px;
+    align-items: center;
+    padding: 5px;
+    padding-left: 20px;
+
+}
 
 
 

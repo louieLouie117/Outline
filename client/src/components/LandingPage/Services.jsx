@@ -14,7 +14,7 @@ function Services(props) {
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laborum consectetur distinctio neque provident? Accusantium saepe, fuga delectus explicabo inventore libero iste quod fugit assumenda aperiam quidem provident vitae sapiente!</p>
         </header>
 
-        
+        <div>
         <section>
           <header>
           <div className="DotIcon"></div>
@@ -67,7 +67,7 @@ function Services(props) {
 
           </main>
         </section>
-
+        </div>
       </main>
 
     </div>
