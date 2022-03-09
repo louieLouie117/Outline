@@ -16,6 +16,7 @@ function LearnToCode(props) {
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laborum consectetur distinctio neque provident? Accusantium saepe, fuga delectus explicabo inventore libero iste quod fugit assumenda aperiam quidem provident vitae sapiente!</p>
         </header>
 
+      <div>
         
         <section>
           <header>
@@ -27,11 +28,23 @@ function LearnToCode(props) {
 
           <main>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, molestiae illum amet reiciendis atque earum, similique eos quo explicabo possimus esse culpa nulla placeat aliquid nobis. Neque, incidunt! Ipsum, dicta.</p>
-            <aside>
-              <h4>HTML</h4>
-              <h4>CSS</h4>
-              <h4>JavaScript</h4>
-            </aside>
+            <ul className='LearnTabs'>
+              <li>
+                <img  src="/assets/icons/htmlIcon.png" alt="" />
+                <h4>HTML</h4>
+              </li>
+
+              <li>
+                <img  src="/assets/icons/cssIcon.png" alt="" />
+                <h4>CSS</h4>
+              </li>
+
+              <li>
+                <img  src="/assets/icons/jsIcon.png" alt="" />
+                <h4>JavaScript</h4>
+              </li>
+              
+            </ul>
 
           </main>
         </section>
@@ -48,11 +61,22 @@ function LearnToCode(props) {
 
           <main>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, molestiae illum amet reiciendis atque earum, similique eos quo explicabo possimus esse culpa nulla placeat aliquid nobis. Neque, incidunt! Ipsum, dicta.</p>
-            <aside>
-              <h4>React.js</h4>
-              <h4>Vue.js</h4>
-              <h4>Angular.js</h4>
-            </aside>
+            <ul className='LearnTabs'>
+              <li>
+                  <img  src="/assets/icons/reactIcon.png" alt="" />
+                  <h4>React</h4>
+                </li>
+
+                <li>
+                  <img  src="/assets/icons/vueIcon.png" alt="" />
+                  <h4>Vue</h4>
+                </li>
+
+                <li>
+                  <img  src="/assets/icons/angularIcon.png" alt="" />
+                  <h4>Angular</h4>
+                </li>
+            </ul>
 
           </main>
         </section>
@@ -67,14 +91,30 @@ function LearnToCode(props) {
 
           <main>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, molestiae illum amet reiciendis atque earum, similique eos quo explicabo possimus esse culpa nulla placeat aliquid nobis. Neque, incidunt! Ipsum, dicta.</p>
-            <aside>
-              <h4>MERN</h4>
-              <h4>Python</h4>
-              <h4>C Sharp</h4>
-            </aside>
+            <ul className='LearnTabs'>
 
+               <li>
+                  <img  src="/assets/icons/cSharpIcon.png" alt="" />
+                  <h4>C Sharp</h4>
+                </li>
+
+              <li>
+                 <img  src="/assets/icons/jsIcon.png" alt="" />
+                  <h4>MERN</h4>
+                </li>
+
+              
+
+                <li>
+                  <img  src="/assets/icons/pythonIcon.png" alt="" />
+                  <h4>Python</h4>
+            </li>
+          
+            </ul>
           </main>
         </section>
+
+        </div>
 
       </main>
 
