@@ -400,15 +400,23 @@ iframe ::-webkit-scrollbar{
 
 }
 
+.PopSection>button{
+    margin: 10px;
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+    border: none;
+}
+
 .PopSection>main{
     display: grid;
-    grid-template-rows: 50px 1fr auto;
     background: white;
     /* margin: 0 20px; */
     margin-bottom: -13px;
-    min-height:30vh;
+    min-height:45vh;
     max-width: 25em;
     border-radius: 7px;
+
 
   }
 
@@ -434,6 +442,7 @@ iframe ::-webkit-scrollbar{
 
 .PopSection>main>header{
     padding: 30px;
+    /* background: red; */
 }
 
 .PopSection footer img{
