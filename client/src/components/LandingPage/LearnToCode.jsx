@@ -14,7 +14,7 @@ const [IconImage, setIconImage] = useState();
 const PopUpHandler = (e)=>{
   setPopUpSection(false)
 
-  if(e.target.innerText === "Close" ){
+  if(e.target.innerText === "X" ){
       setPopUpSection(true)
     return
   }
@@ -76,7 +76,7 @@ const PopUpHandler = (e)=>{
   if(e.target.id === "CSharpBTN"){
     setPopUpTitle("C Sharp")
     setPopUpDescription("Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laborum consectetur distinctio neque provident? Accusantium saepe, fuga delectus explicabo inventore libero iste quod fugit assumenda aperiam quidem provident vitae sapiente!")
-    setPopUpBTN("Schedule Meet Up")
+    setPopUpBTN("Schedule Mentorship")
     setIconImage("cSharpIcon")
 
   }
@@ -86,7 +86,7 @@ const PopUpHandler = (e)=>{
   if(e.target.id === "MernBTN"){
     setPopUpTitle("MERN")
     setPopUpDescription("Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laborum consectetur distinctio neque provident? Accusantium saepe, fuga delectus explicabo inventore libero iste quod fugit assumenda aperiam quidem provident vitae sapiente!")
-    setPopUpBTN("Schedule Meet Up")
+    setPopUpBTN("Schedule Mentorship")
     setIconImage("jsIcon")
 
   }
@@ -95,7 +95,7 @@ const PopUpHandler = (e)=>{
   if(e.target.id === "PythonBTN"){
     setPopUpTitle("Python")
     setPopUpDescription("Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laborum consectetur distinctio neque provident? Accusantium saepe, fuga delectus explicabo inventore libero iste quod fugit assumenda aperiam quidem provident vitae sapiente!")
-    setPopUpBTN("Schedule Meet Up")
+    setPopUpBTN("Schedule Mentorship")
     setIconImage("PythonIcon")
 
   }
@@ -228,7 +228,7 @@ const PopUpHandler = (e)=>{
 
 
         <aside className="PopSection" style={{display: PopUpSection ? "none" : "grid" }}>
-        <button onClick={PopUpHandler}>Close</button>
+        <button onClick={PopUpHandler}>X</button>
 
 
                   <main>
