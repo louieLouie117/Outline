@@ -413,7 +413,7 @@ iframe ::-webkit-scrollbar{
     background: white;
     /* margin: 0 20px; */
     margin-bottom: -13px;
-    min-height:45vh;
+    min-height: 50vh;
     max-width: 25em;
     border-radius: 7px;
 
@@ -442,18 +442,33 @@ iframe ::-webkit-scrollbar{
 
 .PopSection>main{
     display: grid;
-    grid-template-rows: 80px 1fr;
+    grid-template-rows: 80px 1fr ;
+    
 }
 
+.PopSection>main section{
+    display: grid;
+    row-gap: 10px;
 
-.PopSection>main>header{
+
+}
+
+.AboutTechTool , .DetailsInformation {
+    display: grid;
+    row-gap: 10px;
+}
+
+.AboutTechTool header, .DetailsInformation header{
     display: grid;
     grid-template-columns: 50px 1fr;
-    padding: 30px;
+    padding: 0 30px;
+    padding-top: 30px;
+    align-items: center;
 }
 
 
 .PopSection>main section{
+    display: grid;
     padding:  0 30px;
 }
 

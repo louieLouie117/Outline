@@ -4,16 +4,23 @@ import React, { useState } from "react";
 function LearnToCode(props) {
 
 const [PopUpSection, setPopUpSection] = useState(true);
+const [IconImage, setIconImage] = useState();
 const [PopUpTitle, setPopUpTitle] = useState("Title");
 const [PopUpDescription, setPopUpDescription] = useState("Description");
+const [DetailsBTN, setDetailsBTN] = useState();
 const [PopUpBTN, setPopUpBTN] = useState("BTN");
-const [IconImage, setIconImage] = useState();
+
+const [AboutTechSection, setAboutTechSection] = useState(false);
+const [DetailsInformation, setDetailsInformation] = useState(true);
+const [DetailsTitle, setDetailsTitle] = useState(false);
 
 
 
 
 const PopUpHandler = (e)=>{
   setPopUpSection(false)
+  setAboutTechSection(false)
+  setDetailsInformation(true)
 
   if(e.target.innerText === "X" ){
       setPopUpSection(true)
@@ -25,6 +32,7 @@ const PopUpHandler = (e)=>{
     setPopUpDescription("Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laborum consectetur distinctio neque provident? Accusantium saepe, fuga delectus explicabo inventore libero iste quod fugit assumenda aperiam quidem provident vitae sapiente!")
     setPopUpBTN("Schedule Meet Up")
     setIconImage("htmlIcon")
+    setDetailsBTN("Meet up details")
   }
 
 
@@ -34,6 +42,9 @@ const PopUpHandler = (e)=>{
     setPopUpDescription("Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laborum consectetur distinctio neque provident? Accusantium saepe, fuga delectus explicabo inventore libero iste quod fugit assumenda aperiam quidem provident vitae sapiente!")
     setPopUpBTN("Schedule Meet Up")
     setIconImage("cssIcon")
+        setDetailsBTN("Meet up details")
+
+
 
   }
 
@@ -43,6 +54,9 @@ const PopUpHandler = (e)=>{
     setPopUpDescription("Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laborum consectetur distinctio neque provident? Accusantium saepe, fuga delectus explicabo inventore libero iste quod fugit assumenda aperiam quidem provident vitae sapiente!")
     setPopUpBTN("Schedule Meet Up")
     setIconImage("jsIcon")
+        setDetailsBTN("Meet up details")
+
+
 
   }
 
@@ -51,6 +65,9 @@ const PopUpHandler = (e)=>{
     setPopUpDescription("Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laborum consectetur distinctio neque provident? Accusantium saepe, fuga delectus explicabo inventore libero iste quod fugit assumenda aperiam quidem provident vitae sapiente!")
     setPopUpBTN("Schedule Meet Up")
     setIconImage("reactIcon")
+        setDetailsBTN("Meet up details")
+
+
 
   }
 
@@ -61,6 +78,9 @@ const PopUpHandler = (e)=>{
     setPopUpDescription("Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laborum consectetur distinctio neque provident? Accusantium saepe, fuga delectus explicabo inventore libero iste quod fugit assumenda aperiam quidem provident vitae sapiente!")
     setPopUpBTN("Schedule Meet Up")
     setIconImage("vueIcon")
+        setDetailsBTN("Meet up details")
+
+    
 
   }
 
@@ -70,6 +90,8 @@ const PopUpHandler = (e)=>{
     setPopUpDescription("Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laborum consectetur distinctio neque provident? Accusantium saepe, fuga delectus explicabo inventore libero iste quod fugit assumenda aperiam quidem provident vitae sapiente!")
     setPopUpBTN("Schedule Meet Up")
     setIconImage("angularIcon")
+        setDetailsBTN("Meet up details")
+
 
   }
 
@@ -79,6 +101,9 @@ const PopUpHandler = (e)=>{
     setPopUpDescription("Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laborum consectetur distinctio neque provident? Accusantium saepe, fuga delectus explicabo inventore libero iste quod fugit assumenda aperiam quidem provident vitae sapiente!")
     setPopUpBTN("Schedule Mentorship")
     setIconImage("cSharpIcon")
+    setDetailsBTN("Mentorship details")
+
+
 
   }
 
@@ -89,6 +114,8 @@ const PopUpHandler = (e)=>{
     setPopUpDescription("Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laborum consectetur distinctio neque provident? Accusantium saepe, fuga delectus explicabo inventore libero iste quod fugit assumenda aperiam quidem provident vitae sapiente!")
     setPopUpBTN("Schedule Mentorship")
     setIconImage("jsIcon")
+    setDetailsBTN("Mentorship details")
+
 
   }
 
@@ -98,11 +125,48 @@ const PopUpHandler = (e)=>{
     setPopUpDescription("Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laborum consectetur distinctio neque provident? Accusantium saepe, fuga delectus explicabo inventore libero iste quod fugit assumenda aperiam quidem provident vitae sapiente!")
     setPopUpBTN("Schedule Mentorship")
     setIconImage("PythonIcon")
+    setDetailsBTN("Mentorship details")
+
 
   }
   
 }
 
+
+const DetailsHandler = (e) =>{
+  if(e.target.innerText === "< back to article"){
+    setAboutTechSection(false)
+    setDetailsInformation(true)
+    setDetailsBTN("Meet up details")
+
+  }
+  if(e.target.innerText === "< back to articles"){
+    setAboutTechSection(false)
+    setDetailsInformation(true)
+    setDetailsBTN("Mentorship details")
+
+  }
+
+  if(e.target.innerText === "Meet up details"){
+    setAboutTechSection(true)
+    setDetailsInformation(false)
+    setDetailsBTN("< back to article")
+    setDetailsTitle("Meet up details")
+  }
+
+  if(e.target.innerText === "Mentorship details"){
+    setAboutTechSection(true)
+    setDetailsInformation(false)
+    setDetailsBTN("< back to articles")
+    setDetailsTitle("Mentorship details")
+
+  }
+
+ 
+  
+
+
+}
   return (
     <div className='OutlineLayout-Container' >
       <header>
@@ -233,19 +297,38 @@ const PopUpHandler = (e)=>{
 
 
                   <main>
+                    <div className="AboutTechTool" style={{display: AboutTechSection ? "none" : "grid" }}>
+                      <header>
+                        <img  src={`/assets/icons/${IconImage}.png`} alt="" />
+                        <h1>{PopUpTitle}</h1>
+                      </header>
+                      <section>
+                      <p>{PopUpDescription}</p>
+                      <p>{PopUpDescription}</p>
+                      <a onClick={DetailsHandler}>{DetailsBTN}</a>
+                      </section>
+                    </div>
+
+                    <div className="DetailsInformation" style={{display: DetailsInformation ? "none" : "grid" }}>
                     <header>
-                      <img  src={`/assets/icons/${IconImage}.png`} alt="" />
-                      <h1>{PopUpTitle}</h1>
-                    </header>
-                    <section>
-                    <p>{PopUpDescription}</p>
+                    <img  src={`/assets/icons/${IconImage}.png`} alt="" />
+                       
+                        <h1>{DetailsTitle}</h1>
+                      </header>
+                      <section>
+                      <p>{PopUpDescription}</p>
+                      <a onClick={DetailsHandler}>{DetailsBTN}</a>
+
                     </section>
-                   
+                      </div>
                   </main>
+                  
                   <footer>
                     <div className="PopFooter-Container">
                     <img  src="/assets/icons/calendarIcon.png" alt="" />
+                    <a href="https://calendly.com/cardona-luis/15min">
                     <button>{PopUpBTN}</button>
+                    </a>
                     </div>
                   </footer>
                  
