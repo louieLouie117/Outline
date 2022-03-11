@@ -305,7 +305,7 @@ const DetailsHandler = (e) =>{
                       <section>
                       <p>{PopUpDescription}</p>
                       <p>{PopUpDescription}</p>
-                      <a onClick={DetailsHandler}>{DetailsBTN}</a>
+                      <p onClick={DetailsHandler}>{DetailsBTN}</p>
                       </section>
                     </div>
 
@@ -317,7 +317,7 @@ const DetailsHandler = (e) =>{
                       </header>
                       <section>
                       <p>{PopUpDescription}</p>
-                      <a onClick={DetailsHandler}>{DetailsBTN}</a>
+                      <p onClick={DetailsHandler}>{DetailsBTN}</p>
 
                     </section>
                       </div>
