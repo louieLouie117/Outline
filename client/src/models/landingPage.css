@@ -410,10 +410,11 @@ iframe ::-webkit-scrollbar{
 
 .PopSection>main{
     display: grid;
+    overflow: scroll;
     background: white;
     /* margin: 0 20px; */
     margin-bottom: -13px;
-    min-height: 50vh;
+    height: 500px;
     max-width: 25em;
     border-radius: 7px;
 
