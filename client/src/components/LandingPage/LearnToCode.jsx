@@ -11,6 +11,7 @@ const [IconImage, setIconImage] = useState();
 
 
 
+
 const PopUpHandler = (e)=>{
   setPopUpSection(false)
 
@@ -20,7 +21,7 @@ const PopUpHandler = (e)=>{
   }
 
   if(e.target.id === "HtmlBTN"){
-    setPopUpTitle("HTML")
+    setPopUpTitle("What is HTML")
     setPopUpDescription("Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laborum consectetur distinctio neque provident? Accusantium saepe, fuga delectus explicabo inventore libero iste quod fugit assumenda aperiam quidem provident vitae sapiente!")
     setPopUpBTN("Schedule Meet Up")
     setIconImage("htmlIcon")
@@ -29,7 +30,7 @@ const PopUpHandler = (e)=>{
 
   
   if(e.target.id === "CssBTN"){
-    setPopUpTitle("CSS")
+    setPopUpTitle("What is CSS?")
     setPopUpDescription("Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laborum consectetur distinctio neque provident? Accusantium saepe, fuga delectus explicabo inventore libero iste quod fugit assumenda aperiam quidem provident vitae sapiente!")
     setPopUpBTN("Schedule Meet Up")
     setIconImage("cssIcon")
@@ -38,7 +39,7 @@ const PopUpHandler = (e)=>{
 
 
   if(e.target.id === "JavaScriptBTN"){
-    setPopUpTitle("JavaScript")
+    setPopUpTitle("What is JavaScript?")
     setPopUpDescription("Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laborum consectetur distinctio neque provident? Accusantium saepe, fuga delectus explicabo inventore libero iste quod fugit assumenda aperiam quidem provident vitae sapiente!")
     setPopUpBTN("Schedule Meet Up")
     setIconImage("jsIcon")
@@ -46,7 +47,7 @@ const PopUpHandler = (e)=>{
   }
 
   if(e.target.id === "ReactBTN"){
-    setPopUpTitle("React.js")
+    setPopUpTitle("What is React.js?")
     setPopUpDescription("Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laborum consectetur distinctio neque provident? Accusantium saepe, fuga delectus explicabo inventore libero iste quod fugit assumenda aperiam quidem provident vitae sapiente!")
     setPopUpBTN("Schedule Meet Up")
     setIconImage("reactIcon")
@@ -56,7 +57,7 @@ const PopUpHandler = (e)=>{
 
   
   if(e.target.id === "VueBTN"){
-    setPopUpTitle("Vue.js")
+    setPopUpTitle("What is Vue.js?")
     setPopUpDescription("Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laborum consectetur distinctio neque provident? Accusantium saepe, fuga delectus explicabo inventore libero iste quod fugit assumenda aperiam quidem provident vitae sapiente!")
     setPopUpBTN("Schedule Meet Up")
     setIconImage("vueIcon")
@@ -65,7 +66,7 @@ const PopUpHandler = (e)=>{
 
 
   if(e.target.id === "AngularBTN"){
-    setPopUpTitle("Angular.js")
+    setPopUpTitle("What is Angular.js?")
     setPopUpDescription("Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laborum consectetur distinctio neque provident? Accusantium saepe, fuga delectus explicabo inventore libero iste quod fugit assumenda aperiam quidem provident vitae sapiente!")
     setPopUpBTN("Schedule Meet Up")
     setIconImage("angularIcon")
@@ -74,7 +75,7 @@ const PopUpHandler = (e)=>{
 
   
   if(e.target.id === "CSharpBTN"){
-    setPopUpTitle("C Sharp")
+    setPopUpTitle("What is C Sharp Stack?")
     setPopUpDescription("Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laborum consectetur distinctio neque provident? Accusantium saepe, fuga delectus explicabo inventore libero iste quod fugit assumenda aperiam quidem provident vitae sapiente!")
     setPopUpBTN("Schedule Mentorship")
     setIconImage("cSharpIcon")
@@ -84,7 +85,7 @@ const PopUpHandler = (e)=>{
 
   
   if(e.target.id === "MernBTN"){
-    setPopUpTitle("MERN")
+    setPopUpTitle("What is MERN?")
     setPopUpDescription("Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laborum consectetur distinctio neque provident? Accusantium saepe, fuga delectus explicabo inventore libero iste quod fugit assumenda aperiam quidem provident vitae sapiente!")
     setPopUpBTN("Schedule Mentorship")
     setIconImage("jsIcon")
@@ -93,7 +94,7 @@ const PopUpHandler = (e)=>{
 
 
   if(e.target.id === "PythonBTN"){
-    setPopUpTitle("Python")
+    setPopUpTitle("What is Python?")
     setPopUpDescription("Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laborum consectetur distinctio neque provident? Accusantium saepe, fuga delectus explicabo inventore libero iste quod fugit assumenda aperiam quidem provident vitae sapiente!")
     setPopUpBTN("Schedule Mentorship")
     setIconImage("PythonIcon")
@@ -103,7 +104,7 @@ const PopUpHandler = (e)=>{
 }
 
   return (
-    <div className='LearnToCode-Container' >
+    <div className='OutlineLayout-Container' >
       <header>
         <p>Have you been wanting to learn to code?</p>       
       </header>
@@ -201,14 +202,14 @@ const PopUpHandler = (e)=>{
 
                <li>
                   <img  src="/assets/icons/cSharpIcon.png" alt="" />
-                  <h4>C Sharp</h4>
+                  <h4>C Sharp Stack</h4>
                 <button id="CSharpBTN" onClick={PopUpHandler}></button>
 
                 </li>
 
               <li>
                  <img  src="/assets/icons/jsIcon.png" alt="" />
-                  <h4>MERN</h4>
+                  <h4>MERN Stack</h4>
                 <button id="MernBTN" onClick={PopUpHandler}></button>
 
                 </li>
@@ -217,7 +218,7 @@ const PopUpHandler = (e)=>{
 
                 <li>
                   <img  src="/assets/icons/pythonIcon.png" alt="" />
-                  <h4>Python</h4>
+                  <h4>Python Stack</h4>
                 <button id="PythonBTN" onClick={PopUpHandler}></button>
 
             </li>
@@ -235,9 +236,10 @@ const PopUpHandler = (e)=>{
                     <header>
                       <img  src={`/assets/icons/${IconImage}.png`} alt="" />
                       <h1>{PopUpTitle}</h1>
-                      <p>{PopUpDescription}</p>
                     </header>
-                   
+                    <section>
+                    <p>{PopUpDescription}</p>
+                    </section>
                    
                   </main>
                   <footer>
