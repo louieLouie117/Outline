@@ -212,7 +212,7 @@ iframe ::-webkit-scrollbar{
 
 }
 
-.LearnToCode-Container{
+.OutlineLayout-Container{
     display: grid;
     text-align: left;
     max-width: 75em; 
@@ -220,7 +220,7 @@ iframe ::-webkit-scrollbar{
     z-index: 0;
 }
 
-.LearnToCode-Container>header{
+.OutlineLayout-Container>header{
     display: grid;
     justify-items: left;
     background: #136DC0;
@@ -232,13 +232,13 @@ iframe ::-webkit-scrollbar{
 
 
 
-.LearnToCode-Container>header p{
+.OutlineLayout-Container>header p{
     font: 2.2em sans-serif;
 }
 
-.LearnToCode-Container>main {
+.OutlineLayout-Container>main {
     display: grid;
-    padding: 20px;
+    padding: 10px 30px;
     background: white;
 
 
@@ -246,7 +246,7 @@ iframe ::-webkit-scrollbar{
 
 
 @media screen and (min-width: 1100px) {
-    .LearnToCode-Container{
+    .OutlineLayout-Container{
     border-radius: 10px;
     margin-bottom: 40px;
     box-shadow: 0px 40px 70px rgba(0, 0, 0, 0.235);
@@ -254,14 +254,14 @@ iframe ::-webkit-scrollbar{
         
     }
 
-    .LearnToCode-Container>header{
+    .OutlineLayout-Container>header{
         border-radius: 10px 10px 0 0;
     
     
     }
 
 
-.LearnToCode-Container>main {
+.OutlineLayout-Container>main {
     grid-template-columns: 1fr 1fr;
     padding: 30px;
     
@@ -272,7 +272,7 @@ iframe ::-webkit-scrollbar{
 
 }
 
-.LearnToCode-Container>main>header{
+.OutlineLayout-Container>main>header{
     padding-top: 20px;
     padding-bottom: 20px;
     padding: 20px;
@@ -281,7 +281,7 @@ iframe ::-webkit-scrollbar{
 
 }
 
-.LearnToCode-Container>main>div>section{
+.OutlineLayout-Container>main>div>section{
     display: grid;
     grid-template-columns: 30px auto;
     /* background: gold; */
@@ -289,7 +289,7 @@ iframe ::-webkit-scrollbar{
 }
 
 
-.LearnToCode-Container>main section header{
+.OutlineLayout-Container>main section header{
     display: grid;
     grid-template-columns: 40px 1fr;
     color: #136DC0;
@@ -328,7 +328,7 @@ iframe ::-webkit-scrollbar{
 
 }
 
-.LearnToCode-Container>main>section>main{
+.OutlineLayout-Container>main>section>main{
     display: grid;
     row-gap: 20px;
     grid-column: 2;
@@ -338,7 +338,7 @@ iframe ::-webkit-scrollbar{
 }
 
 
-.LearnToCode-Container>main>section main aside{
+.OutlineLayout-Container>main>section main aside{
     padding-bottom: 30px;
 }
 
@@ -413,7 +413,7 @@ iframe ::-webkit-scrollbar{
     background: white;
     /* margin: 0 20px; */
     margin-bottom: -13px;
-    min-height:45vh;
+    min-height: 50vh;
     max-width: 25em;
     border-radius: 7px;
 
@@ -440,9 +440,36 @@ iframe ::-webkit-scrollbar{
     align-items: center;
 }
 
-.PopSection>main>header{
-    padding: 30px;
-    /* background: red; */
+.PopSection>main{
+    display: grid;
+    grid-template-rows: 80px 1fr ;
+    
+}
+
+.PopSection>main section{
+    display: grid;
+    row-gap: 10px;
+
+
+}
+
+.AboutTechTool , .DetailsInformation {
+    display: grid;
+    row-gap: 10px;
+}
+
+.AboutTechTool header, .DetailsInformation header{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    padding: 0 30px;
+    padding-top: 30px;
+    align-items: center;
+}
+
+
+.PopSection>main section{
+    display: grid;
+    padding:  0 30px;
 }
 
 .PopSection footer img{

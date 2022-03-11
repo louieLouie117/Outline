@@ -2,7 +2,7 @@ import React from 'react'
 
 function Services(props) {
   return (
-    <div className='LearnToCode-Container'>
+    <div className='OutlineLayout-Container'>
           <header>
         <p>Do you need help with keeping your business online</p>       
       </header>
