@@ -386,7 +386,7 @@ iframe ::-webkit-scrollbar{
 
 .PopSection{
     position: fixed;
-    display: none;
+    display:grid;
     height: 100vh;
     width: 100vw;
     background: rgba(0, 0, 0, 0.733);
@@ -395,7 +395,7 @@ iframe ::-webkit-scrollbar{
     left: 0;
     z-index: 55;
     justify-content: center;
-    align-content: center;
+    /* align-content: center; */
     justify-items: center;
 
 }
@@ -413,10 +413,10 @@ iframe ::-webkit-scrollbar{
     overflow: scroll;
     background: white;
     /* margin: 0 20px; */
-    margin-bottom: -13px;
-    height: 500px;
+    /* margin-bottom: -13px; */
+    /* height: 500px; */
     max-width: 25em;
-    border-radius: 7px;
+    border-radius: 7px 7px 0 0;
 
 
   }
@@ -443,7 +443,7 @@ iframe ::-webkit-scrollbar{
 
 .PopSection>main{
     display: grid;
-    grid-template-rows: 80px 1fr ;
+    /* grid-template-rows: 80px 1fr ; */
     
 }
 
