@@ -35,7 +35,7 @@ const OptionsHandler = e =>{
 }
 
 
-const [FullElement, setFullElement] = useState(
+const [FullElement] = useState(
     <h2>Create elements using state</h2>
 );
 
