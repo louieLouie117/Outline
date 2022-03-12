@@ -33,6 +33,12 @@ const OptionsHandler = e =>{
 
 
 }
+
+
+const [FullElement, setFullElement] = useState(
+    <h2>Create elements using state</h2>
+);
+
   return (
     <div className='LandingPage-Container'>
 
@@ -56,6 +62,11 @@ const OptionsHandler = e =>{
       <div style={{display: ContentServices ? "grid" : "none"}}>
         <Services></Services>
       </div>
+
+      <div className="TestState">
+                    <h1>Elemtns with rect</h1>
+                    <div>{FullElement}</div>
+                  </div>
         
     </div>
   )

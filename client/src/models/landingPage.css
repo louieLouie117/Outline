@@ -387,6 +387,7 @@ iframe ::-webkit-scrollbar{
 .PopSection{
     position: fixed;
     display:grid;
+    grid-template-rows: 70px 650px 1fr;
     height: 100vh;
     width: 100vw;
     background: rgba(0, 0, 0, 0.733);
@@ -454,18 +455,7 @@ iframe ::-webkit-scrollbar{
 
 }
 
-.AboutTechTool , .DetailsInformation {
-    display: grid;
-    row-gap: 10px;
-}
 
-.AboutTechTool header, .DetailsInformation header{
-    display: grid;
-    grid-template-columns: 50px 1fr;
-    padding: 0 30px;
-    padding-top: 30px;
-    align-items: center;
-}
 
 
 .PopSection>main section{
@@ -489,6 +479,36 @@ iframe ::-webkit-scrollbar{
 
 
 }
+
+.Article-Container{
+    background: white;
+    max-width: 25em;
+    border-radius: 7px 7px 0 0 ;
+}
+
+.Article-Container>main{
+    display: grid;
+    grid-template-rows: 50px auto;
+    padding:  30px;
+}
+
+.Article-Container>main header{
+    display: flex;
+    column-gap: 10px;
+}
+
+.Article-Container>main header img{
+    height: 30px;
+    width: 30px;
+}
+
+
+.Article-Container>main section{
+    display: grid;
+    row-gap: 5px;
+
+}
+
 
 
 

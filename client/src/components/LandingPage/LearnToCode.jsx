@@ -4,23 +4,23 @@ import React, { useState } from "react";
 function LearnToCode(props) {
 
 const [PopUpSection, setPopUpSection] = useState(true);
-const [IconImage, setIconImage] = useState();
-const [PopUpTitle, setPopUpTitle] = useState("Title");
-const [PopUpDescription, setPopUpDescription] = useState("Description");
-const [DetailsBTN, setDetailsBTN] = useState();
 const [PopUpBTN, setPopUpBTN] = useState("BTN");
 
-const [AboutTechSection, setAboutTechSection] = useState(false);
-const [DetailsInformation, setDetailsInformation] = useState(true);
-const [DetailsTitle, setDetailsTitle] = useState(false);
+const [ArticleContainer, setArticleContainer] = useState(true);
+const [Article, setArticle] = useState();
+
+const [MentorshipContainer] = useState(true);
+const [MentorshipDetails] = useState();
+
+
+
 
 
 
 
 const PopUpHandler = (e)=>{
   setPopUpSection(false)
-  setAboutTechSection(false)
-  setDetailsInformation(true)
+  setArticleContainer(false)
 
   if(e.target.innerText === "X" ){
       setPopUpSection(true)
@@ -28,45 +28,84 @@ const PopUpHandler = (e)=>{
   }
 
   if(e.target.id === "HtmlBTN"){
-    setPopUpTitle("What is HTML")
-    setPopUpDescription("Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laborum consectetur distinctio neque provident? Accusantium saepe, fuga delectus explicabo inventore libero iste quod fugit assumenda aperiam quidem provident vitae sapiente!")
-    setPopUpBTN("Schedule Meet Up")
-    setIconImage("htmlIcon")
-    setDetailsBTN("Meet up details")
+  setPopUpBTN("Schedule Meet up")
+   setArticle(
+    <main>
+      <header>
+        <img  src={`/assets/icons/htmlIcon.png`} alt="" />
+        <h1>What is HTML?</h1>
+      </header>
+      <section>
+        <p>P1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
+        <p>P2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
+
+        <p>P3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
+        <p onClick={DetailsHandler}>Meet up details</p>
+      </section>
+  </main>
+   );
   }
 
 
   
   if(e.target.id === "CssBTN"){
-    setPopUpTitle("What is CSS?")
-    setPopUpDescription("Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laborum consectetur distinctio neque provident? Accusantium saepe, fuga delectus explicabo inventore libero iste quod fugit assumenda aperiam quidem provident vitae sapiente!")
-    setPopUpBTN("Schedule Meet Up")
-    setIconImage("cssIcon")
-        setDetailsBTN("Meet up details")
-
-
+    setPopUpBTN("Schedule Meet up")
+    setArticle(
+     <main>
+       <header>
+         <img  src={`/assets/icons/cssIcon.png`} alt="" />
+         <h1>What is CSS?</h1>
+       </header>
+       <section>
+         <p>P1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
+         <p>P2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
+ 
+         <p>P3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
+         <p onClick={DetailsHandler}>Meet up details</p>
+       </section>
+   </main>
+    );
 
   }
 
 
   if(e.target.id === "JavaScriptBTN"){
-    setPopUpTitle("What is JavaScript?")
-    setPopUpDescription("Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laborum consectetur distinctio neque provident? Accusantium saepe, fuga delectus explicabo inventore libero iste quod fugit assumenda aperiam quidem provident vitae sapiente!")
-    setPopUpBTN("Schedule Meet Up")
-    setIconImage("jsIcon")
-        setDetailsBTN("Meet up details")
-
-
+    setPopUpBTN("Schedule Meet up")
+    setArticle(
+     <main>
+       <header>
+         <img  src={`/assets/icons/jsIcon.png`} alt="" />
+         <h1>What is JavaScript?</h1>
+       </header>
+       <section>
+         <p>P1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
+         <p>P2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
+ 
+         <p>P3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
+         <p onClick={DetailsHandler}>Meet up details</p>
+       </section>
+   </main>
+    );
 
   }
 
   if(e.target.id === "ReactBTN"){
-    setPopUpTitle("What is React.js?")
-    setPopUpDescription("Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laborum consectetur distinctio neque provident? Accusantium saepe, fuga delectus explicabo inventore libero iste quod fugit assumenda aperiam quidem provident vitae sapiente!")
-    setPopUpBTN("Schedule Meet Up")
-    setIconImage("reactIcon")
-        setDetailsBTN("Meet up details")
-
+    setPopUpBTN("Schedule Meet up")
+    setArticle(
+     <main>
+       <header>
+         <img  src={`/assets/icons/reactIcon.png`} alt="" />
+         <h1>What is React.js?</h1>
+       </header>
+       <section>
+         <p>P1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
+         <p>P2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
+ 
+         <p>P3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
+         <p onClick={DetailsHandler}>Meet up details</p>
+       </section>
+   </main>
+    );
 
 
   }
@@ -74,35 +113,66 @@ const PopUpHandler = (e)=>{
 
   
   if(e.target.id === "VueBTN"){
-    setPopUpTitle("What is Vue.js?")
-    setPopUpDescription("Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laborum consectetur distinctio neque provident? Accusantium saepe, fuga delectus explicabo inventore libero iste quod fugit assumenda aperiam quidem provident vitae sapiente!")
-    setPopUpBTN("Schedule Meet Up")
-    setIconImage("vueIcon")
-        setDetailsBTN("Meet up details")
+    setPopUpBTN("Schedule Meet up")
+   setArticle(
+    <main>
+      <header>
+        <img  src={`/assets/icons/vueIcon.png`} alt="" />
+        <h1>What is Vue?</h1>
+      </header>
+      <section>
+        <p>P1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
+        <p>P2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
 
+        <p>P3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
+        <p onClick={DetailsHandler}>Meet up details</p>
+      </section>
+  </main>
+   );
     
 
   }
 
 
   if(e.target.id === "AngularBTN"){
-    setPopUpTitle("What is Angular.js?")
-    setPopUpDescription("Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laborum consectetur distinctio neque provident? Accusantium saepe, fuga delectus explicabo inventore libero iste quod fugit assumenda aperiam quidem provident vitae sapiente!")
-    setPopUpBTN("Schedule Meet Up")
-    setIconImage("angularIcon")
-        setDetailsBTN("Meet up details")
+    setPopUpBTN("Schedule Meet up")
+   setArticle(
+    <main>
+      <header>
+        <img  src={`/assets/icons/angularIcon.png`} alt="" />
+        <h1>What is Angular?</h1>
+      </header>
+      <section>
+        <p>P1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
+        <p>P2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
+
+        <p>P3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
+        <p onClick={DetailsHandler}>Meet up details</p>
+      </section>
+  </main>
+   );
 
 
   }
 
   
   if(e.target.id === "CSharpBTN"){
-    setPopUpTitle("What is C Sharp Stack?")
-    setPopUpDescription("Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laborum consectetur distinctio neque provident? Accusantium saepe, fuga delectus explicabo inventore libero iste quod fugit assumenda aperiam quidem provident vitae sapiente!")
-    setPopUpBTN("Schedule Mentorship")
-    setIconImage("cSharpIcon")
-    setDetailsBTN("Mentorship details")
-
+    setPopUpBTN("Schedule Meet up")
+    setArticle(
+     <main>
+       <header>
+         <img  src={`/assets/icons/cSharpIcon.png`} alt="" />
+         <h1>What is C Sharp Stack?</h1>
+       </header>
+       <section>
+         <p>P1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
+         <p>P2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
+ 
+         <p>P3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
+         <p onClick={DetailsHandler}>Meet up details</p>
+       </section>
+   </main>
+    );
 
 
   }
@@ -110,63 +180,72 @@ const PopUpHandler = (e)=>{
 
   
   if(e.target.id === "MernBTN"){
-    setPopUpTitle("What is MERN?")
-    setPopUpDescription("Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laborum consectetur distinctio neque provident? Accusantium saepe, fuga delectus explicabo inventore libero iste quod fugit assumenda aperiam quidem provident vitae sapiente!")
-    setPopUpBTN("Schedule Mentorship")
-    setIconImage("jsIcon")
-    setDetailsBTN("Mentorship details")
-
+    setPopUpBTN("Schedule Meet up")
+    setArticle(
+     <main>
+       <header>
+         <img  src={`/assets/icons/jsIcon.png`} alt="" />
+         <h1>What is MERN Stack?</h1>
+       </header>
+       <section>
+         <p>P1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
+         <p>P2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
+ 
+         <p>P3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
+         <p onClick={DetailsHandler}>Meet up details</p>
+       </section>
+   </main>
+    );
 
   }
 
 
   if(e.target.id === "PythonBTN"){
-    setPopUpTitle("What is Python?")
-    setPopUpDescription("Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laborum consectetur distinctio neque provident? Accusantium saepe, fuga delectus explicabo inventore libero iste quod fugit assumenda aperiam quidem provident vitae sapiente!")
-    setPopUpBTN("Schedule Mentorship")
-    setIconImage("PythonIcon")
-    setDetailsBTN("Mentorship details")
-
+    setPopUpBTN("Schedule Meet up")
+    setArticle(
+     <main>
+       <header>
+         <img  src={`/assets/icons/pythonIcon.png`} alt="" />
+         <h1>What is Python Stack?</h1>
+       </header>
+       <section>
+         <p>P1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
+         <p>P2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
+ 
+         <p>P3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
+         <p onClick={DetailsHandler}>Meet up details</p>
+       </section>
+   </main>
+    );
 
   }
   
 }
+
 
 
 const DetailsHandler = (e) =>{
   if(e.target.innerText === "< back to article"){
-    setAboutTechSection(false)
-    setDetailsInformation(true)
-    setDetailsBTN("Meet up details")
+ 
 
   }
   if(e.target.innerText === "< back to articles"){
-    setAboutTechSection(false)
-    setDetailsInformation(true)
-    setDetailsBTN("Mentorship details")
+ 
 
   }
 
   if(e.target.innerText === "Meet up details"){
-    setAboutTechSection(true)
-    setDetailsInformation(false)
-    setDetailsBTN("< back to article")
-    setDetailsTitle("Meet up details")
+  
   }
 
   if(e.target.innerText === "Mentorship details"){
-    setAboutTechSection(true)
-    setDetailsInformation(false)
-    setDetailsBTN("< back to articles")
-    setDetailsTitle("Mentorship details")
+
 
   }
-
- 
-  
-
-
 }
+
+
+
   return (
     <div className='OutlineLayout-Container' >
       <header>
@@ -296,7 +375,10 @@ const DetailsHandler = (e) =>{
         <button onClick={PopUpHandler}>X</button>
 
 
-                  <main>
+                  <div className="Article-Container" style={{display: ArticleContainer ? "none" : "grid" }}>{Article}</div>
+                  <div className="MentorshipDetails-Container" style={{display: MentorshipContainer ? "none" : "grid" }}>{MentorshipDetails}</div>
+
+                  {/* <main>
                     <div className="AboutTechTool" style={{display: AboutTechSection ? "none" : "grid" }}>
                       <header>
                         <img  src={`/assets/icons/${IconImage}.png`} alt="" />
@@ -321,7 +403,7 @@ const DetailsHandler = (e) =>{
 
                     </section>
                       </div>
-                  </main>
+                  </main> */}
                   
                   <footer>
                     <div className="PopFooter-Container">
@@ -331,13 +413,14 @@ const DetailsHandler = (e) =>{
                     </a>
                     </div>
                   </footer>
+              
                  
           </aside>
 
         </div>
 
       </main>
-
+     
 
     </div>
   )
