@@ -387,7 +387,7 @@ iframe ::-webkit-scrollbar{
 .PopSection{
     position: fixed;
     display:grid;
-    grid-template-rows: 70px 650px 1fr;
+    grid-template-rows: 70px 500px 1fr;
     height: 100vh;
     width: 100vw;
     background: rgba(0, 0, 0, 0.733);
