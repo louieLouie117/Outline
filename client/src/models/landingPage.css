@@ -509,6 +509,16 @@ iframe ::-webkit-scrollbar{
 
 }
 
+.Article-Container>main section button{
+    background: none;
+    text-decoration: underline;
+    color: #136DC0;
+    border: none;
+    justify-self: left;
+    cursor: pointer;
+
+}
+
 
 
 

@@ -40,7 +40,7 @@ const PopUpHandler = (e)=>{
         <p>P2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
 
         <p>P3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
-        <p onClick={DetailsHandler}>Meet up details</p>
+        <button onClick={DetailsHandler}>Meet up details</button>
       </section>
   </main>
    );
@@ -61,7 +61,7 @@ const PopUpHandler = (e)=>{
          <p>P2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
  
          <p>P3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
-         <p onClick={DetailsHandler}>Meet up details</p>
+         <button onClick={DetailsHandler}>Meet up details</button>
        </section>
    </main>
     );
@@ -82,7 +82,7 @@ const PopUpHandler = (e)=>{
          <p>P2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
  
          <p>P3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
-         <p onClick={DetailsHandler}>Meet up details</p>
+         <button onClick={DetailsHandler}>Meet up details</button>
        </section>
    </main>
     );
@@ -90,7 +90,7 @@ const PopUpHandler = (e)=>{
   }
 
   if(e.target.id === "ReactBTN"){
-    setPopUpBTN("Schedule Meet up")
+    setPopUpBTN("Schedule Mentorship")
     setArticle(
      <main>
        <header>
@@ -102,7 +102,7 @@ const PopUpHandler = (e)=>{
          <p>P2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
  
          <p>P3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
-         <p onClick={DetailsHandler}>Meet up details</p>
+         <button onClick={DetailsHandler}>Mentorship details</button>
        </section>
    </main>
     );
@@ -125,7 +125,7 @@ const PopUpHandler = (e)=>{
         <p>P2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
 
         <p>P3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
-        <p onClick={DetailsHandler}>Meet up details</p>
+        <button onClick={DetailsHandler}>Meet up details</button>
       </section>
   </main>
    );
@@ -147,7 +147,7 @@ const PopUpHandler = (e)=>{
         <p>P2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
 
         <p>P3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
-        <p onClick={DetailsHandler}>Meet up details</p>
+        <button onClick={DetailsHandler}>Meet up details</button>
       </section>
   </main>
    );
@@ -157,7 +157,7 @@ const PopUpHandler = (e)=>{
 
   
   if(e.target.id === "CSharpBTN"){
-    setPopUpBTN("Schedule Meet up")
+    setPopUpBTN("Schedule Mentorship")
     setArticle(
      <main>
        <header>
@@ -169,7 +169,7 @@ const PopUpHandler = (e)=>{
          <p>P2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
  
          <p>P3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
-         <p onClick={DetailsHandler}>Meet up details</p>
+         <button onClick={DetailsHandler}>Mentorship details</button>
        </section>
    </main>
     );
@@ -180,7 +180,7 @@ const PopUpHandler = (e)=>{
 
   
   if(e.target.id === "MernBTN"){
-    setPopUpBTN("Schedule Meet up")
+    setPopUpBTN("Schedule Mentorship")
     setArticle(
      <main>
        <header>
@@ -192,7 +192,7 @@ const PopUpHandler = (e)=>{
          <p>P2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
  
          <p>P3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
-         <p onClick={DetailsHandler}>Meet up details</p>
+         <button onClick={DetailsHandler}>Mentorship details</button>
        </section>
    </main>
     );
@@ -201,7 +201,7 @@ const PopUpHandler = (e)=>{
 
 
   if(e.target.id === "PythonBTN"){
-    setPopUpBTN("Schedule Meet up")
+    setPopUpBTN("Schedule Mentorship")
     setArticle(
      <main>
        <header>
@@ -213,7 +213,7 @@ const PopUpHandler = (e)=>{
          <p>P2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
  
          <p>P3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
-         <p onClick={DetailsHandler}>Meet up details</p>
+         <button onClick={DetailsHandler}>Mentorship details</button>
        </section>
    </main>
     );
