@@ -13,6 +13,7 @@ h1, h2, h3, h4, p{
 ul{
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 
@@ -214,6 +215,8 @@ iframe ::-webkit-scrollbar{
 
 .OutlineLayout-Container{
     display: grid;
+    align-items: flex-start;
+    align-content: flex-start;
     text-align: left;
     max-width: 75em; 
     justify-self: center;
@@ -307,20 +310,21 @@ iframe ::-webkit-scrollbar{
 
 
 .DotIcon{
-    height: 20px;
-    width: 20px;
+    height: 15px;
+    width: 15px;
     background: #136DC0;
     border-radius: 20px;
     grid-row: 1/2;
     grid-column: 1/2;
     justify-self: center;
     margin-left: -10px;
-
 }
+
+
 
 .GaryLineSVG{
     height: 100%;
-    width: 5px;
+    width: 3px;
     background: rgb(184, 184, 184);
     grid-row: 2;
     justify-self: center;
@@ -480,36 +484,44 @@ iframe ::-webkit-scrollbar{
 
 }
 
-.Article-Container{
+.PopupLayout-Container{
     background: white;
     max-width: 25em;
     border-radius: 7px 7px 0 0 ;
+    width: 100%;
+    overflow: scroll;
+
 }
 
-.Article-Container>main{
+.PopupLayout-Container>main{
     display: grid;
     grid-template-rows: 50px auto;
     padding:  30px;
 }
 
-.Article-Container>main header{
+.PopupLayout-Container>main>header{
     display: flex;
     column-gap: 10px;
+    padding-top: 10px;
+    background: white;
+    position: sticky;
+    top: 0px;
+
 }
 
-.Article-Container>main header img{
+.PopupLayout-Container>main header img{
     height: 30px;
     width: 30px;
 }
 
 
-.Article-Container>main section{
+.PopupLayout-Container>main section{
     display: grid;
     row-gap: 5px;
 
 }
 
-.Article-Container>main section button{
+.PopupLayout-Container>main section button{
     background: none;
     text-decoration: underline;
     color: #136DC0;
@@ -518,6 +530,47 @@ iframe ::-webkit-scrollbar{
     cursor: pointer;
 
 }
+
+.PopupLayout-Container>main section ul h2{
+    color: #136DC0;
+    font: 1em sans-serif;
+
+}
+
+
+/* .Details-Container{
+    background: whitesmoke;
+} */
+
+.SectionLayout-Container{
+    display: grid;
+    align-items: flex-start;
+
+
+}
+
+.AdvanceMentorship{
+    background: white;
+    display: grid;
+}
+
+.AdvanceMentorship ul{
+    display: grid;
+    grid-template-columns: 30px auto;
+    column-gap: 10px;
+}
+
+.AdvanceMentorship ul h2{
+    cursor: pointer;
+}
+
+.SectionList{
+    display: grid;
+    overflow: hidden;
+}
+
+
+
 
 
 
