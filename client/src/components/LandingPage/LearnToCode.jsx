@@ -306,7 +306,7 @@ const DetailsHandler = (e) =>{
         setDetails(
           <main>
              <header>
-               <img  src={`/assets/icons/CSharpIcon.png`} alt="" />
+               <img  src={`/assets/icons/cSharpIcon.png`} alt="" />
                <h1>C Sharp Mentorship</h1>
              </header>
              <section className="SectionLayout-Container AdvanceMentorship">
@@ -458,7 +458,7 @@ const DetailsHandler = (e) =>{
         setDetails(
           <main>
              <header>
-               <img  src={`/assets/icons/jsIcon.png`} alt="" />
+               <img  src={`/assets/icons/pythonIcon.png`} alt="" />
                <h1>Python Mentorship</h1>
              </header>
              <section className="SectionLayout-Container AdvanceMentorship">
@@ -471,7 +471,7 @@ const DetailsHandler = (e) =>{
                   </header>
                   <div className="GaryLineSVG"></div>
                   <div className="SectionList">
-                    <li>MERN Week 1</li>
+                    <li>Python Week 1</li>
                     <li>React useState</li>
                     <li>Save code to Github</li>
                     <li>Deployment App</li>
@@ -485,7 +485,7 @@ const DetailsHandler = (e) =>{
                   </header>
                   <div className="GaryLineSVG"></div>
                   <div className="SectionList" >
-                    <li>MERN Week 2</li>
+                    <li>Python Week 2</li>
                     <li>React useState</li>
                     <li>Save code to Github</li>
                     <li>Deployment App</li>
@@ -499,7 +499,7 @@ const DetailsHandler = (e) =>{
                   </header>
                   <div className="GaryLineSVG"></div>
                   <div className="SectionList" >
-                    <li>MERN week 3</li>
+                    <li>Python week 3</li>
                     <li>React useState</li>
                     <li>Save code to Github</li>
                     <li>Deployment App</li>
@@ -513,7 +513,7 @@ const DetailsHandler = (e) =>{
                   </header>
                   <div className="GaryLineSVG"></div>
                   <div  className="SectionList">
-                    <li>MERN Week 4</li>
+                    <li>Python Week 4</li>
                     <li>React useState</li>
                     <li>Save code to Github</li>
                     <li>Deployment App</li>
