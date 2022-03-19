@@ -14,8 +14,8 @@ function App() {
     <div className="App">
 
       <Router>
-        <LandingPage path="/"></LandingPage>
-        <Profile path="/luiscardona"></Profile>
+        <LandingPage path="/"/>
+        <Profile path="/luiscardona"/>
       </Router>
       <Link to="/luiscardona">Profile Page</Link>
 
