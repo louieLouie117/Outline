@@ -12,12 +12,13 @@ function App() {
 
   return (
     <div className="App">
-      <Link to="/luiscardona"></Link>
 
       <Router>
         <LandingPage path="/"></LandingPage>
         <Profile path="/luiscardona"></Profile>
       </Router>
+      <Link to="/luiscardona">Profile Page</Link>
+
     </div>
   );
 }
