@@ -27,6 +27,7 @@ const PopUpHandler = (e)=>{
   setPopUpBTN("Schedule Meet up")
    setArticle(
     <main>
+      
       <header>
         <img  src={`/assets/icons/htmlIcon.png`} alt="" />
         <h1>What is HTML?</h1>
@@ -38,7 +39,21 @@ const PopUpHandler = (e)=>{
         <p>P3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
         <button id="HtmlDetails">Meet up details</button>
       </section>
+      <footer>
+              <div className="PopFooter-Container">
+                <img  src="/assets/icons/calendarIcon.png" alt="" />
+                <a href="https://calendly.com/cardona-luis/15min">
+                  <button>Schedule Meet up</button>
+                </a>
+            </div>
+          </footer>
   </main>
+  
+  
+
+  
+
+  
    );
   }
 
@@ -146,6 +161,7 @@ const PopUpHandler = (e)=>{
         <button id="AngularDetails" >Meet up details</button>
       </section>
   </main>
+
    );
 
 
@@ -523,42 +539,32 @@ const PopUpHandler = (e)=>{
 
 
                   <div className="PopupLayout-Container" style={{display: ArticleContainer ? "none" : "grid" }}>{Article}</div>
+                 
+                 
 
-                  {/* <main>
-                    <div className="AboutTechTool" style={{display: AboutTechSection ? "none" : "grid" }}>
-                      <header>
-                        <img  src={`/assets/icons/${IconImage}.png`} alt="" />
-                        <h1>{PopUpTitle}</h1>
-                      </header>
-                      <section>
-                      <p>{PopUpDescription}</p>
-                      <p>{PopUpDescription}</p>
-                      <p >{DetailsBTN}</p>
-                      </section>
-                    </div>
+                  <aside>
 
-                    <div className="DetailsInformation" style={{display: DetailsInformation ? "none" : "grid" }}>
-                    <header>
-                    <img  src={`/assets/icons/${IconImage}.png`} alt="" />
-                       
-                        <h1>{DetailsTitle}</h1>
-                      </header>
-                      <section>
-                      <p>{PopUpDescription}</p>
-                      <p onClick={DetailsHandler}>{DetailsBTN}</p>
+                  <ul className='LearnTabs'>
 
-                    </section>
-                      </div>
-                  </main> */}
-                  
-                  <footer>
-                    <div className="PopFooter-Container">
-                    <img  src="/assets/icons/calendarIcon.png" alt="" />
-                    <a href="https://calendly.com/cardona-luis/15min">
-                    <button>{PopUpBTN}</button>
-                    </a>
-                    </div>
-                  </footer>
+                       <li>
+                        <img  src="/assets/icons/jsIcon.png" alt="" />
+                        <h4>MERN Stack</h4>
+                      <button id="MernBTN" onClick={PopUpHandler}></button>
+
+                      </li>
+
+
+
+                      <li>
+                        <img  src="/assets/icons/pythonIcon.png" alt="" />
+                        <h4>Python Stack</h4>
+                      <button id="PythonBTN" onClick={PopUpHandler}></button>
+
+                      </li>
+
+                  </ul>
+                    
+                  </aside>
               
                  
           </aside>
