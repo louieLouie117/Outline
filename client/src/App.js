@@ -15,7 +15,7 @@ function App() {
     <div className="App">
       <Router>
         <LandingPage path="/"></LandingPage>
-        <Profile path="luiscardona"></Profile>
+        <Profile path="/luiscardona"></Profile>
       </Router>
     </div>
   );
