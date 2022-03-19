@@ -42,7 +42,6 @@ a:active { text-decoration: none; }
     display: grid;
     /* height: 100vh; */
     grid-template-rows: 80px 1fr auto;
-    justify-items: center;
     padding-top: 30px;
 
 }
@@ -78,13 +77,13 @@ a:active { text-decoration: none; }
     padding-bottom: 10px;
 }
 
-.Hero-Container main{
+/* .WorkProject-Container main{
     padding-bottom: 20px;
 
 }
 
 
-.Hero-Container main header{
+.WorkProject-Container main header{
     max-width: 85vw;
     display: flex;
     overflow: scroll;
@@ -96,17 +95,17 @@ a:active { text-decoration: none; }
 }
 
 
-.Hero-Container main header picture{
+.WorkProject-Container main header picture{
     display: grid;
     justify-items: center;
     align-items: center;
 }
 
-.Hero-Container main header picture img{
+.WorkProject-Container main header picture img{
     background: white;
 }
 
-.Hero-Container main header footer{
+.WorkProject-Container main header footer{
     background: white;
     width: 95.5%;
      grid-row: 2/3;
@@ -123,7 +122,7 @@ a:active { text-decoration: none; }
 
 }
 
-.Hero-Container main header button {
+.WorkProject-Container main header button {
     height: 40px;
     width: 150px;
     color: #136DC0;
@@ -133,15 +132,14 @@ a:active { text-decoration: none; }
     
 }
 
-.Hero-Container main header picture img{
+.WorkProject-Container main header picture img{
     margin: 15px 0;
-    /* box-shadow: 0px -7px 5px rgba(0, 0, 0, 0.247); */
     border-radius: 40px;
     grid-row: 1/3;
     grid-column: 1/2;
 
 }
-
+ */
 
 .LandingPage-Container nav {
     display: grid;
@@ -176,10 +174,10 @@ a:active { text-decoration: none; }
     }
 
 
-    .Hero-Container main header{
+    /* .WorkProject-Container main header{
         padding-left: 0;
         max-width: 95vw;
-    }
+    } */
 
 }
 
@@ -357,7 +355,7 @@ iframe ::-webkit-scrollbar{
     display: grid;
     grid-template-columns: 40px 1fr;
     background: white;
-    width: 250px;
+    width: 24em;
     height: 40px;
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.397);
     border-radius: 3px;
@@ -391,9 +389,9 @@ iframe ::-webkit-scrollbar{
 .PopSection{
     position: fixed;
     display:grid;
-    grid-template-rows: 70px 500px 1fr;
-    height: 100vh;
-    width: 100vw;
+    row-gap: 10px;
+    height: 100%;
+    width: 100%;
     background: rgba(0, 0, 0, 0.733);
     z-index: 55;
     top: 0;
@@ -402,6 +400,8 @@ iframe ::-webkit-scrollbar{
     justify-content: center;
     /* align-content: center; */
     justify-items: center;
+    align-content: flex-start;
+    overflow: scroll;
 
 }
 
@@ -487,7 +487,7 @@ iframe ::-webkit-scrollbar{
 .PopupLayout-Container{
     background: white;
     max-width: 25em;
-    border-radius: 7px 7px 0 0 ;
+    border-radius: 3px;
     width: 100%;
     overflow: scroll;
 
