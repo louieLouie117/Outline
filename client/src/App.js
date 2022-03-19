@@ -3,8 +3,7 @@ import LandingPageStyles from './models/landingPage.css'
 
 import LandingPage from './views/LandingPage';
 import Profile from './views/Profile';
-import { Router } from '@reach/router';
-
+import { Router, Link } from '@reach/router';
 
 function App() {
   <LandingPageStyles></LandingPageStyles>
@@ -13,6 +12,8 @@ function App() {
 
   return (
     <div className="App">
+      <Link to="/luiscardona"></Link>
+
       <Router>
         <LandingPage path="/"></LandingPage>
         <Profile path="/luiscardona"></Profile>
