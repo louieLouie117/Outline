@@ -595,6 +595,10 @@ iframe ::-webkit-scrollbar{
     cursor: pointer;
 }
 
+.ArticleState-Container>main header h2{
+    font: 1em sans-serif;
+}
+
 
 .ArticleState-Container>main header img{
     height: 30px;

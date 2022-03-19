@@ -17,7 +17,7 @@ const [Article3, setArticle3] = useState();
 
 
 
-const BeginnerArticlesHandler = (e)=>{
+const ArticlesHandler = (e)=>{
 
   if(e.target.innerText == "What is HTML?" || e.target.id == "HtmlBTN"){
     setPopUpSection(false)
@@ -51,39 +51,75 @@ const BeginnerArticlesHandler = (e)=>{
     setArticle3(false)
   }
 
+
+  if(e.target.innerText == "What is React.js?" || e.target.id == "ReactBTN"){
+    setPopUpSection(false)
+    setBeginnerArticleContainer(true)
+    setIntermediateArticleContainer(false)
+    setAdvanceArticleContainer(true)
+    setArticle1(false)
+    setArticle2(true)
+    setArticle3(true)
+  }
+
+  if(e.target.innerText == "What is Vue.js?" || e.target.id == "VueBTN"){
+    setPopUpSection(false)
+    setBeginnerArticleContainer(true)
+    setIntermediateArticleContainer(false)
+    setAdvanceArticleContainer(true)
+    setArticle1(true)
+    setArticle2(false)
+    setArticle3(true)
+  }
+
+
+  if(e.target.innerText == "What is Angular.js?" || e.target.id == "AngularBTN"){
+    setPopUpSection(false)
+    setBeginnerArticleContainer(true)
+    setIntermediateArticleContainer(false)
+    setAdvanceArticleContainer(true)
+    setArticle1(true)
+    setArticle2(true)
+    setArticle3(false)
+  }
+ 
+
+  if(e.target.innerText == "C Sharp Mentorship" || e.target.id == "CSharpBTN"){
+    setPopUpSection(false)
+    setBeginnerArticleContainer(true)
+    setIntermediateArticleContainer(true)
+    setAdvanceArticleContainer(false)
+    setArticle1(false)
+    setArticle2(true)
+    setArticle3(true)
+  }
+
+
+  if(e.target.innerText == "MERN Mentorship" || e.target.id == "MernBTN"){
+    setPopUpSection(false)
+    setBeginnerArticleContainer(true)
+    setIntermediateArticleContainer(true)
+    setAdvanceArticleContainer(false)
+    setArticle1(true)
+    setArticle2(false)
+    setArticle3(true)
+  }
+
+  if(e.target.innerText == "Python Mentorship" || e.target.id == "PythonBTN"){
+    setPopUpSection(false)
+    setBeginnerArticleContainer(true)
+    setIntermediateArticleContainer(true)
+    setAdvanceArticleContainer(false)
+    setArticle1(true)
+    setArticle2(true)
+    setArticle3(false)
+  }
+ 
  
    
   
 }
 
-
-const IntermediateArticlesHandler = (e)=>{
-  setPopUpSection(false)
-  setBeginnerArticleContainer(true)
-  setIntermediateArticleContainer(false)
-  setAdvanceArticleContainer(true)
-  setArticle1(false)
-  setArticle2(true)
-  setArticle3(true)
-
- 
-   
-  
-}
-
-const AdvanceArticlesHandler = (e)=>{
-  setPopUpSection(false)
-  setBeginnerArticleContainer(true)
-  setIntermediateArticleContainer(true)
-  setAdvanceArticleContainer(false)
-  setArticle1(false)
-  setArticle2(true)
-  setArticle3(true)
-
- 
-   
-  
-}
 
 const PopUpHandler = (e)=>{
   setPopUpSection(false)
@@ -133,19 +169,19 @@ const PopUpHandler = (e)=>{
               <li>
                 <img  src="/assets/icons/htmlIcon.png" alt="" />
                 <h4>HTML</h4>
-                <button id="HtmlBTN" onClick={BeginnerArticlesHandler}></button>
+                <button id="HtmlBTN" onClick={ArticlesHandler}></button>
               </li>
 
               <li>
                 <img  src="/assets/icons/cssIcon.png" alt="" />
                 <h4>CSS</h4>
-                <button id="CssBTN" onClick={BeginnerArticlesHandler}></button>
+                <button id="CssBTN" onClick={ArticlesHandler}></button>
               </li>
 
               <li>
                 <img  src="/assets/icons/jsIcon.png" alt="" />
                 <h4>JavaScript</h4>
-                <button id="JavaScriptBTN" onClick={BeginnerArticlesHandler}></button>
+                <button id="JavaScriptBTN" onClick={ArticlesHandler}></button>
               </li>
               
              </ul>
@@ -167,21 +203,21 @@ const PopUpHandler = (e)=>{
               <li>
                   <img  src="/assets/icons/reactIcon.png" alt="" />
                   <h4>React.js</h4>
-                  <button id="ReactBTN" onClick={IntermediateArticlesHandler}></button>
+                  <button id="ReactBTN" onClick={ArticlesHandler}></button>
                 
                 </li>
 
                 <li>
                   <img  src="/assets/icons/vueIcon.png" alt="" />
                   <h4>Vue.js</h4>
-                <button id="VueBTN" onClick={IntermediateArticlesHandler}></button>
+                <button id="VueBTN" onClick={ArticlesHandler}></button>
 
                 </li>
 
                 <li>
                   <img  src="/assets/icons/angularIcon.png" alt="" />
                   <h4>Angular.js</h4>
-                <button id="AngularBTN" onClick={IntermediateArticlesHandler}></button>
+                <button id="AngularBTN" onClick={ArticlesHandler}></button>
 
                 </li>
             </ul>
@@ -204,14 +240,14 @@ const PopUpHandler = (e)=>{
                <li>
                   <img  src="/assets/icons/cSharpIcon.png" alt="" />
                   <h4>C Sharp Stack</h4>
-                <button id="CSharpBTN" onClick={AdvanceArticlesHandler}></button>
+                <button id="CSharpBTN" onClick={ArticlesHandler}></button>
 
                 </li>
 
               <li>
                  <img  src="/assets/icons/jsIcon.png" alt="" />
                   <h4>MERN Stack</h4>
-                <button id="MernBTN" onClick={AdvanceArticlesHandler}></button>
+                <button id="MernBTN" onClick={ArticlesHandler}></button>
 
                 </li>
 
@@ -220,7 +256,7 @@ const PopUpHandler = (e)=>{
                 <li>
                   <img  src="/assets/icons/pythonIcon.png" alt="" />
                   <h4>Python Stack</h4>
-                <button id="PythonBTN" onClick={AdvanceArticlesHandler}></button>
+                <button id="PythonBTN" onClick={ArticlesHandler}></button>
 
             </li>
           
@@ -240,7 +276,7 @@ const PopUpHandler = (e)=>{
                 
                 <header>
                   <img  src={`/assets/icons/htmlIcon.png`} alt="" />
-                  <h1 onClick={BeginnerArticlesHandler}>What is HTML?</h1>
+                  <h1 onClick={ArticlesHandler}>What is HTML?</h1>
                 </header>
                 
                 <section>
@@ -263,7 +299,7 @@ const PopUpHandler = (e)=>{
                 
                 <header>
                   <img  src={`/assets/icons/cssIcon.png`} alt="" />
-                  <h1 onClick={BeginnerArticlesHandler}>What is CSS?</h1>
+                  <h1 onClick={ArticlesHandler}>What is CSS?</h1>
                 </header>
                 
                 <section>
@@ -286,7 +322,7 @@ const PopUpHandler = (e)=>{
                 
                 <header>
                   <img  src={`/assets/icons/jsIcon.png`} alt="" />
-                  <h1  onClick={BeginnerArticlesHandler}>What is JavaScript?</h1>
+                  <h1  onClick={ArticlesHandler}>What is JavaScript?</h1>
                 </header>
                 
                 <section>
@@ -317,7 +353,7 @@ const PopUpHandler = (e)=>{
                         
                         <header>
                           <img  src={`/assets/icons/htmlIcon.png`} alt="" />
-                          <h1>What is React.js?</h1>
+                          <h1 onClick={ArticlesHandler}>What is React.js?</h1>
                         </header>
                         
                         <section>
@@ -340,7 +376,7 @@ const PopUpHandler = (e)=>{
                         
                         <header>
                           <img  src={`/assets/icons/cssIcon.png`} alt="" />
-                          <h1>What is Vue.js?</h1>
+                          <h1 onClick={ArticlesHandler}>What is Vue.js?</h1>
                         </header>
                         
                         <section>
@@ -363,7 +399,7 @@ const PopUpHandler = (e)=>{
                         
                         <header>
                           <img  src={`/assets/icons/jsIcon.png`} alt="" />
-                          <h1>What is Angular.js?</h1>
+                          <h1 onClick={ArticlesHandler}>What is Angular.js?</h1>
                         </header>
                         
                         <section>
@@ -393,7 +429,7 @@ const PopUpHandler = (e)=>{
 <main style={{height: Article1 ? "20px" : "500px" }}>
 <header>
   <img  src={`/assets/icons/cSharpIcon.png`} alt="" />
-  <h1>C Sharp Mentorship</h1>
+  <h1 onClick={ArticlesHandler}>C Sharp Mentorship</h1>
 </header>
 <section className="SectionLayout-Container AdvanceMentorship">
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla velit nihil eos modi natus. Unde, officiis, impedit, inventore vel culpa facilis voluptatibus nemo sapiente voluptates sequi omnis voluptatem mollitia quibusdam?</p>
@@ -471,7 +507,7 @@ const PopUpHandler = (e)=>{
 <main style={{height: Article2 ? "20px" : "500px" }}> 
 <header>
   <img  src={`/assets/icons/jsIcon.png`} alt="" />
-  <h1>MERN Mentorship</h1>
+  <h1 onClick={ArticlesHandler}>MERN Mentorship</h1>
 </header>
 <section className="SectionLayout-Container AdvanceMentorship">
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla velit nihil eos modi natus. Unde, officiis, impedit, inventore vel culpa facilis voluptatibus nemo sapiente voluptates sequi omnis voluptatem mollitia quibusdam?</p>
@@ -549,7 +585,7 @@ const PopUpHandler = (e)=>{
 <main style={{height: Article3 ? "20px" : "500px" }}>
 <header>
   <img  src={`/assets/icons/pythonIcon.png`} alt="" />
-  <h1>Python Mentorship</h1>
+  <h1 onClick={ArticlesHandler}>Python Mentorship</h1>
 </header>
 <section className="SectionLayout-Container AdvanceMentorship">
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla velit nihil eos modi natus. Unde, officiis, impedit, inventore vel culpa facilis voluptatibus nemo sapiente voluptates sequi omnis voluptatem mollitia quibusdam?</p>
