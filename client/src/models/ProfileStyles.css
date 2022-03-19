@@ -1,0 +1,43 @@
+body{
+    display: grid;
+    background: whitesmoke;
+    max-width: 45em;
+    justify-self: center;
+
+}
+
+h1, h2, h3, h4, p{
+    margin: 0;
+    padding: 0;
+    text-align: unset;
+
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+a{
+    color: #136DC0;
+    
+}
+
+
+a:link { text-decoration: none; }
+
+
+a:visited { text-decoration: none; }
+
+
+a:hover { text-decoration: none; }
+
+
+a:active { text-decoration: none; }
+.LandingPage-Container{
+    display: grid;
+    width: 100vw;
+}
+
