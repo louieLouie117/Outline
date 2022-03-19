@@ -18,13 +18,38 @@ const [Article3, setArticle3] = useState();
 
 
 const BeginnerArticlesHandler = (e)=>{
-  setPopUpSection(false)
-  setBeginnerArticleContainer(false)
-  setIntermediateArticleContainer(true)
-  setAdvanceArticleContainer(true)
-  setArticle1(false)
-  setArticle2(true)
-  setArticle3(true)
+
+  if(e.target.innerText == "What is HTML?" || e.target.id == "HtmlBTN"){
+    setPopUpSection(false)
+    setBeginnerArticleContainer(false)
+    setIntermediateArticleContainer(true)
+    setAdvanceArticleContainer(true)
+    setArticle1(false)
+    setArticle2(true)
+    setArticle3(true)
+  }
+
+  if(e.target.innerText == "What is CSS?" || e.target.id == "CssBTN"){
+    setPopUpSection(false)
+    setBeginnerArticleContainer(false)
+    setIntermediateArticleContainer(true)
+    setAdvanceArticleContainer(true)
+    setArticle1(true)
+    setArticle2(false)
+    setArticle3(true)
+  }
+ 
+
+  
+  if(e.target.innerText == "What is JavaScript?" || e.target.id == "JavaScriptBTN"){
+    setPopUpSection(false)
+    setBeginnerArticleContainer(false)
+    setIntermediateArticleContainer(true)
+    setAdvanceArticleContainer(true)
+    setArticle1(true)
+    setArticle2(true)
+    setArticle3(false)
+  }
 
  
    
@@ -208,161 +233,161 @@ const PopUpHandler = (e)=>{
         <button onClick={PopUpHandler}>X</button>
 
 
-                  <div className="PopupLayout-Container" style={{display: BeginnerArticleContainer ? "none" : "grid" }}>
+<div className="PopupLayout-Container" style={{display: BeginnerArticleContainer ? "none" : "grid" }}>
 
-                  <div className="ArticleState-Container">
-   <main style={{height: Article1 ? "20px" : "500px" }}>
-     
-     <header>
-       <img  src={`/assets/icons/htmlIcon.png`} alt="" />
-       <h1>What is HTML?</h1>
-     </header>
-     
-     <section>
-       <p>P1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
-       <p>P2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
+        <div className="ArticleState-Container">
+              <main style={{height: Article1 ? "20px" : "500px" }}>
+                
+                <header>
+                  <img  src={`/assets/icons/htmlIcon.png`} alt="" />
+                  <h1 onClick={BeginnerArticlesHandler}>What is HTML?</h1>
+                </header>
+                
+                <section>
+                  <p>P1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
+                  <p>P2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
 
-       <p>P3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
-     </section>
-     <footer>
-             <div className="PopFooter-Container">
-               <img  src="/assets/icons/calendarIcon.png" alt="" />
-               <a href="https://calendly.com/cardona-luis/15min">
-                 <button>Schedule Meet up</button>
-               </a>
-           </div>
-         </footer>
- </main>
+                  <p>P3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
+                </section>
+                <footer>
+                        <div className="PopFooter-Container">
+                          <img  src="/assets/icons/calendarIcon.png" alt="" />
+                          <a href="https://calendly.com/cardona-luis/15min">
+                            <button>Schedule Meet up</button>
+                          </a>
+                      </div>
+                    </footer>
+            </main>
 
- <main style={{height: Article2 ? "20px" : "500px" }}>
-     
-     <header>
-       <img  src={`/assets/icons/cssIcon.png`} alt="" />
-       <h1>What is CSS?</h1>
-     </header>
-     
-     <section>
-       <p>P1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
-       <p>P2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
+            <main style={{height: Article2 ? "20px" : "500px" }}>
+                
+                <header>
+                  <img  src={`/assets/icons/cssIcon.png`} alt="" />
+                  <h1 onClick={BeginnerArticlesHandler}>What is CSS?</h1>
+                </header>
+                
+                <section>
+                  <p>P1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
+                  <p>P2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
 
-       <p>P3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
-     </section>
-     <footer>
-             <div className="PopFooter-Container">
-               <img  src="/assets/icons/calendarIcon.png" alt="" />
-               <a href="https://calendly.com/cardona-luis/15min">
-                 <button>Schedule Meet up</button>
-               </a>
-           </div>
-         </footer>
- </main>
+                  <p>P3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
+                </section>
+                <footer>
+                        <div className="PopFooter-Container">
+                          <img  src="/assets/icons/calendarIcon.png" alt="" />
+                          <a href="https://calendly.com/cardona-luis/15min">
+                            <button>Schedule Meet up</button>
+                          </a>
+                      </div>
+                    </footer>
+            </main>
 
- <main style={{height: Article3 ? "20px" : "500px" }}>
-     
-     <header>
-       <img  src={`/assets/icons/jsIcon.png`} alt="" />
-       <h1>What is JavaScript?</h1>
-     </header>
-     
-     <section>
-       <p>P1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
-       <p>P2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
+            <main style={{height: Article3 ? "20px" : "500px" }}>
+                
+                <header>
+                  <img  src={`/assets/icons/jsIcon.png`} alt="" />
+                  <h1  onClick={BeginnerArticlesHandler}>What is JavaScript?</h1>
+                </header>
+                
+                <section>
+                  <p>P1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
+                  <p>P2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
 
-       <p>P3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
-     </section>
-     <footer>
-             <div className="PopFooter-Container">
-               <img  src="/assets/icons/calendarIcon.png" alt="" />
-               <a href="https://calendly.com/cardona-luis/15min">
-                 <button>Schedule Meet up</button>
-               </a>
-           </div>
-         </footer>
- </main>
+                  <p>P3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
+                </section>
+                <footer>
+                        <div className="PopFooter-Container">
+                          <img  src="/assets/icons/calendarIcon.png" alt="" />
+                          <a href="https://calendly.com/cardona-luis/15min">
+                            <button>Schedule Meet up</button>
+                          </a>
+                      </div>
+                    </footer>
+            </main>
 
- </div>
+            </div>
                     
 </div>
                  
                  
 
 <div className="PopupLayout-Container" style={{display: IntermediateArticleContainer ? "none" : "grid" }}>
-<div className="ArticleState-Container">
-    <main style={{height: Article1 ? "20px" : "500px" }}>
-      
-      <header>
-        <img  src={`/assets/icons/htmlIcon.png`} alt="" />
-        <h1>What is React.js?</h1>
-      </header>
-      
-      <section>
-        <p>P1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
-        <p>P2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
+                  <div className="ArticleState-Container">
+                      <main style={{height: Article1 ? "20px" : "500px" }}>
+                        
+                        <header>
+                          <img  src={`/assets/icons/htmlIcon.png`} alt="" />
+                          <h1>What is React.js?</h1>
+                        </header>
+                        
+                        <section>
+                          <p>P1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
+                          <p>P2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
 
-        <p>P3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
-      </section>
-      <footer>
-              <div className="PopFooter-Container">
-                <img  src="/assets/icons/calendarIcon.png" alt="" />
-                <a href="https://calendly.com/cardona-luis/15min">
-                  <button>Schedule Meet up</button>
-                </a>
-            </div>
-          </footer>
-  </main>
+                          <p>P3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
+                        </section>
+                        <footer>
+                                <div className="PopFooter-Container">
+                                  <img  src="/assets/icons/calendarIcon.png" alt="" />
+                                  <a href="https://calendly.com/cardona-luis/15min">
+                                    <button>Schedule Meet up</button>
+                                  </a>
+                              </div>
+                            </footer>
+                    </main>
 
-  <main style={{height: Article2 ? "20px" : "500px" }}>
-      
-      <header>
-        <img  src={`/assets/icons/cssIcon.png`} alt="" />
-        <h1>What is Vue.js?</h1>
-      </header>
-      
-      <section>
-        <p>P1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
-        <p>P2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
+                    <main style={{height: Article2 ? "20px" : "500px" }}>
+                        
+                        <header>
+                          <img  src={`/assets/icons/cssIcon.png`} alt="" />
+                          <h1>What is Vue.js?</h1>
+                        </header>
+                        
+                        <section>
+                          <p>P1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
+                          <p>P2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
 
-        <p>P3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
-      </section>
-      <footer>
-              <div className="PopFooter-Container">
-                <img  src="/assets/icons/calendarIcon.png" alt="" />
-                <a href="https://calendly.com/cardona-luis/15min">
-                  <button>Schedule Meet up</button>
-                </a>
-            </div>
-          </footer>
-  </main>
+                          <p>P3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
+                        </section>
+                        <footer>
+                                <div className="PopFooter-Container">
+                                  <img  src="/assets/icons/calendarIcon.png" alt="" />
+                                  <a href="https://calendly.com/cardona-luis/15min">
+                                    <button>Schedule Meet up</button>
+                                  </a>
+                              </div>
+                            </footer>
+                    </main>
 
-  <main style={{height: Article3 ? "20px" : "500px" }}>
-      
-      <header>
-        <img  src={`/assets/icons/jsIcon.png`} alt="" />
-        <h1>What is Angular.js?</h1>
-      </header>
-      
-      <section>
-        <p>P1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
-        <p>P2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
+                    <main style={{height: Article3 ? "20px" : "500px" }}>
+                        
+                        <header>
+                          <img  src={`/assets/icons/jsIcon.png`} alt="" />
+                          <h1>What is Angular.js?</h1>
+                        </header>
+                        
+                        <section>
+                          <p>P1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
+                          <p>P2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
 
-        <p>P3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
-      </section>
-      <footer>
-              <div className="PopFooter-Container">
-                <img  src="/assets/icons/calendarIcon.png" alt="" />
-                <a href="https://calendly.com/cardona-luis/15min">
-                  <button>Schedule Meet up</button>
-                </a>
-            </div>
-          </footer>
-  </main>
+                          <p>P3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
+                        </section>
+                        <footer>
+                                <div className="PopFooter-Container">
+                                  <img  src="/assets/icons/calendarIcon.png" alt="" />
+                                  <a href="https://calendly.com/cardona-luis/15min">
+                                    <button>Schedule Meet up</button>
+                                  </a>
+                              </div>
+                            </footer>
+                    </main>
 
-  </div>
+                    </div>
 
 
-              </div>
+      </div>
 
-              <div className="PopupLayout-Container" style={{display: AdvanceArticleContainer ? "none" : "grid" }}>
+      <div className="PopupLayout-Container" style={{display: AdvanceArticleContainer ? "none" : "grid" }}>
               <div className="ArticleState-Container">
 
 <main style={{height: Article1 ? "20px" : "500px" }}>

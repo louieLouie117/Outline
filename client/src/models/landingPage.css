@@ -581,7 +581,7 @@ iframe ::-webkit-scrollbar{
     display: grid;
     row-gap: 10px;
     background: white;
-    padding: 20px;
+    padding: 25px;
     border-radius: 7px;
     overflow: scroll;
 }
@@ -589,6 +589,15 @@ iframe ::-webkit-scrollbar{
 .ArticleState-Container>main header{
     display: flex;
     column-gap: 10px;
+}
+
+.ArticleState-Container>main header h1{
+    cursor: pointer;
+}
+
+
+.ArticleState-Container>main header img{
+    height: 30px;
 }
 
 
