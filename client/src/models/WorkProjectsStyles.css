@@ -1,3 +1,7 @@
+.WorkProject-Container{
+    display: grid;
+}
+
 .WorkProject-Container main{
     padding-bottom: 20px;
 
@@ -63,6 +67,11 @@
 
 
 @media screen and (min-width: 1100px) {
+    .WorkProject-Container main{
+        justify-self: center;
+        padding-bottom: 20px;
+    
+    }
  
     .WorkProject-Container main header{
         padding-left: 0;
