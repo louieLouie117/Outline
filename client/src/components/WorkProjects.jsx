@@ -16,7 +16,7 @@ function WorkProjects(props) {
         <picture>
             <img  src="/assets/showCase/GarageSallyWebsite.png" alt="" />
             <footer>
-            <button ><a href="https://garagesallyapp.com/" target='_blank'> view </a></button>
+            <button ><a href="https://garagesallyapp.com/" > view </a></button>
             </footer>
             </picture>
           <picture> 
@@ -34,7 +34,7 @@ function WorkProjects(props) {
             <picture>
             <img  src="/assets/showCase/website2.png" alt="" />
             <footer>
-            <button > <a href="https://icy-flower-0ac939810.1.azurestaticapps.net/" target='_blank'> view and purchase </a></button>
+            <button > <a href="https://icy-flower-0ac939810.1.azurestaticapps.net/" > view and purchase </a></button>
             </footer>
 
             </picture>
@@ -42,14 +42,14 @@ function WorkProjects(props) {
             <picture>
             <img  src="/assets/showCase/website3.png" alt="" />
             <footer>
-            <button > <a href="https://www.jrprolandscaping.com/" target='_blank'> view </a></button>
+            <button > <a href="https://www.jrprolandscaping.com/" > view </a></button>
             </footer>
             </picture>
             
             <picture>
             <img  src="/assets/showCase/website4.png" alt="" />
             <footer>
-            <button ><a href="https://www.ibupholstery.com/" target='_blank'> view </a></button>
+            <button ><a href="https://www.ibupholstery.com/" > view </a></button>
             </footer>
             </picture>
 
@@ -58,14 +58,14 @@ function WorkProjects(props) {
             <picture>
             <img  src="/assets/showCase/LeeWebsite.png" alt="" />
             <footer>
-            <button ><a href="https://calendly.com/cardona-luis/15min" target='_blank'>Make an Appointment</a></button>
+            <button ><a href="https://calendly.com/cardona-luis/15min" >Make an Appointment</a></button>
             </footer>
             </picture>
 
             <picture>
             <img  src="/assets/showCase/PizzaWebsite.png" alt="" />
             <footer>
-            <button ><a href="https://calendly.com/cardona-luis/15min" target='_blank'>Make an Appointment</a></button>
+            <button ><a href="https://calendly.com/cardona-luis/15min" >Make an Appointment</a></button>
             </footer>
             </picture>
             </header>

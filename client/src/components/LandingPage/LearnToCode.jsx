@@ -4,7 +4,6 @@ import React, { useState } from "react";
 function LearnToCode(props) {
 
 const [PopUpSection, setPopUpSection] = useState(true);
-const [PopUpBTN, setPopUpBTN] = useState("BTN");
 
 const [ArticleContainer, setArticleContainer] = useState(true);
 const [Article, setArticle] = useState();
@@ -24,7 +23,6 @@ const PopUpHandler = (e)=>{
   }
 
   if(e.target.id === "HtmlBTN"){
-  setPopUpBTN("Schedule Meet up")
    setArticle(
     <main>
       
@@ -60,7 +58,7 @@ const PopUpHandler = (e)=>{
 
   
   if(e.target.id === "CssBTN"){
-    setPopUpBTN("Schedule Meet up")
+
     setArticle(
      <main>
        <header>
@@ -81,7 +79,7 @@ const PopUpHandler = (e)=>{
 
 
   if(e.target.id === "JavaScriptBTN"){
-    setPopUpBTN("Schedule Meet up")
+
     setArticle(
      <main>
        <header>
@@ -101,7 +99,7 @@ const PopUpHandler = (e)=>{
   }
 
   if(e.target.id === "ReactBTN"){
-    setPopUpBTN("Schedule Meet up")
+
     setArticle(
      <main>
        <header>
@@ -124,7 +122,7 @@ const PopUpHandler = (e)=>{
 
   
   if(e.target.id === "VueBTN"){
-    setPopUpBTN("Schedule Meet up")
+
    setArticle(
     <main>
       <header>
@@ -146,7 +144,7 @@ const PopUpHandler = (e)=>{
 
 
   if(e.target.id === "AngularBTN"){
-    setPopUpBTN("Schedule Meet up")
+
    setArticle(
     <main>
       <header>
@@ -169,7 +167,7 @@ const PopUpHandler = (e)=>{
 
   
   if(e.target.id === "CSharpBTN"){
-    setPopUpBTN("Schedule Mentorship")
+    
     setArticle(
       <main>
       <header>
@@ -249,7 +247,7 @@ const PopUpHandler = (e)=>{
 
   
   if(e.target.id === "MernBTN"){
-    setPopUpBTN("Schedule Mentorship")
+   
     setArticle(
       <main>
       <header>
@@ -327,7 +325,7 @@ const PopUpHandler = (e)=>{
 
 
   if(e.target.id === "PythonBTN"){
-    setPopUpBTN("Schedule Mentorship")
+    
     setArticle(
       <main>
       <header>
