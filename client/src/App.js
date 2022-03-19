@@ -1,6 +1,7 @@
 import './App.css';
-import LandingPage from './views/LandingPage';
 import LandingPageStyles from './models/landingPage.css'
+
+import LandingPage from './views/LandingPage';
 import Profile from './views/Profile';
 import { Router } from '@reach/router';
 

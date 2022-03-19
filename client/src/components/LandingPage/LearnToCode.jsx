@@ -9,19 +9,17 @@ const [PopUpBTN, setPopUpBTN] = useState("BTN");
 const [ArticleContainer, setArticleContainer] = useState(true);
 const [Article, setArticle] = useState();
 
-const [DetailsContainer, setDetailsContainer] = useState(true);
-const [Details, setDetails] = useState();
 
 
 const PopUpHandler = (e)=>{
   setPopUpSection(false)
   setArticleContainer(false)
-  setDetailsContainer(true)
+ 
 
 
   if(e.target.innerText === "X" ){
       setPopUpSection(true)
-      setDetailsContainer(true)
+     
     return
   }
 
@@ -38,7 +36,7 @@ const PopUpHandler = (e)=>{
         <p>P2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
 
         <p>P3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
-        <button id="HtmlDetails" onClick={DetailsHandler}>Meet up details</button>
+        <button id="HtmlDetails">Meet up details</button>
       </section>
   </main>
    );
@@ -59,7 +57,7 @@ const PopUpHandler = (e)=>{
          <p>P2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
  
          <p>P3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
-         <button id="CssDetails" onClick={DetailsHandler}>Meet up details</button>
+         <button id="CssDetails" >Meet up details</button>
        </section>
    </main>
     );
@@ -80,7 +78,7 @@ const PopUpHandler = (e)=>{
          <p>P2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
  
          <p>P3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
-         <button id="JavaScriptDetails" onClick={DetailsHandler}>Meet up details</button>
+         <button id="JavaScriptDetails" >Meet up details</button>
        </section>
    </main>
     );
@@ -88,7 +86,7 @@ const PopUpHandler = (e)=>{
   }
 
   if(e.target.id === "ReactBTN"){
-    setPopUpBTN("Schedule Mentorship")
+    setPopUpBTN("Schedule Meet up")
     setArticle(
      <main>
        <header>
@@ -100,7 +98,7 @@ const PopUpHandler = (e)=>{
          <p>P2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
  
          <p>P3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
-         <button id="ReactDetails" onClick={DetailsHandler}>Mentorship details</button>
+         <button id="ReactDetails" >Mentorship details</button>
        </section>
    </main>
     );
@@ -123,7 +121,7 @@ const PopUpHandler = (e)=>{
         <p>P2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
 
         <p>P3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
-        <button id="VueDetails" onClick={DetailsHandler}>Meet up details</button>
+        <button id="VueDetails" >Meet up details</button>
       </section>
   </main>
    );
@@ -145,7 +143,7 @@ const PopUpHandler = (e)=>{
         <p>P2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
 
         <p>P3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
-        <button id="AngularDetails" onClick={DetailsHandler}>Meet up details</button>
+        <button id="AngularDetails" >Meet up details</button>
       </section>
   </main>
    );
@@ -157,19 +155,76 @@ const PopUpHandler = (e)=>{
   if(e.target.id === "CSharpBTN"){
     setPopUpBTN("Schedule Mentorship")
     setArticle(
-     <main>
-       <header>
-         <img  src={`/assets/icons/cSharpIcon.png`} alt="" />
-         <h1>What is C Sharp Stack?</h1>
-       </header>
-       <section>
-         <p>P1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
-         <p>P2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
- 
-         <p>P3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
-         <button id="CSharpDetails" onClick={DetailsHandler}>Mentorship details</button>
-       </section>
-   </main>
+      <main>
+      <header>
+        <img  src={`/assets/icons/cSharpIcon.png`} alt="" />
+        <h1>C Sharp Mentorship</h1>
+      </header>
+      <section className="SectionLayout-Container AdvanceMentorship">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla velit nihil eos modi natus. Unde, officiis, impedit, inventore vel culpa facilis voluptatibus nemo sapiente voluptates sequi omnis voluptatem mollitia quibusdam?</p>
+     
+        <ul>
+           <header>
+             <h2 >Week 1</h2>
+             <div className="DotIcon"></div>
+           </header>
+           <div className="GaryLineSVG"></div>
+           <div className="SectionList">
+             <li>CSharp Week 1</li>
+             <li>React useState</li>
+             <li>Save code to Github</li>
+             <li>Deployment App</li>
+           </div>
+         </ul>
+         
+         <ul>
+           <header>
+             <h2 >Week 2</h2>
+             <div className="DotIcon"></div>
+           </header>
+           <div className="GaryLineSVG"></div>
+           <div className="SectionList" >
+             <li>CSharp Week 2</li>
+             <li>React useState</li>
+             <li>Save code to Github</li>
+             <li>Deployment App</li>
+           </div>
+         </ul>
+
+         <ul>
+           <header>
+             <h2 >Week 3</h2>
+             <div className="DotIcon"></div>
+           </header>
+           <div className="GaryLineSVG"></div>
+           <div className="SectionList" >
+             <li>CSharp week 3</li>
+             <li>React useState</li>
+             <li>Save code to Github</li>
+             <li>Deployment App</li>
+           </div>
+         </ul>
+
+         <ul>
+         <header>
+             <h2 >Week 4</h2>
+             <div className="DotIcon"></div>
+           </header>
+           <div className="GaryLineSVG"></div>
+           <div  className="SectionList">
+             <li>CSharp week 4</li>
+             <li>React useState</li>
+             <li>Save code to Github</li>
+             <li>Deployment App</li>
+           </div>
+         </ul>
+
+         <p>Learn the fundamentals of C Sharp by careting application. The cost for 4 weeks is $500.00</p>
+
+
+        <button id="CSharpBTN" onClick={PopUpHandler}>back to article</button>
+      </section>
+  </main>
     );
 
 
@@ -180,19 +235,76 @@ const PopUpHandler = (e)=>{
   if(e.target.id === "MernBTN"){
     setPopUpBTN("Schedule Mentorship")
     setArticle(
-     <main>
-       <header>
-         <img  src={`/assets/icons/jsIcon.png`} alt="" />
-         <h1>What is MERN Stack?</h1>
-       </header>
-       <section>
-         <p>P1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
-         <p>P2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
- 
-         <p>P3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
-         <button id="MernDetails" onClick={DetailsHandler}>Mentorship details</button>
-       </section>
-   </main>
+      <main>
+      <header>
+        <img  src={`/assets/icons/jsIcon.png`} alt="" />
+        <h1>MERN Mentorship</h1>
+      </header>
+      <section className="SectionLayout-Container AdvanceMentorship">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla velit nihil eos modi natus. Unde, officiis, impedit, inventore vel culpa facilis voluptatibus nemo sapiente voluptates sequi omnis voluptatem mollitia quibusdam?</p>
+     
+        <ul>
+           <header>
+             <h2 >Week 1</h2>
+             <div className="DotIcon"></div>
+           </header>
+           <div className="GaryLineSVG"></div>
+           <div className="SectionList">
+             <li>MERN Week 1</li>
+             <li>React useState</li>
+             <li>Save code to Github</li>
+             <li>Deployment App</li>
+           </div>
+         </ul>
+         
+         <ul>
+           <header>
+             <h2 >Week 2</h2>
+             <div className="DotIcon"></div>
+           </header>
+           <div className="GaryLineSVG"></div>
+           <div className="SectionList" >
+             <li>MERN Week 2</li>
+             <li>React useState</li>
+             <li>Save code to Github</li>
+             <li>Deployment App</li>
+           </div>
+         </ul>
+
+         <ul>
+           <header>
+             <h2 >Week 3</h2>
+             <div className="DotIcon"></div>
+           </header>
+           <div className="GaryLineSVG"></div>
+           <div className="SectionList" >
+             <li>MERN week 3</li>
+             <li>React useState</li>
+             <li>Save code to Github</li>
+             <li>Deployment App</li>
+           </div>
+         </ul>
+
+         <ul>
+         <header>
+             <h2 >Week 4</h2>
+             <div className="DotIcon"></div>
+           </header>
+           <div className="GaryLineSVG"></div>
+           <div  className="SectionList">
+             <li>MERN Week 4</li>
+             <li>React useState</li>
+             <li>Save code to Github</li>
+             <li>Deployment App</li>
+           </div>
+         </ul>
+
+         <p>Learn the fundamentals of MERN by careting application. The cost for 4 weeks is $500.00</p>
+
+        <button id="CSharpBTN" onClick={PopUpHandler}>back to article</button>
+        
+      </section>
+  </main>
     );
 
   }
@@ -201,19 +313,77 @@ const PopUpHandler = (e)=>{
   if(e.target.id === "PythonBTN"){
     setPopUpBTN("Schedule Mentorship")
     setArticle(
-     <main>
-       <header>
-         <img  src={`/assets/icons/pythonIcon.png`} alt="" />
-         <h1>What is Python Stack?</h1>
-       </header>
-       <section>
-         <p>P1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
-         <p>P2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
- 
-         <p>P3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
-         <button id="PythonDetails" onClick={DetailsHandler}>Mentorship details</button>
-       </section>
-   </main>
+      <main>
+      <header>
+        <img  src={`/assets/icons/pythonIcon.png`} alt="" />
+        <h1>Python Mentorship</h1>
+      </header>
+      <section className="SectionLayout-Container AdvanceMentorship">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla velit nihil eos modi natus. Unde, officiis, impedit, inventore vel culpa facilis voluptatibus nemo sapiente voluptates sequi omnis voluptatem mollitia quibusdam?</p>
+     
+        <ul>
+           <header>
+             <h2 >Week 1</h2>
+             <div className="DotIcon"></div>
+           </header>
+           <div className="GaryLineSVG"></div>
+           <div className="SectionList">
+             <li>Python Week 1</li>
+             <li>React useState</li>
+             <li>Save code to Github</li>
+             <li>Deployment App</li>
+           </div>
+         </ul>
+         
+         <ul>
+           <header>
+             <h2 >Week 2</h2>
+             <div className="DotIcon"></div>
+           </header>
+           <div className="GaryLineSVG"></div>
+           <div className="SectionList" >
+             <li>Python Week 2</li>
+             <li>React useState</li>
+             <li>Save code to Github</li>
+             <li>Deployment App</li>
+           </div>
+         </ul>
+
+         <ul>
+           <header>
+             <h2 >Week 3</h2>
+             <div className="DotIcon"></div>
+           </header>
+           <div className="GaryLineSVG"></div>
+           <div className="SectionList" >
+             <li>Python week 3</li>
+             <li>React useState</li>
+             <li>Save code to Github</li>
+             <li>Deployment App</li>
+           </div>
+         </ul>
+
+         <ul>
+         <header>
+             <h2 >Week 4</h2>
+             <div className="DotIcon"></div>
+           </header>
+           <div className="GaryLineSVG"></div>
+           <div  className="SectionList">
+             <li>Python Week 4</li>
+             <li>React useState</li>
+             <li>Save code to Github</li>
+             <li>Deployment App</li>
+           </div>
+         </ul>
+
+        <p>Learn the fundamentals of Python by careting application. The cost for 4 weeks is $500.00</p>
+
+
+         
+        <button id="CSharpBTN" onClick={PopUpHandler}>back to article</button>
+      </section>
+  </main>
     );
 
   }
@@ -221,317 +391,6 @@ const PopUpHandler = (e)=>{
 }
 
 
-const DetailsHandler = (e) =>{
-  setArticleContainer(true)
-  setDetailsContainer(false)
-  if(e.target.id === "HtmlDetails"){
-  setDetails(
-
-    <main >
-       <header>
-         <img  src={`/assets/icons/pythonIcon.png`} alt="" />
-         <h1>Html Meet Up</h1>
-       </header>
-       <section>
-         <p>If you have any question about Html schedule meet up I would love to help you in any way I can.</p>
-      
-         <button id="HtmlBTN" onClick={PopUpHandler}>back to article</button>
-       </section>
-   </main>
-   )
-
-  }
-
-    if(e.target.id === "CssDetails"){
-    setDetails(
-      <main>
-         <header>
-           <img  src={`/assets/icons/pythonIcon.png`} alt="" />
-           <h1>CSS Meet Up</h1>
-         </header>
-         <section>
-           <p>If you have any question about CSS schedule meet up I would love to help you in any way I can.</p>
-        
-           <button id="CssBTN" onClick={PopUpHandler}>back to article</button>
-         </section>
-     </main>
-     )
-  
-    }
-
-    if(e.target.id === "JavaScriptDetails"){
-      setDetails(
-    
-        <main>
-           <header>
-             <img  src={`/assets/icons/pythonIcon.png`} alt="" />
-             <h1>JavaScript Meet Up</h1>
-           </header>
-           <section>
-             <p>If you have any question about JavaScript schedule meet up I would love to help you in any way I can.</p>
-          
-             <button id="JavaScriptBTN" onClick={PopUpHandler}>back to article</button>
-           </section>
-       </main>
-       )
-      }
-
-    if(e.target.id === "ReactDetails"){
-        setDetails(
-      
-          <main>
-             <header>
-               <img  src={`/assets/icons/pythonIcon.png`} alt="" />
-               <h1>React Mentorship</h1>
-             </header>
-             <section className="SectionLayout-Container">
-             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla velit nihil eos modi natus. Unde, officiis, impedit, inventore vel culpa facilis voluptatibus nemo sapiente voluptates sequi omnis voluptatem mollitia quibusdam?</p>
-                <ul>
-                  <h2>Lecture Outline</h2>
-                  <li>Create a React.js Static App</li>
-                  <li>React useState</li>
-                  <li>Save code to Github</li>
-                  <li>Deployment App</li>
-                </ul>
-               <p>Learn the fundamentals of React by careting application. The cost for 1 weeks is $100.00</p>
-
-               <button id="ReactBTN" onClick={PopUpHandler}>back to article</button>
-             </section>
-         </main>
-         )
-    
-      }
-
-    if(e.target.id === "CSharpDetails"){
-        setDetails(
-          <main>
-             <header>
-               <img  src={`/assets/icons/cSharpIcon.png`} alt="" />
-               <h1>C Sharp Mentorship</h1>
-             </header>
-             <section className="SectionLayout-Container AdvanceMentorship">
-             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla velit nihil eos modi natus. Unde, officiis, impedit, inventore vel culpa facilis voluptatibus nemo sapiente voluptates sequi omnis voluptatem mollitia quibusdam?</p>
-            
-               <ul>
-                  <header>
-                    <h2 >Week 1</h2>
-                    <div className="DotIcon"></div>
-                  </header>
-                  <div className="GaryLineSVG"></div>
-                  <div className="SectionList">
-                    <li>CSharp Week 1</li>
-                    <li>React useState</li>
-                    <li>Save code to Github</li>
-                    <li>Deployment App</li>
-                  </div>
-                </ul>
-                
-                <ul>
-                  <header>
-                    <h2 >Week 2</h2>
-                    <div className="DotIcon"></div>
-                  </header>
-                  <div className="GaryLineSVG"></div>
-                  <div className="SectionList" >
-                    <li>CSharp Week 2</li>
-                    <li>React useState</li>
-                    <li>Save code to Github</li>
-                    <li>Deployment App</li>
-                  </div>
-                </ul>
-
-                <ul>
-                  <header>
-                    <h2 >Week 3</h2>
-                    <div className="DotIcon"></div>
-                  </header>
-                  <div className="GaryLineSVG"></div>
-                  <div className="SectionList" >
-                    <li>CSharp week 3</li>
-                    <li>React useState</li>
-                    <li>Save code to Github</li>
-                    <li>Deployment App</li>
-                  </div>
-                </ul>
-
-                <ul>
-                <header>
-                    <h2 >Week 4</h2>
-                    <div className="DotIcon"></div>
-                  </header>
-                  <div className="GaryLineSVG"></div>
-                  <div  className="SectionList">
-                    <li>CSharp week 4</li>
-                    <li>React useState</li>
-                    <li>Save code to Github</li>
-                    <li>Deployment App</li>
-                  </div>
-                </ul>
-
-                <p>Learn the fundamentals of C Sharp by careting application. The cost for 4 weeks is $500.00</p>
-
-
-               <button id="CSharpBTN" onClick={PopUpHandler}>back to article</button>
-             </section>
-         </main>
-         )
-    
-      }
-
-      if(e.target.id === "MernDetails"){
-        setDetails(
-          <main>
-             <header>
-               <img  src={`/assets/icons/jsIcon.png`} alt="" />
-               <h1>MERN Mentorship</h1>
-             </header>
-             <section className="SectionLayout-Container AdvanceMentorship">
-             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla velit nihil eos modi natus. Unde, officiis, impedit, inventore vel culpa facilis voluptatibus nemo sapiente voluptates sequi omnis voluptatem mollitia quibusdam?</p>
-            
-               <ul>
-                  <header>
-                    <h2 >Week 1</h2>
-                    <div className="DotIcon"></div>
-                  </header>
-                  <div className="GaryLineSVG"></div>
-                  <div className="SectionList">
-                    <li>MERN Week 1</li>
-                    <li>React useState</li>
-                    <li>Save code to Github</li>
-                    <li>Deployment App</li>
-                  </div>
-                </ul>
-                
-                <ul>
-                  <header>
-                    <h2 >Week 2</h2>
-                    <div className="DotIcon"></div>
-                  </header>
-                  <div className="GaryLineSVG"></div>
-                  <div className="SectionList" >
-                    <li>MERN Week 2</li>
-                    <li>React useState</li>
-                    <li>Save code to Github</li>
-                    <li>Deployment App</li>
-                  </div>
-                </ul>
-
-                <ul>
-                  <header>
-                    <h2 >Week 3</h2>
-                    <div className="DotIcon"></div>
-                  </header>
-                  <div className="GaryLineSVG"></div>
-                  <div className="SectionList" >
-                    <li>MERN week 3</li>
-                    <li>React useState</li>
-                    <li>Save code to Github</li>
-                    <li>Deployment App</li>
-                  </div>
-                </ul>
-
-                <ul>
-                <header>
-                    <h2 >Week 4</h2>
-                    <div className="DotIcon"></div>
-                  </header>
-                  <div className="GaryLineSVG"></div>
-                  <div  className="SectionList">
-                    <li>MERN Week 4</li>
-                    <li>React useState</li>
-                    <li>Save code to Github</li>
-                    <li>Deployment App</li>
-                  </div>
-                </ul>
-
-                <p>Learn the fundamentals of MERN by careting application. The cost for 4 weeks is $500.00</p>
-
-               <button id="CSharpBTN" onClick={PopUpHandler}>back to article</button>
-               
-             </section>
-         </main>
-         )
-    
-      }
-      
-      if(e.target.id === "PythonDetails"){
-        setDetails(
-          <main>
-             <header>
-               <img  src={`/assets/icons/pythonIcon.png`} alt="" />
-               <h1>Python Mentorship</h1>
-             </header>
-             <section className="SectionLayout-Container AdvanceMentorship">
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla velit nihil eos modi natus. Unde, officiis, impedit, inventore vel culpa facilis voluptatibus nemo sapiente voluptates sequi omnis voluptatem mollitia quibusdam?</p>
-            
-               <ul>
-                  <header>
-                    <h2 >Week 1</h2>
-                    <div className="DotIcon"></div>
-                  </header>
-                  <div className="GaryLineSVG"></div>
-                  <div className="SectionList">
-                    <li>Python Week 1</li>
-                    <li>React useState</li>
-                    <li>Save code to Github</li>
-                    <li>Deployment App</li>
-                  </div>
-                </ul>
-                
-                <ul>
-                  <header>
-                    <h2 >Week 2</h2>
-                    <div className="DotIcon"></div>
-                  </header>
-                  <div className="GaryLineSVG"></div>
-                  <div className="SectionList" >
-                    <li>Python Week 2</li>
-                    <li>React useState</li>
-                    <li>Save code to Github</li>
-                    <li>Deployment App</li>
-                  </div>
-                </ul>
-
-                <ul>
-                  <header>
-                    <h2 >Week 3</h2>
-                    <div className="DotIcon"></div>
-                  </header>
-                  <div className="GaryLineSVG"></div>
-                  <div className="SectionList" >
-                    <li>Python week 3</li>
-                    <li>React useState</li>
-                    <li>Save code to Github</li>
-                    <li>Deployment App</li>
-                  </div>
-                </ul>
-
-                <ul>
-                <header>
-                    <h2 >Week 4</h2>
-                    <div className="DotIcon"></div>
-                  </header>
-                  <div className="GaryLineSVG"></div>
-                  <div  className="SectionList">
-                    <li>Python Week 4</li>
-                    <li>React useState</li>
-                    <li>Save code to Github</li>
-                    <li>Deployment App</li>
-                  </div>
-                </ul>
-
-               <p>Learn the fundamentals of Python by careting application. The cost for 4 weeks is $500.00</p>
-
-
-                
-               <button id="CSharpBTN" onClick={PopUpHandler}>back to article</button>
-             </section>
-         </main>
-         )
-    
-      }
-
-}
 
 
   return (
@@ -664,7 +523,6 @@ const DetailsHandler = (e) =>{
 
 
                   <div className="PopupLayout-Container" style={{display: ArticleContainer ? "none" : "grid" }}>{Article}</div>
-                  <div className="PopupLayout-Container Details-Container" style={{display: DetailsContainer ? "none" : "grid" }}>{Details}</div>
 
                   {/* <main>
                     <div className="AboutTechTool" style={{display: AboutTechSection ? "none" : "grid" }}>
@@ -675,7 +533,7 @@ const DetailsHandler = (e) =>{
                       <section>
                       <p>{PopUpDescription}</p>
                       <p>{PopUpDescription}</p>
-                      <p onClick={DetailsHandler}>{DetailsBTN}</p>
+                      <p >{DetailsBTN}</p>
                       </section>
                     </div>
 
