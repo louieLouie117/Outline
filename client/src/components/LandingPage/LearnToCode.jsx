@@ -5,14 +5,64 @@ function LearnToCode(props) {
 
 const [PopUpSection, setPopUpSection] = useState(true);
 
-const [ArticleContainer, setArticleContainer] = useState(true);
-const [Article, setArticle] = useState();
+const [BeginnerArticleContainer, setBeginnerArticleContainer] = useState(true);
+const [IntermediateArticleContainer, setIntermediateArticleContainer] = useState(true);
+const [AdvanceArticleContainer, setAdvanceArticleContainer] = useState(true);
+
+const [Article1, setArticle1] = useState();
+const [Article2, setArticle2] = useState();
+const [Article3, setArticle3] = useState();
 
 
+
+
+
+const BeginnerArticlesHandler = (e)=>{
+  setPopUpSection(false)
+  setBeginnerArticleContainer(false)
+  setIntermediateArticleContainer(true)
+  setAdvanceArticleContainer(true)
+  setArticle1(false)
+  setArticle2(true)
+  setArticle3(true)
+
+ 
+   
+  
+}
+
+
+const IntermediateArticlesHandler = (e)=>{
+  setPopUpSection(false)
+  setBeginnerArticleContainer(true)
+  setIntermediateArticleContainer(false)
+  setAdvanceArticleContainer(true)
+  setArticle1(false)
+  setArticle2(true)
+  setArticle3(true)
+
+ 
+   
+  
+}
+
+const AdvanceArticlesHandler = (e)=>{
+  setPopUpSection(false)
+  setBeginnerArticleContainer(true)
+  setIntermediateArticleContainer(true)
+  setAdvanceArticleContainer(false)
+  setArticle1(false)
+  setArticle2(true)
+  setArticle3(true)
+
+ 
+   
+  
+}
 
 const PopUpHandler = (e)=>{
   setPopUpSection(false)
-  setArticleContainer(false)
+  setBeginnerArticleContainer(false)
  
 
 
@@ -22,386 +72,8 @@ const PopUpHandler = (e)=>{
     return
   }
 
-  if(e.target.id === "HtmlBTN"){
-   setArticle(
-    <main>
-      
-      <header>
-        <img  src={`/assets/icons/htmlIcon.png`} alt="" />
-        <h1>What is HTML?</h1>
-      </header>
-      <section>
-        <p>P1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
-        <p>P2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
-
-        <p>P3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
-        <button id="HtmlDetails">Meet up details</button>
-      </section>
-      <footer>
-              <div className="PopFooter-Container">
-                <img  src="/assets/icons/calendarIcon.png" alt="" />
-                <a href="https://calendly.com/cardona-luis/15min">
-                  <button>Schedule Meet up</button>
-                </a>
-            </div>
-          </footer>
-  </main>
   
-  
-
-  
-
-  
-   );
-  }
-
-
-  
-  if(e.target.id === "CssBTN"){
-
-    setArticle(
-     <main>
-       <header>
-         <img  src={`/assets/icons/cssIcon.png`} alt="" />
-         <h1>What is CSS?</h1>
-       </header>
-       <section>
-         <p>P1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
-         <p>P2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
  
-         <p>P3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
-         <button id="CssDetails" >Meet up details</button>
-       </section>
-   </main>
-    );
-
-  }
-
-
-  if(e.target.id === "JavaScriptBTN"){
-
-    setArticle(
-     <main>
-       <header>
-         <img  src={`/assets/icons/jsIcon.png`} alt="" />
-         <h1>What is JavaScript?</h1>
-       </header>
-       <section>
-         <p>P1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
-         <p>P2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
- 
-         <p>P3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
-         <button id="JavaScriptDetails" >Meet up details</button>
-       </section>
-   </main>
-    );
-
-  }
-
-  if(e.target.id === "ReactBTN"){
-
-    setArticle(
-     <main>
-       <header>
-         <img  src={`/assets/icons/reactIcon.png`} alt="" />
-         <h1>What is React.js?</h1>
-       </header>
-       <section>
-         <p>P1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
-         <p>P2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
- 
-         <p>P3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
-         <button id="ReactDetails" >Mentorship details</button>
-       </section>
-   </main>
-    );
-
-
-  }
-
-
-  
-  if(e.target.id === "VueBTN"){
-
-   setArticle(
-    <main>
-      <header>
-        <img  src={`/assets/icons/vueIcon.png`} alt="" />
-        <h1>What is Vue?</h1>
-      </header>
-      <section>
-        <p>P1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
-        <p>P2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
-
-        <p>P3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
-        <button id="VueDetails" >Meet up details</button>
-      </section>
-  </main>
-   );
-    
-
-  }
-
-
-  if(e.target.id === "AngularBTN"){
-
-   setArticle(
-    <main>
-      <header>
-        <img  src={`/assets/icons/angularIcon.png`} alt="" />
-        <h1>What is Angular?</h1>
-      </header>
-      <section>
-        <p>P1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
-        <p>P2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
-
-        <p>P3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
-        <button id="AngularDetails" >Meet up details</button>
-      </section>
-  </main>
-
-   );
-
-
-  }
-
-  
-  if(e.target.id === "CSharpBTN"){
-    
-    setArticle(
-      <main>
-      <header>
-        <img  src={`/assets/icons/cSharpIcon.png`} alt="" />
-        <h1>C Sharp Mentorship</h1>
-      </header>
-      <section className="SectionLayout-Container AdvanceMentorship">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla velit nihil eos modi natus. Unde, officiis, impedit, inventore vel culpa facilis voluptatibus nemo sapiente voluptates sequi omnis voluptatem mollitia quibusdam?</p>
-     
-        <ul>
-           <header>
-             <h2 >Week 1</h2>
-             <div className="DotIcon"></div>
-           </header>
-           <div className="GaryLineSVG"></div>
-           <div className="SectionList">
-             <li>CSharp Week 1</li>
-             <li>React useState</li>
-             <li>Save code to Github</li>
-             <li>Deployment App</li>
-           </div>
-         </ul>
-         
-         <ul>
-           <header>
-             <h2 >Week 2</h2>
-             <div className="DotIcon"></div>
-           </header>
-           <div className="GaryLineSVG"></div>
-           <div className="SectionList" >
-             <li>CSharp Week 2</li>
-             <li>React useState</li>
-             <li>Save code to Github</li>
-             <li>Deployment App</li>
-           </div>
-         </ul>
-
-         <ul>
-           <header>
-             <h2 >Week 3</h2>
-             <div className="DotIcon"></div>
-           </header>
-           <div className="GaryLineSVG"></div>
-           <div className="SectionList" >
-             <li>CSharp week 3</li>
-             <li>React useState</li>
-             <li>Save code to Github</li>
-             <li>Deployment App</li>
-           </div>
-         </ul>
-
-         <ul>
-         <header>
-             <h2 >Week 4</h2>
-             <div className="DotIcon"></div>
-           </header>
-           <div className="GaryLineSVG"></div>
-           <div  className="SectionList">
-             <li>CSharp week 4</li>
-             <li>React useState</li>
-             <li>Save code to Github</li>
-             <li>Deployment App</li>
-           </div>
-         </ul>
-
-         <p>Learn the fundamentals of C Sharp by careting application. The cost for 4 weeks is $500.00</p>
-
-
-        <button id="CSharpBTN" onClick={PopUpHandler}>back to article</button>
-      </section>
-  </main>
-    );
-
-
-  }
-
-
-  
-  if(e.target.id === "MernBTN"){
-   
-    setArticle(
-      <main>
-      <header>
-        <img  src={`/assets/icons/jsIcon.png`} alt="" />
-        <h1>MERN Mentorship</h1>
-      </header>
-      <section className="SectionLayout-Container AdvanceMentorship">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla velit nihil eos modi natus. Unde, officiis, impedit, inventore vel culpa facilis voluptatibus nemo sapiente voluptates sequi omnis voluptatem mollitia quibusdam?</p>
-     
-        <ul>
-           <header>
-             <h2 >Week 1</h2>
-             <div className="DotIcon"></div>
-           </header>
-           <div className="GaryLineSVG"></div>
-           <div className="SectionList">
-             <li>MERN Week 1</li>
-             <li>React useState</li>
-             <li>Save code to Github</li>
-             <li>Deployment App</li>
-           </div>
-         </ul>
-         
-         <ul>
-           <header>
-             <h2 >Week 2</h2>
-             <div className="DotIcon"></div>
-           </header>
-           <div className="GaryLineSVG"></div>
-           <div className="SectionList" >
-             <li>MERN Week 2</li>
-             <li>React useState</li>
-             <li>Save code to Github</li>
-             <li>Deployment App</li>
-           </div>
-         </ul>
-
-         <ul>
-           <header>
-             <h2 >Week 3</h2>
-             <div className="DotIcon"></div>
-           </header>
-           <div className="GaryLineSVG"></div>
-           <div className="SectionList" >
-             <li>MERN week 3</li>
-             <li>React useState</li>
-             <li>Save code to Github</li>
-             <li>Deployment App</li>
-           </div>
-         </ul>
-
-         <ul>
-         <header>
-             <h2 >Week 4</h2>
-             <div className="DotIcon"></div>
-           </header>
-           <div className="GaryLineSVG"></div>
-           <div  className="SectionList">
-             <li>MERN Week 4</li>
-             <li>React useState</li>
-             <li>Save code to Github</li>
-             <li>Deployment App</li>
-           </div>
-         </ul>
-
-         <p>Learn the fundamentals of MERN by careting application. The cost for 4 weeks is $500.00</p>
-
-        <button id="CSharpBTN" onClick={PopUpHandler}>back to article</button>
-        
-      </section>
-  </main>
-    );
-
-  }
-
-
-  if(e.target.id === "PythonBTN"){
-    
-    setArticle(
-      <main>
-      <header>
-        <img  src={`/assets/icons/pythonIcon.png`} alt="" />
-        <h1>Python Mentorship</h1>
-      </header>
-      <section className="SectionLayout-Container AdvanceMentorship">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla velit nihil eos modi natus. Unde, officiis, impedit, inventore vel culpa facilis voluptatibus nemo sapiente voluptates sequi omnis voluptatem mollitia quibusdam?</p>
-     
-        <ul>
-           <header>
-             <h2 >Week 1</h2>
-             <div className="DotIcon"></div>
-           </header>
-           <div className="GaryLineSVG"></div>
-           <div className="SectionList">
-             <li>Python Week 1</li>
-             <li>React useState</li>
-             <li>Save code to Github</li>
-             <li>Deployment App</li>
-           </div>
-         </ul>
-         
-         <ul>
-           <header>
-             <h2 >Week 2</h2>
-             <div className="DotIcon"></div>
-           </header>
-           <div className="GaryLineSVG"></div>
-           <div className="SectionList" >
-             <li>Python Week 2</li>
-             <li>React useState</li>
-             <li>Save code to Github</li>
-             <li>Deployment App</li>
-           </div>
-         </ul>
-
-         <ul>
-           <header>
-             <h2 >Week 3</h2>
-             <div className="DotIcon"></div>
-           </header>
-           <div className="GaryLineSVG"></div>
-           <div className="SectionList" >
-             <li>Python week 3</li>
-             <li>React useState</li>
-             <li>Save code to Github</li>
-             <li>Deployment App</li>
-           </div>
-         </ul>
-
-         <ul>
-         <header>
-             <h2 >Week 4</h2>
-             <div className="DotIcon"></div>
-           </header>
-           <div className="GaryLineSVG"></div>
-           <div  className="SectionList">
-             <li>Python Week 4</li>
-             <li>React useState</li>
-             <li>Save code to Github</li>
-             <li>Deployment App</li>
-           </div>
-         </ul>
-
-        <p>Learn the fundamentals of Python by careting application. The cost for 4 weeks is $500.00</p>
-
-
-         
-        <button id="CSharpBTN" onClick={PopUpHandler}>back to article</button>
-      </section>
-  </main>
-    );
-
-  }
-  
 }
 
 
@@ -436,19 +108,19 @@ const PopUpHandler = (e)=>{
               <li>
                 <img  src="/assets/icons/htmlIcon.png" alt="" />
                 <h4>HTML</h4>
-                <button id="HtmlBTN" onClick={PopUpHandler}></button>
+                <button id="HtmlBTN" onClick={BeginnerArticlesHandler}></button>
               </li>
 
               <li>
                 <img  src="/assets/icons/cssIcon.png" alt="" />
                 <h4>CSS</h4>
-                <button id="CssBTN" onClick={PopUpHandler}></button>
+                <button id="CssBTN" onClick={BeginnerArticlesHandler}></button>
               </li>
 
               <li>
                 <img  src="/assets/icons/jsIcon.png" alt="" />
                 <h4>JavaScript</h4>
-                <button id="JavaScriptBTN" onClick={PopUpHandler}></button>
+                <button id="JavaScriptBTN" onClick={BeginnerArticlesHandler}></button>
               </li>
               
              </ul>
@@ -470,21 +142,21 @@ const PopUpHandler = (e)=>{
               <li>
                   <img  src="/assets/icons/reactIcon.png" alt="" />
                   <h4>React.js</h4>
-                  <button id="ReactBTN" onClick={PopUpHandler}></button>
+                  <button id="ReactBTN" onClick={IntermediateArticlesHandler}></button>
                 
                 </li>
 
                 <li>
                   <img  src="/assets/icons/vueIcon.png" alt="" />
                   <h4>Vue.js</h4>
-                <button id="VueBTN" onClick={PopUpHandler}></button>
+                <button id="VueBTN" onClick={IntermediateArticlesHandler}></button>
 
                 </li>
 
                 <li>
                   <img  src="/assets/icons/angularIcon.png" alt="" />
                   <h4>Angular.js</h4>
-                <button id="AngularBTN" onClick={PopUpHandler}></button>
+                <button id="AngularBTN" onClick={IntermediateArticlesHandler}></button>
 
                 </li>
             </ul>
@@ -507,14 +179,14 @@ const PopUpHandler = (e)=>{
                <li>
                   <img  src="/assets/icons/cSharpIcon.png" alt="" />
                   <h4>C Sharp Stack</h4>
-                <button id="CSharpBTN" onClick={PopUpHandler}></button>
+                <button id="CSharpBTN" onClick={AdvanceArticlesHandler}></button>
 
                 </li>
 
               <li>
                  <img  src="/assets/icons/jsIcon.png" alt="" />
                   <h4>MERN Stack</h4>
-                <button id="MernBTN" onClick={PopUpHandler}></button>
+                <button id="MernBTN" onClick={AdvanceArticlesHandler}></button>
 
                 </li>
 
@@ -523,7 +195,7 @@ const PopUpHandler = (e)=>{
                 <li>
                   <img  src="/assets/icons/pythonIcon.png" alt="" />
                   <h4>Python Stack</h4>
-                <button id="PythonBTN" onClick={PopUpHandler}></button>
+                <button id="PythonBTN" onClick={AdvanceArticlesHandler}></button>
 
             </li>
           
@@ -536,33 +208,401 @@ const PopUpHandler = (e)=>{
         <button onClick={PopUpHandler}>X</button>
 
 
-                  <div className="PopupLayout-Container" style={{display: ArticleContainer ? "none" : "grid" }}>{Article}</div>
-                 
-                 
+                  <div className="PopupLayout-Container" style={{display: BeginnerArticleContainer ? "none" : "grid" }}>
 
-                  <aside>
+                  <div className="ArticleState-Container">
+   <main style={{height: Article1 ? "20px" : "500px" }}>
+     
+     <header>
+       <img  src={`/assets/icons/htmlIcon.png`} alt="" />
+       <h1>What is HTML?</h1>
+     </header>
+     
+     <section>
+       <p>P1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
+       <p>P2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
 
-                  <ul className='LearnTabs'>
+       <p>P3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
+     </section>
+     <footer>
+             <div className="PopFooter-Container">
+               <img  src="/assets/icons/calendarIcon.png" alt="" />
+               <a href="https://calendly.com/cardona-luis/15min">
+                 <button>Schedule Meet up</button>
+               </a>
+           </div>
+         </footer>
+ </main>
 
-                       <li>
-                        <img  src="/assets/icons/jsIcon.png" alt="" />
-                        <h4>MERN Stack</h4>
-                      <button id="MernBTN" onClick={PopUpHandler}></button>
+ <main style={{height: Article2 ? "20px" : "500px" }}>
+     
+     <header>
+       <img  src={`/assets/icons/cssIcon.png`} alt="" />
+       <h1>What is CSS?</h1>
+     </header>
+     
+     <section>
+       <p>P1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
+       <p>P2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
 
-                      </li>
+       <p>P3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
+     </section>
+     <footer>
+             <div className="PopFooter-Container">
+               <img  src="/assets/icons/calendarIcon.png" alt="" />
+               <a href="https://calendly.com/cardona-luis/15min">
+                 <button>Schedule Meet up</button>
+               </a>
+           </div>
+         </footer>
+ </main>
 
+ <main style={{height: Article3 ? "20px" : "500px" }}>
+     
+     <header>
+       <img  src={`/assets/icons/jsIcon.png`} alt="" />
+       <h1>What is JavaScript?</h1>
+     </header>
+     
+     <section>
+       <p>P1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
+       <p>P2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
 
+       <p>P3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
+     </section>
+     <footer>
+             <div className="PopFooter-Container">
+               <img  src="/assets/icons/calendarIcon.png" alt="" />
+               <a href="https://calendly.com/cardona-luis/15min">
+                 <button>Schedule Meet up</button>
+               </a>
+           </div>
+         </footer>
+ </main>
 
-                      <li>
-                        <img  src="/assets/icons/pythonIcon.png" alt="" />
-                        <h4>Python Stack</h4>
-                      <button id="PythonBTN" onClick={PopUpHandler}></button>
-
-                      </li>
-
-                  </ul>
+ </div>
                     
-                  </aside>
+</div>
+                 
+                 
+
+<div className="PopupLayout-Container" style={{display: IntermediateArticleContainer ? "none" : "grid" }}>
+<div className="ArticleState-Container">
+    <main style={{height: Article1 ? "20px" : "500px" }}>
+      
+      <header>
+        <img  src={`/assets/icons/htmlIcon.png`} alt="" />
+        <h1>What is React.js?</h1>
+      </header>
+      
+      <section>
+        <p>P1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
+        <p>P2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
+
+        <p>P3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
+      </section>
+      <footer>
+              <div className="PopFooter-Container">
+                <img  src="/assets/icons/calendarIcon.png" alt="" />
+                <a href="https://calendly.com/cardona-luis/15min">
+                  <button>Schedule Meet up</button>
+                </a>
+            </div>
+          </footer>
+  </main>
+
+  <main style={{height: Article2 ? "20px" : "500px" }}>
+      
+      <header>
+        <img  src={`/assets/icons/cssIcon.png`} alt="" />
+        <h1>What is Vue.js?</h1>
+      </header>
+      
+      <section>
+        <p>P1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
+        <p>P2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
+
+        <p>P3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
+      </section>
+      <footer>
+              <div className="PopFooter-Container">
+                <img  src="/assets/icons/calendarIcon.png" alt="" />
+                <a href="https://calendly.com/cardona-luis/15min">
+                  <button>Schedule Meet up</button>
+                </a>
+            </div>
+          </footer>
+  </main>
+
+  <main style={{height: Article3 ? "20px" : "500px" }}>
+      
+      <header>
+        <img  src={`/assets/icons/jsIcon.png`} alt="" />
+        <h1>What is Angular.js?</h1>
+      </header>
+      
+      <section>
+        <p>P1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
+        <p>P2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
+
+        <p>P3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
+      </section>
+      <footer>
+              <div className="PopFooter-Container">
+                <img  src="/assets/icons/calendarIcon.png" alt="" />
+                <a href="https://calendly.com/cardona-luis/15min">
+                  <button>Schedule Meet up</button>
+                </a>
+            </div>
+          </footer>
+  </main>
+
+  </div>
+
+
+              </div>
+
+              <div className="PopupLayout-Container" style={{display: AdvanceArticleContainer ? "none" : "grid" }}>
+              <div className="ArticleState-Container">
+
+<main style={{height: Article1 ? "20px" : "500px" }}>
+<header>
+  <img  src={`/assets/icons/cSharpIcon.png`} alt="" />
+  <h1>C Sharp Mentorship</h1>
+</header>
+<section className="SectionLayout-Container AdvanceMentorship">
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla velit nihil eos modi natus. Unde, officiis, impedit, inventore vel culpa facilis voluptatibus nemo sapiente voluptates sequi omnis voluptatem mollitia quibusdam?</p>
+
+  <ul>
+     <header>
+       <h2 >Week 1</h2>
+       <div className="DotIcon"></div>
+     </header>
+     <div className="GaryLineSVG"></div>
+     <div className="SectionList">
+       <li>CSharp Week 1</li>
+       <li>React useState</li>
+       <li>Save code to Github</li>
+       <li>Deployment App</li>
+     </div>
+   </ul>
+   
+   <ul>
+     <header>
+       <h2 >Week 2</h2>
+       <div className="DotIcon"></div>
+     </header>
+     <div className="GaryLineSVG"></div>
+     <div className="SectionList" >
+       <li>CSharp Week 2</li>
+       <li>React useState</li>
+       <li>Save code to Github</li>
+       <li>Deployment App</li>
+     </div>
+   </ul>
+
+   <ul>
+     <header>
+       <h2 >Week 3</h2>
+       <div className="DotIcon"></div>
+     </header>
+     <div className="GaryLineSVG"></div>
+     <div className="SectionList" >
+       <li>CSharp week 3</li>
+       <li>React useState</li>
+       <li>Save code to Github</li>
+       <li>Deployment App</li>
+     </div>
+   </ul>
+
+   <ul>
+   <header>
+       <h2 >Week 4</h2>
+       <div className="DotIcon"></div>
+     </header>
+     <div className="GaryLineSVG"></div>
+     <div  className="SectionList">
+       <li>CSharp week 4</li>
+       <li>React useState</li>
+       <li>Save code to Github</li>
+       <li>Deployment App</li>
+     </div>
+   </ul>
+
+   <p>Learn the fundamentals of C Sharp by careting application. The cost for 4 weeks is $500.00</p>
+
+
+   <footer>
+        <div className="PopFooter-Container">
+          <img  src="/assets/icons/calendarIcon.png" alt="" />
+          <a href="https://calendly.com/cardona-luis/15min">
+            <button>Schedule Meet up</button>
+          </a>
+      </div>
+    </footer>
+</section>
+</main>
+
+<main style={{height: Article2 ? "20px" : "500px" }}> 
+<header>
+  <img  src={`/assets/icons/jsIcon.png`} alt="" />
+  <h1>MERN Mentorship</h1>
+</header>
+<section className="SectionLayout-Container AdvanceMentorship">
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla velit nihil eos modi natus. Unde, officiis, impedit, inventore vel culpa facilis voluptatibus nemo sapiente voluptates sequi omnis voluptatem mollitia quibusdam?</p>
+
+  <ul>
+     <header>
+       <h2 >Week 1</h2>
+       <div className="DotIcon"></div>
+     </header>
+     <div className="GaryLineSVG"></div>
+     <div className="SectionList">
+       <li>MERN Week 1</li>
+       <li>React useState</li>
+       <li>Save code to Github</li>
+       <li>Deployment App</li>
+     </div>
+   </ul>
+   
+   <ul>
+     <header>
+       <h2 >Week 2</h2>
+       <div className="DotIcon"></div>
+     </header>
+     <div className="GaryLineSVG"></div>
+     <div className="SectionList" >
+       <li>MERN Week 2</li>
+       <li>React useState</li>
+       <li>Save code to Github</li>
+       <li>Deployment App</li>
+     </div>
+   </ul>
+
+   <ul>
+     <header>
+       <h2 >Week 3</h2>
+       <div className="DotIcon"></div>
+     </header>
+     <div className="GaryLineSVG"></div>
+     <div className="SectionList" >
+       <li>MERN week 3</li>
+       <li>React useState</li>
+       <li>Save code to Github</li>
+       <li>Deployment App</li>
+     </div>
+   </ul>
+
+   <ul>
+   <header>
+       <h2 >Week 4</h2>
+       <div className="DotIcon"></div>
+     </header>
+     <div className="GaryLineSVG"></div>
+     <div  className="SectionList">
+       <li>MERN Week 4</li>
+       <li>React useState</li>
+       <li>Save code to Github</li>
+       <li>Deployment App</li>
+     </div>
+   </ul>
+
+   <p>Learn the fundamentals of MERN by careting application. The cost for 4 weeks is $500.00</p>
+
+   <footer>
+        <div className="PopFooter-Container">
+          <img  src="/assets/icons/calendarIcon.png" alt="" />
+          <a href="https://calendly.com/cardona-luis/15min">
+            <button>Schedule Meet up</button>
+          </a>
+      </div>
+    </footer>
+  
+</section>
+</main>
+
+<main style={{height: Article3 ? "20px" : "500px" }}>
+<header>
+  <img  src={`/assets/icons/pythonIcon.png`} alt="" />
+  <h1>Python Mentorship</h1>
+</header>
+<section className="SectionLayout-Container AdvanceMentorship">
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla velit nihil eos modi natus. Unde, officiis, impedit, inventore vel culpa facilis voluptatibus nemo sapiente voluptates sequi omnis voluptatem mollitia quibusdam?</p>
+
+  <ul>
+     <header>
+       <h2 >Week 1</h2>
+       <div className="DotIcon"></div>
+     </header>
+     <div className="GaryLineSVG"></div>
+     <div className="SectionList">
+       <li>Python Week 1</li>
+       <li>React useState</li>
+       <li>Save code to Github</li>
+       <li>Deployment App</li>
+     </div>
+   </ul>
+   
+   <ul>
+     <header>
+       <h2 >Week 2</h2>
+       <div className="DotIcon"></div>
+     </header>
+     <div className="GaryLineSVG"></div>
+     <div className="SectionList" >
+       <li>Python Week 2</li>
+       <li>React useState</li>
+       <li>Save code to Github</li>
+       <li>Deployment App</li>
+     </div>
+   </ul>
+
+   <ul>
+     <header>
+       <h2 >Week 3</h2>
+       <div className="DotIcon"></div>
+     </header>
+     <div className="GaryLineSVG"></div>
+     <div className="SectionList" >
+       <li>Python week 3</li>
+       <li>React useState</li>
+       <li>Save code to Github</li>
+       <li>Deployment App</li>
+     </div>
+   </ul>
+
+   <ul>
+   <header>
+       <h2 >Week 4</h2>
+       <div className="DotIcon"></div>
+     </header>
+     <div className="GaryLineSVG"></div>
+     <div  className="SectionList">
+       <li>Python Week 4</li>
+       <li>React useState</li>
+       <li>Save code to Github</li>
+       <li>Deployment App</li>
+     </div>
+   </ul>
+
+  <p>Learn the fundamentals of Python by careting application. The cost for 4 weeks is $500.00</p>
+
+
+   
+  <footer>
+        <div className="PopFooter-Container">
+          <img  src="/assets/icons/calendarIcon.png" alt="" />
+          <a href="https://calendly.com/cardona-luis/15min">
+            <button>Schedule Meet up</button>
+          </a>
+      </div>
+    </footer>
+</section>
+</main>
+
+</div>
+
+              </div>
               
                  
           </aside>
