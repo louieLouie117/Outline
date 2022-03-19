@@ -19,7 +19,7 @@ const [Article3, setArticle3] = useState();
 
 const ArticlesHandler = (e)=>{
 
-  if(e.target.innerText == "What is HTML?" || e.target.id == "HtmlBTN"){
+  if(e.target.innerText === "What is HTML?" || e.target.id === "HtmlBTN"){
     setPopUpSection(false)
     setBeginnerArticleContainer(false)
     setIntermediateArticleContainer(true)
@@ -29,7 +29,7 @@ const ArticlesHandler = (e)=>{
     setArticle3(true)
   }
 
-  if(e.target.innerText == "What is CSS?" || e.target.id == "CssBTN"){
+  if(e.target.innerText === "What is CSS?" || e.target.id === "CssBTN"){
     setPopUpSection(false)
     setBeginnerArticleContainer(false)
     setIntermediateArticleContainer(true)
@@ -41,7 +41,7 @@ const ArticlesHandler = (e)=>{
  
 
   
-  if(e.target.innerText == "What is JavaScript?" || e.target.id == "JavaScriptBTN"){
+  if(e.target.innerText === "What is JavaScript?" || e.target.id === "JavaScriptBTN"){
     setPopUpSection(false)
     setBeginnerArticleContainer(false)
     setIntermediateArticleContainer(true)
@@ -52,7 +52,7 @@ const ArticlesHandler = (e)=>{
   }
 
 
-  if(e.target.innerText == "What is React.js?" || e.target.id == "ReactBTN"){
+  if(e.target.innerText === "What is React.js?" || e.target.id === "ReactBTN"){
     setPopUpSection(false)
     setBeginnerArticleContainer(true)
     setIntermediateArticleContainer(false)
@@ -62,7 +62,7 @@ const ArticlesHandler = (e)=>{
     setArticle3(true)
   }
 
-  if(e.target.innerText == "What is Vue.js?" || e.target.id == "VueBTN"){
+  if(e.target.innerText === "What is Vue.js?" || e.target.id === "VueBTN"){
     setPopUpSection(false)
     setBeginnerArticleContainer(true)
     setIntermediateArticleContainer(false)
@@ -73,7 +73,7 @@ const ArticlesHandler = (e)=>{
   }
 
 
-  if(e.target.innerText == "What is Angular.js?" || e.target.id == "AngularBTN"){
+  if(e.target.innerText === "What is Angular.js?" || e.target.id === "AngularBTN"){
     setPopUpSection(false)
     setBeginnerArticleContainer(true)
     setIntermediateArticleContainer(false)
@@ -84,7 +84,7 @@ const ArticlesHandler = (e)=>{
   }
  
 
-  if(e.target.innerText == "C Sharp Mentorship" || e.target.id == "CSharpBTN"){
+  if(e.target.innerText === "C Sharp Mentorship" || e.target.id === "CSharpBTN"){
     setPopUpSection(false)
     setBeginnerArticleContainer(true)
     setIntermediateArticleContainer(true)
@@ -95,7 +95,7 @@ const ArticlesHandler = (e)=>{
   }
 
 
-  if(e.target.innerText == "MERN Mentorship" || e.target.id == "MernBTN"){
+  if(e.target.innerText === "MERN Mentorship" || e.target.id === "MernBTN"){
     setPopUpSection(false)
     setBeginnerArticleContainer(true)
     setIntermediateArticleContainer(true)
@@ -105,7 +105,7 @@ const ArticlesHandler = (e)=>{
     setArticle3(true)
   }
 
-  if(e.target.innerText == "Python Mentorship" || e.target.id == "PythonBTN"){
+  if(e.target.innerText === "Python Mentorship" || e.target.id === "PythonBTN"){
     setPopUpSection(false)
     setBeginnerArticleContainer(true)
     setIntermediateArticleContainer(true)
