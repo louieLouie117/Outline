@@ -485,7 +485,6 @@ iframe ::-webkit-scrollbar{
 }
 
 .PopupLayout-Container{
-    background: white;
     max-width: 25em;
     border-radius: 3px;
     width: 100%;
@@ -571,8 +570,39 @@ iframe ::-webkit-scrollbar{
 
 
 
+.ArticleState-Container{
+    display: grid;
+    row-gap: 20px;
+    background: none;
+}
 
 
+.ArticleState-Container>main{
+    display: grid;
+    row-gap: 10px;
+    background: white;
+    padding: 25px;
+    border-radius: 7px;
+    overflow: scroll;
+}
+
+.ArticleState-Container>main header{
+    display: flex;
+    column-gap: 10px;
+}
+
+.ArticleState-Container>main header h1{
+    cursor: pointer;
+}
+
+.ArticleState-Container>main header h2{
+    font: 1em sans-serif;
+}
+
+
+.ArticleState-Container>main header img{
+    height: 30px;
+}
 
 
 
