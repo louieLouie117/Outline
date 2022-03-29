@@ -63,10 +63,7 @@ const [FullElement] = useState(
         <Services></Services>
       </div>
 
-      <div className="TestState">
-                    <h1>Elemtns with rect</h1>
-                    <div>{FullElement}</div>
-                  </div>
+    
         
     </div>
   )
