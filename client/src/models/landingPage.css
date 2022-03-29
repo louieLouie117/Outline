@@ -3,7 +3,7 @@ body{
     max-width: 45em;
 }
 
-h1, h2, h3, h4, p{
+h1, h2, h3, h4, h5, p{
     margin: 0;
     padding: 0;
     text-align: unset;
@@ -211,17 +211,16 @@ iframe ::-webkit-scrollbar{
 
 }
 
-.OutlineLayout-Container{
+.OutlineLayout-Container, .Service-Container{
     display: grid;
     align-items: flex-start;
     align-content: flex-start;
     text-align: left;
-    max-width: 75em; 
     justify-self: center;
     z-index: 0;
 }
 
-.OutlineLayout-Container>header{
+.OutlineLayout-Container>header, .Service-Container>header{
     display: grid;
     justify-items: left;
     background: #136DC0;
@@ -233,40 +232,62 @@ iframe ::-webkit-scrollbar{
 
 
 
-.OutlineLayout-Container>header p{
+.OutlineLayout-Container>header p, .Service-Container>header p{
     font: 2.2em sans-serif;
 }
 
-.OutlineLayout-Container>main {
+.OutlineLayout-Container>main, .Service-Container>main{
     display: grid;
     padding: 10px 30px;
     background: white;
+    justify-items: center;
 
 
+
+}
+
+.Service-Container>main header{
+    max-width: 550px;
+    padding-bottom: 30px;
+}
+
+.PricingCard-Container{
+    display: grid;
+    row-gap: 20px;
 }
 
 
 @media screen and (min-width: 1100px) {
-    .OutlineLayout-Container{
-    border-radius: 10px;
-    margin-bottom: 40px;
-    box-shadow: 0px 40px 70px rgba(0, 0, 0, 0.235);
+    .OutlineLayout-Container, .Service-Container{
+        border-radius: 10px;
+        margin-bottom: 40px;
+        box-shadow: 0px 40px 70px rgba(0, 0, 0, 0.235);
+        max-width: 75em;
+        min-width: 75em;
 
-        
     }
 
-    .OutlineLayout-Container>header{
+    .OutlineLayout-Container>header, .Service-Container>header{
         border-radius: 10px 10px 0 0;
     
     
     }
 
 
-.OutlineLayout-Container>main {
-    grid-template-columns: 1fr 1fr;
-    padding: 30px;
-    
-}
+    .OutlineLayout-Container>main {
+        grid-template-columns: 1fr 1fr;
+        padding: 30px;
+        
+    }
+
+
+    .PricingCard-Container{
+        display: grid;
+        height: 500px;
+        column-gap: 30px;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: flex-end;
+    }
 
 
 
@@ -606,6 +627,37 @@ iframe ::-webkit-scrollbar{
 
 
 
+
+.ServicePricing-Container{
+    display: grid;
+    row-gap: 20px;
+    background: white;
+    width: 250px;
+    border-radius: 7px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.281);
+    padding: 20px;
+
+}
+
+
+
+.ServicePricing-Container>ul h4{
+    font: 1.5em sans-serif;
+    color: #136DC0;
+}
+
+.TwoColumnsGrid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.Span2{
+    grid-column: 1/3;
+}
+
+.ServiceContainer{
+    background: red;
+}
 
 
 

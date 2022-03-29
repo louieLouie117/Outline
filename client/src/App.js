@@ -17,7 +17,6 @@ function App() {
         <LandingPage path="/"/>
         <Profile path="/luiscardona"/>
       </Router>
-      <Link to="/luiscardona">Profile Page</Link>
 
     </div>
   );
