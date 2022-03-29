@@ -35,9 +35,6 @@ const OptionsHandler = e =>{
 }
 
 
-const [FullElement] = useState(
-    <h2>Create elements using state</h2>
-);
 
   return (
     <div className='LandingPage-Container'>

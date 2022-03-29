@@ -3,7 +3,7 @@ import LandingPageStyles from './models/landingPage.css'
 
 import LandingPage from './views/LandingPage';
 import Profile from './views/Profile';
-import { Router, Link } from '@reach/router';
+import { Router } from '@reach/router';
 
 function App() {
   <LandingPageStyles></LandingPageStyles>
