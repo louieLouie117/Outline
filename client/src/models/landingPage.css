@@ -254,6 +254,24 @@ iframe ::-webkit-scrollbar{
 .PricingCard-Container{
     display: grid;
     row-gap: 20px;
+    padding-bottom: 60px;
+}
+
+
+
+.PricingCard-Container footer{
+    display: grid;
+    justify-items: center;
+    font: 0.8em sans-serif;
+}
+
+.WebAppContainer{
+    font: 0.7em sans-serif;
+}
+
+.WebAppContainer ul li {
+    display: grid;
+    grid-template-columns: 25px 2fr 1fr;
 }
 
 

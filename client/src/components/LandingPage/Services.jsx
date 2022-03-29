@@ -87,9 +87,9 @@ function Services(props) {
                 <li>Re-deployment</li>
               </ul>
               <footer>
-                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+              <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                             <input type="hidden" name="cmd" value="_s-xclick"/>
-                            <input type="hidden" name="hosted_button_id" value="8XQJR2M39U7FQ"/>
+                            <input type="hidden" name="hosted_button_id" value="FS7CZ3EALU6N4"/>
                             <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribeCC_LG.gif"
                                 border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"/>
                             <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1"
@@ -113,12 +113,37 @@ function Services(props) {
             <aside className='ServicePricing-Container'>
               <ul className='TwoColumnsGrid'>
               <h4 className='Span2'>Web App</h4>
-                <li>Mobile Design</li>
-                <li>$250.00</li>
-                <li>Mobile Development</li>
-                <li>$250.00</li>
-                <li>Total__________</li>
-                <li>$500.00</li>
+                <li>Design and Planning</li>
+                <li>$2,500.00</li>
+            
+              </ul>
+
+              <aside className='WebAppContainer'>
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" name="" id="" checked/>
+                                        <h3>Frontend Developer...</h3>
+                                        <h3>$1,000.00</h3>
+                                    </li>
+
+                                    <li>
+                                        <input type="checkbox" name="" id="" checked/>
+                                        <h3>Backend Developer...</h3>
+                                        <h3>$1,000.00</h3>
+                                    </li>
+
+                                    <li>
+                                        <input type="checkbox" name="" id="" checked/>
+                                        <h3>Operations Developer...</h3>
+                                        <h3>$1,000.00</h3>
+                                    </li>
+
+                                </ul>
+                      </aside>
+                      <ul className='TwoColumnsGrid'>
+                <li>Total___________</li>
+                <li>$5,500.00</li>
+            
               </ul>
 
               <ul>
@@ -129,14 +154,15 @@ function Services(props) {
                 <li>Re-deployment</li>
               </ul>
               <footer>
-                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+              <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                             <input type="hidden" name="cmd" value="_s-xclick"/>
-                            <input type="hidden" name="hosted_button_id" value="8XQJR2M39U7FQ"/>
+                            <input type="hidden" name="hosted_button_id" value="M56XHSE6QPJVC"/>
                             <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribeCC_LG.gif"
                                 border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"/>
                             <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1"
                                 height="1"/>
                         </form>
+
 
                         <h3>$150.00/month</h3>
                     </footer>
