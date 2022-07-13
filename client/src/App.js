@@ -1,6 +1,5 @@
 import './App.css';
 import LandingPageStyles from './models/landingPage.css'
-import OnlineEstimateStyles from './models/OnlineEstimateStyles.css'
 import LandingPage from './views/LandingPage';
 import Profile from './views/Profile';
 import { Router } from '@reach/router';
