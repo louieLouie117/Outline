@@ -20,16 +20,16 @@ const OptionsHandler = e =>{
     if(e.target.innerText === "Learn to code"){
       setLearnButton(false);
       setServiceButton(true);
-      setContentLearnToCode(false);
-      setContentServices(true);
+      setContentLearnToCode(true);
+      setContentServices(false);
       
 
     }
     if(e.target.innerText === "Services"){
       setLearnButton(true);
       setServiceButton(false);
-      setContentLearnToCode(true);
-      setContentServices(false);
+      setContentLearnToCode(false);
+      setContentServices(true);
     }
 
 

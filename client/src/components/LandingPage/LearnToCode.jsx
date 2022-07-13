@@ -143,13 +143,12 @@ function LearnToCode(props) {
   return (
     <div className='OutlineLayout-Container' >
       <header>
-        <p>Have you been wanting to learn to code?</p>
       </header>
 
       <main>
 
         <header>
-          <h2>Fundamentals Outline</h2>
+          <h2>Fundamental Outline</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laborum consectetur distinctio neque provident? Accusantium saepe, fuga delectus explicabo inventore libero iste quod fugit assumenda aperiam quidem provident vitae sapiente!</p>
         </header>
 
