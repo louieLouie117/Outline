@@ -1,5 +1,11 @@
 .WorkProject-Container{
     display: grid;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.WorkProject-Container h1{
+    font: 2em sans-serif;
 }
 
 .WorkProject-Container main{
