@@ -4,7 +4,6 @@ function Services(props) {
   return (
     <div className='Service-Container'>
         <header>
-          <p>Do you need help with keeping your business online</p>       
         </header>
 
       <main>
@@ -14,7 +13,7 @@ function Services(props) {
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laborum consectetur distinctio neque provident? Accusantium saepe, fuga delectus explicabo inventore libero iste quod fugit assumenda aperiam quidem provident vitae sapiente!</p>
         </header>
 
-        <div className='PricingCard-Container'>
+        {/* <div className='PricingCard-Container'>
         <section>
         
 
@@ -171,7 +170,7 @@ function Services(props) {
 
           </main>
         </section>
-        </div>
+        </div> */}
       </main>
 
     </div>
