@@ -40,21 +40,18 @@ a:active { text-decoration: none; }
 
 .Hero-Container{
     display: grid;
-    /* height: 100vh; */
-    grid-template-rows: 80px 1fr auto;
-    padding-top: 30px;
+    justify-content: center;
+    height: 80vh;
+    align-content: center;
+    width: 100vw;
 
 }
 
 .Hero-Container header{
     display: grid;
     font: 1em sans-serif;
-    width: 100%;
-    justify-items: center;
+    justify-items: left;
     align-content: center;
-
-
-
 }
 
 
@@ -64,14 +61,20 @@ a:active { text-decoration: none; }
     padding-left: 5px;
 }
 
+.Hero-Container  aside{
+    display: grid;
+    align-items: top;
+    text-align: left;
+    justify-items: center;
 
-.Hero-Container  aside p:first-of-type{
+}
+
+.Hero-Container  aside p{
     color: black;
-    font: 1em sans-serif;
+    font: 1.8em sans-serif;
 }
 
 .Hero-Container  aside p:last-of-type{
-    font-size: 2em;
     color: #136DC0;
     margin-top: -5px;
     padding-bottom: 10px;
@@ -279,7 +282,7 @@ iframe ::-webkit-scrollbar{
     .OutlineLayout-Container, .Service-Container{
         border-radius: 10px;
         margin-bottom: 40px;
-        box-shadow: 0px 40px 70px rgba(0, 0, 0, 0.235);
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.235);
         max-width: 75em;
         min-width: 75em;
 
