@@ -1,0 +1,13 @@
+.OnlineEstimate-Container{
+    display: block;
+    height: 30vh;
+}
+
+.OnlineEstimate-Container button {
+    height: 40px;
+    width: 130px;
+    border: none;
+    background: #136DC0;
+    color: white;
+    border-radius: 7px;
+}
