@@ -1,6 +1,7 @@
 .OnlineEstimate-Container{
     display: block;
     height: 30vh;
+
 }
 
 .OnlineEstimate-Container button {
@@ -10,4 +11,17 @@
     background: #136DC0;
     color: white;
     border-radius: 7px;
+}
+
+.OnlineEstimate-Container form{
+    display: grid;
+    justify-items: center;
+}
+
+
+.OnlineEstimate-Container select{
+    display: grid;
+    height: 40px;
+    width: 170px;
+    font: 1em sans-serif;
 }

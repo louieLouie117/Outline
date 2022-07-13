@@ -1,3 +1,4 @@
+
 import React from 'react'
 import OnlineEstimateStyles from '../models/OnlineEstimateStyles.css'
 
@@ -5,7 +6,7 @@ function Estimate(props) {
     <OnlineEstimateStyles></OnlineEstimateStyles>
 
     const OnlineEstimateHandler = (e) =>{
-        alert("Estimate button was click")
+        console.log("Item selected",e.target.value)
     }
 
 
@@ -13,12 +14,13 @@ function Estimate(props) {
   return (
     <div className='OnlineEstimate-Container'>
         <h1>Online Estimate</h1>
-            <select name="" id="">
-                <option value=""onSelect={OnlineEstimateHandler} >Select Services</option>
-                <option value=""onSelect={OnlineEstimateHandler} >Website</option>
-                <option value=""onSelect={OnlineEstimateHandler} >Application</option>
-
+        <form>
+            <select name="" id="" onChange={OnlineEstimateHandler}>
+                <option value="Select Services">Select Services</option>
+                <option value="Website">Website</option>
+                <option value="Application">Application</option>
             </select>
+        </form>
     </div>
   )
 }
