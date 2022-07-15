@@ -14,10 +14,17 @@ function Services(props) {
 
       <main>
 
+      <aside className='ServiceFraise'>
+          <p>Helping businesses with</p>
+          <p>mobile websites and apps</p>
+      </aside>
+
         <header>
-          <h2>Services</h2>
+          <h2>Process</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laborum consectetur distinctio neque provident? Accusantium saepe, fuga delectus explicabo inventore libero iste quod fugit assumenda aperiam quidem provident vitae sapiente!</p>
         </header>
+
+  
 
         <Estimate></Estimate>
 

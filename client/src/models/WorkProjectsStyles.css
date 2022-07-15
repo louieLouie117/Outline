@@ -85,3 +85,20 @@
     }
 
 }
+
+.ServiceFraise{
+    padding: 40px 0px;
+    justify-items: left;
+}
+
+.ServiceFraise p{
+    font: 1.7em sans-serif;
+}
+
+.ServiceFraise p:first-of-type{
+    color: black;
+}
+
+.ServiceFraise p:last-of-type{
+    color: #136DC0;
+}

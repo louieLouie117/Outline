@@ -47,6 +47,8 @@ a:active { text-decoration: none; }
 
 }
 
+
+
 .Hero-Container header{
     display: grid;
     font: 1em sans-serif;
@@ -177,10 +179,14 @@ a:active { text-decoration: none; }
     }
 
 
-    /* .WorkProject-Container main header{
+    .WorkProject-Container main header{
         padding-left: 0;
         max-width: 95vw;
-    } */
+    }
+
+    .Hero-Container{
+        height: 30vh;
+    }
 
 }
 
@@ -228,7 +234,7 @@ iframe ::-webkit-scrollbar{
     justify-items: left;
     background: #136DC0;
     color: white;
-    padding: 15px;
+    padding: 10px;
     text-align: left;
 }
 
@@ -295,7 +301,7 @@ iframe ::-webkit-scrollbar{
     }
 
 
-    .OutlineLayout-Container>main {
+    .OutlineLayout-Container>main, .Service-Container>main {
         grid-template-columns: 1fr 1fr;
         padding: 30px;
         
