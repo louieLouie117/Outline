@@ -8,7 +8,7 @@ function WorkProjects(props) {
     <div className='WorkProject-Container'>
 
       <main>
-        <h1>Website and Application</h1>
+        <h1>My Work</h1>
 
 
         <header>

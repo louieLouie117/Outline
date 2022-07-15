@@ -14,7 +14,7 @@ function HeroBanner(props) {
       <header>
 
       <svg xmlns="http://www.w3.org/2000/svg" width="215" height="48" viewBox="0 0 115 48">
-  <g id="Group_440" data-name="Group 440" transform="translate(-225 -605)">
+  <g id="Group_440" data-name="Group 440" transform="translate(-180 -605)">
     <text id="outline" transform="translate(175 640)" fontSize="41" fontFamily="MS-UIGothic, MS UI Gothic"><tspan x="0" y="0">outline</tspan></text>
     <g id="Rectangle_156" data-name="Rectangle 156" transform="translate(235 646)" fill="#136dc0" stroke="#fff" strokeWidth="0.5">
       <rect width="56" height="7" rx="3.5" stroke="none"/>
@@ -30,12 +30,7 @@ function HeroBanner(props) {
 
       </header>
 
-      <aside>
-        <div>
-          <p>Helping businesses with</p>
-          <p>mobile websites and apps</p>
-        </div>
-      </aside>
+     
 
       {/* <iframe src="https://www.deltabarandgrill.com/" frameborder="0"></iframe> */}
     
