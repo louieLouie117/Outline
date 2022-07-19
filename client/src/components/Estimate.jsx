@@ -5,9 +5,9 @@ import OnlineEstimateStyles from '../models/OnlineEstimateStyles.css'
 function Estimate(props) {
     <OnlineEstimateStyles></OnlineEstimateStyles>
 
-    const OnlineEstimateHandler = (e) =>{
-        console.log("Item selected",e.target.value)
-    }
+    // const OnlineEstimateHandler = (e) =>{
+    //     console.log("Item selected",e.target.value)
+    // }
 
 
 
