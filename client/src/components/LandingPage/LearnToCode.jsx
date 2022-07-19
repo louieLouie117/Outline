@@ -163,7 +163,7 @@ function LearnToCode(props) {
             <div className="GaryLineSVG"></div>
 
             <main>
-              <p>If you are new to coding/programming start with HTML, CSS, and JavaScript. Follow me on <a href="">Tiktok</a> where I will posting tips for beginners.</p>
+              <p>If you are new to coding/programming start with HTML, CSS, and JavaScript. Follow me on <a href="https://www.instagram.com/garagesally.founder/">Instagram</a> where I will posting tips for beginners.</p>
               <ul className='LearnTabs'>
                   <div className="VerticalGaryLineSVG"></div>
 
