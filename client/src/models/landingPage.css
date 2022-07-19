@@ -424,15 +424,36 @@ iframe ::-webkit-scrollbar{
 
 .LearnTabs{
     display: grid;
+    grid-template-columns: 90px  1fr;
     row-gap: 10px;
     padding-bottom: 20px;
+    margin-left: -14px;
+    padding-top: 20px;
 }
+
+/* .HorizontalGaryLineSVG{
+    height: 100%;
+    width: 3px;
+    background: rgb(184, 184, 184);
+    grid-row: 1/5;
+
+} */
+
+.VerticalGaryLineSVG{
+    height: 3px;
+    width: 100%;
+    background: rgb(184, 184, 184);
+    grid-row: 1/5;
+    grid-column: 1/2;
+    align-self: center;
+}
+
 
 .LearnTabs li {
     display: grid;
     grid-template-columns: 40px 1fr;
     background: white;
-    width: 24em;
+    width: 200px;
     height: 40px;
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.397);
     border-radius: 3px;
@@ -442,6 +463,7 @@ iframe ::-webkit-scrollbar{
     overflow: hidden;
 
 }
+
 
 .LearnTabs li img{
     grid-column: 1;
@@ -459,8 +481,6 @@ iframe ::-webkit-scrollbar{
     height: 110%;
     background: none;
     border: none;
-    
-
 }
 
 .PopSection{
