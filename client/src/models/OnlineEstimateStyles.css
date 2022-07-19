@@ -7,6 +7,8 @@
     margin-bottom: 30px;
     position: sticky;
     top: -50px;
+    max-width: 300px;
+    min-width: 260px;
 
 }
 
@@ -38,4 +40,5 @@
     height: 40px;
     width: 200px;
     font: 1em sans-serif;
+    padding: 10px;
 }
