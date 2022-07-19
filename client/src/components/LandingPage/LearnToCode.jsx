@@ -149,7 +149,7 @@ function LearnToCode(props) {
 
         <header>
           <h2>Fundamental Outline</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laborum consectetur distinctio neque provident? Accusantium saepe, fuga delectus explicabo inventore libero iste quod fugit assumenda aperiam quidem provident vitae sapiente!</p>
+          <p>Understanding the fundamentals is all you need to get started.</p>
         </header>
 
         <div>  {/* need to name this div */}
@@ -163,7 +163,7 @@ function LearnToCode(props) {
             <div className="GaryLineSVG"></div>
 
             <main>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, molestiae illum amet reiciendis atque earum, similique eos quo explicabo possimus esse culpa nulla placeat aliquid nobis. Neque, incidunt! Ipsum, dicta.</p>
+              <p>If you are new to coding/programming start with HTML, CSS, and JavaScript. Follow me on <a href="">Tiktok</a> where I will posting tips for beginners.</p>
               <ul className='LearnTabs'>
                   <div className="VerticalGaryLineSVG"></div>
 
@@ -199,7 +199,7 @@ function LearnToCode(props) {
             <div className="GaryLineSVG"></div>
 
             <main>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, molestiae illum amet reiciendis atque earum, similique eos quo explicabo possimus esse culpa nulla placeat aliquid nobis. Neque, incidunt! Ipsum, dicta.</p>
+              <p>The next level is to understand the foundation of JavaScript frameworks that are designed for fast application development. There are three most popular you can pick one.</p>
               <ul className='LearnTabs'>
               <div className="VerticalGaryLineSVG"></div>
 
@@ -237,7 +237,7 @@ function LearnToCode(props) {
             <div className="GaryLineSVG"></div>
 
             <main>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, molestiae illum amet reiciendis atque earum, similique eos quo explicabo possimus esse culpa nulla placeat aliquid nobis. Neque, incidunt! Ipsum, dicta.</p>
+              <p>Once you get to the Advance level you will be able to code full stack web apps. In this level a person will be able to develop both client and server software. I mentor three different anyone that is ready to get to this level. Take a look at the four week courses for each stack.</p>
               <ul className='LearnTabs'>
 
               <div className="VerticalGaryLineSVG"></div>
@@ -279,7 +279,7 @@ function LearnToCode(props) {
             <div className="PopupLayout-Container" style={{ display: BeginnerArticleContainer ? "none" : "grid" }}>
 
               <div className="ArticleState-Container">
-                <main style={{ height: Article1 ? "20px" : "500px" }}>
+                <main style={{ height: Article1 ? "20px" : "auto" }}>
 
                   <header>
                     <img src={`/assets/icons/htmlIcon.png`} alt="" />
@@ -287,10 +287,8 @@ function LearnToCode(props) {
                   </header>
 
                   <section>
-                    <p>P1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
-                    <p>P2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
-
-                    <p>P3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
+                    <p>HTML is the standard markup language for creating Web pages.</p>
+                    <a href="https://www.w3schools.com/html/html_intro.asp">Learn more</a>
                   </section>
                   <footer>
                     <div className="PopFooter-Container">
@@ -302,7 +300,7 @@ function LearnToCode(props) {
                   </footer>
                 </main>
 
-                <main style={{ height: Article2 ? "20px" : "500px" }}>
+                <main style={{ height: Article2 ? "20px" : "auto" }}>
 
                   <header>
                     <img src={`/assets/icons/cssIcon.png`} alt="" />
@@ -310,10 +308,10 @@ function LearnToCode(props) {
                   </header>
 
                   <section>
-                    <p>P1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
-                    <p>P2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
-
-                    <p>P3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
+                    <p>CSS stands for Cascading Style Sheets </p>
+                    <p>CSS describes how HTML elements are to be displayed.</p>
+                    <a href="https://www.w3schools.com/whatis/whatis_css.asp"> Learn more</a>
+                   
                   </section>
                   <footer>
                     <div className="PopFooter-Container">
@@ -325,7 +323,7 @@ function LearnToCode(props) {
                   </footer>
                 </main>
 
-                <main style={{ height: Article3 ? "20px" : "500px" }}>
+                <main style={{ height: Article3 ? "20px" : "auto" }}>
 
                   <header>
                     <img src={`/assets/icons/jsIcon.png`} alt="" />
@@ -333,10 +331,9 @@ function LearnToCode(props) {
                   </header>
 
                   <section>
-                    <p>P1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
-                    <p>P2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
-
-                    <p>P3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
+                    <p>JavaScript can update and change both HTML and CSS.</p>
+                    <a href="https://www.w3schools.com/whatis/whatis_js.asp">Learn more</a>
+                   
                   </section>
                   <footer>
                     <div className="PopFooter-Container">
@@ -356,7 +353,7 @@ function LearnToCode(props) {
 
             <div className="PopupLayout-Container" style={{ display: IntermediateArticleContainer ? "none" : "grid" }}>
               <div className="ArticleState-Container">
-                <main style={{ height: Article1 ? "20px" : "500px" }}>
+                <main style={{ height: Article1 ? "20px" : "auto" }}>
 
                   <header>
                     <img src={`/assets/icons/htmlIcon.png`} alt="" />
@@ -364,10 +361,9 @@ function LearnToCode(props) {
                   </header>
 
                   <section>
-                    <p>P1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
-                    <p>P2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
-
-                    <p>P3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
+                    <p>React is a JavaScript library created by Facebook</p>
+                    <p>React is a User Interface (UI) library.</p>
+                    <a href="https://www.w3schools.com/whatis/whatis_react.asp">Learn more</a>
                   </section>
                   <footer>
                     <div className="PopFooter-Container">
@@ -379,7 +375,7 @@ function LearnToCode(props) {
                   </footer>
                 </main>
 
-                <main style={{ height: Article2 ? "20px" : "500px" }}>
+                <main style={{ height: Article2 ? "20px" : "auto" }}>
 
                   <header>
                     <img src={`/assets/icons/cssIcon.png`} alt="" />
@@ -387,10 +383,10 @@ function LearnToCode(props) {
                   </header>
 
                   <section>
-                    <p>P1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
-                    <p>P2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
-
-                    <p>P3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
+                    <p>Vue.js lets you extend HTML with HTML attributes called directives</p>
+                    <p>Vue.js directives offers functionality to HTML applications</p>
+                    <p>Vue.js provides built-in directives and user defined directives</p>
+                    <a href="https://www.w3schools.com/whatis/whatis_vue.asp">Learn more</a>
                   </section>
                   <footer>
                     <div className="PopFooter-Container">
@@ -402,7 +398,7 @@ function LearnToCode(props) {
                   </footer>
                 </main>
 
-                <main style={{ height: Article3 ? "20px" : "500px" }}>
+                <main style={{ height: Article3 ? "20px" : "auto" }}>
 
                   <header>
                     <img src={`/assets/icons/jsIcon.png`} alt="" />
@@ -410,10 +406,10 @@ function LearnToCode(props) {
                   </header>
 
                   <section>
-                    <p>P1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
-                    <p>P2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
-
-                    <p>P3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit eius neque iste deleniti corrupti quaerat sed at reprehenderit ex, assumenda deserunt cum minima provident illum quod, rerum quis aperiam.</p>
+                  <p>AngularJS lets you extend HTML with HTML attributes called directives</p>
+                    <p>AngularJS directives offers functionality to HTML applications</p>
+                    <p>AngularJS provides built-in directives and user defined directives</p>
+                    <a href="https://www.w3schools.com/whatis/whatis_angularjs.asp">Learn more</a>
                   </section>
                   <footer>
                     <div className="PopFooter-Container">
@@ -433,14 +429,13 @@ function LearnToCode(props) {
             <div className="PopupLayout-Container" style={{ display: AdvanceArticleContainer ? "none" : "grid" }}>
               <div className="ArticleState-Container">
 
-                <main style={{ height: Article1 ? "20px" : "500px" }}>
+                <main style={{ height: Article1 ? "20px" : "auto" }}>
                   <header>
                     <img src={`/assets/icons/cSharpIcon.png`} alt="" />
                     <h1 onClick={ArticlesHandler}>C Sharp Mentorship</h1>
                   </header>
                   <section className="SectionLayout-Container AdvanceMentorship">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla velit nihil eos modi natus. Unde, officiis, impedit, inventore vel culpa facilis voluptatibus nemo sapiente voluptates sequi omnis voluptatem mollitia quibusdam?</p>
-
+                    
                     <ul>
                       <header>
                         <h2 >Week 1</h2>
@@ -511,14 +506,13 @@ function LearnToCode(props) {
                   </section>
                 </main>
 
-                <main style={{ height: Article2 ? "20px" : "500px" }}>
+                <main style={{ height: Article2 ? "20px" : "auto" }}>
                   <header>
                     <img src={`/assets/icons/jsIcon.png`} alt="" />
                     <h1 onClick={ArticlesHandler}>MERN Mentorship</h1>
                   </header>
                   <section className="SectionLayout-Container AdvanceMentorship">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla velit nihil eos modi natus. Unde, officiis, impedit, inventore vel culpa facilis voluptatibus nemo sapiente voluptates sequi omnis voluptatem mollitia quibusdam?</p>
-
+                    
                     <ul>
                       <header>
                         <h2 >Week 1</h2>
@@ -589,14 +583,13 @@ function LearnToCode(props) {
                   </section>
                 </main>
 
-                <main style={{ height: Article3 ? "20px" : "500px" }}>
+                <main style={{ height: Article3 ? "20px" : "auto" }}>
                   <header>
                     <img src={`/assets/icons/pythonIcon.png`} alt="" />
                     <h1 onClick={ArticlesHandler}>Python Mentorship</h1>
                   </header>
                   <section className="SectionLayout-Container AdvanceMentorship">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla velit nihil eos modi natus. Unde, officiis, impedit, inventore vel culpa facilis voluptatibus nemo sapiente voluptates sequi omnis voluptatem mollitia quibusdam?</p>
-
+                    
                     <ul>
                       <header>
                         <h2 >Week 1</h2>

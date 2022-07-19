@@ -13,14 +13,17 @@ function Estimate(props) {
 
   return (
     <div className='OnlineEstimate-Container'>
-        <h1>Free Online Estimate</h1>
-        <form>
+        <h1>Free Estimate</h1>
+        <a href="https://calendly.com/cardona-luis/15min">
+            <button>Get Started</button>
+        </a>
+        {/* <form>
             <select name="" id="" onChange={OnlineEstimateHandler}>
                 <option value="Select Services">Get Started</option>
                 <option value="Website">Website</option>
                 <option value="Application">Application</option>
             </select>
-        </form>
+        </form> */}
         
     </div>
   )

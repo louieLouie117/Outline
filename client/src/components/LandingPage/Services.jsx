@@ -26,7 +26,7 @@ function Services(props) {
 
           <header>
             <h1>My Process</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laborum consectetur distinctio neque provident? Accusantium saepe, fuga delectus explicabo inventore libero iste quod fugit assumenda aperiam quidem provident vitae sapiente!</p>
+            {/* <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laborum consectetur distinctio neque provident? Accusantium saepe, fuga delectus explicabo inventore libero iste quod fugit assumenda aperiam quidem provident vitae sapiente!</p> */}
 
 
             <section>
@@ -36,9 +36,9 @@ function Services(props) {
               </header>
 
               <main>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laborum consectetur distinctio neque provident? Accusantium saepe, fuga delectus explicabo inventore libero iste quod fugit assumenda aperiam quidem provident vitae sapiente!</p>
+                <p>Website 1-2 days.</p>
+                <p>App 1-4 weeks.</p>
               </main>
-          
             </section>
 
 
@@ -46,10 +46,12 @@ function Services(props) {
               <header>
                 <div className="DotIcon"></div>
                 <h2>Phase 2: Development</h2>
+              
               </header>
 
               <main>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laborum consectetur distinctio neque provident? Accusantium saepe, fuga delectus explicabo inventore libero iste quod fugit assumenda aperiam quidem provident vitae sapiente!</p>
+              <p>Website 1 day.</p>
+              <p>App 1-3 months.</p>
               </main>
           
             </section>
@@ -62,7 +64,8 @@ function Services(props) {
               </header>
 
               <main>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laborum consectetur distinctio neque provident? Accusantium saepe, fuga delectus explicabo inventore libero iste quod fugit assumenda aperiam quidem provident vitae sapiente!</p>
+              <p>Website 1hr.</p>
+              <p>App 24-48hr.</p>
               </main>
           
             </section>
