@@ -45,7 +45,7 @@ function Services(props) {
             <section>
               <header>
                 <div className="DotIcon"></div>
-                <h2>Phase 1: Design</h2>
+                <h2>Phase 2: Development</h2>
               </header>
 
               <main>
@@ -58,7 +58,7 @@ function Services(props) {
             <section>
               <header>
                 <div className="DotIcon"></div>
-                <h2>Phase 1: Design</h2>
+                <h2>Phase 3: Deployment</h2>
               </header>
 
               <main>

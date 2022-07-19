@@ -259,7 +259,14 @@ iframe ::-webkit-scrollbar{
 
 .Service-Container>main header{
     max-width: 550px;
-    padding-bottom: 30px;
+    padding: 10px 0;
+}
+
+.Service-Container>main header section header{
+    display: flex;
+    column-gap: 10px;
+    align-items: center;    
+    margin-left: 10px;
 }
 
 .PricingCard-Container{
