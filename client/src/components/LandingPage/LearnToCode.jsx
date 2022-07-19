@@ -165,11 +165,13 @@ function LearnToCode(props) {
             <main>
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, molestiae illum amet reiciendis atque earum, similique eos quo explicabo possimus esse culpa nulla placeat aliquid nobis. Neque, incidunt! Ipsum, dicta.</p>
               <ul className='LearnTabs'>
-                <li>
-                  <img src="/assets/icons/htmlIcon.png" alt="" />
-                  <h4>HTML</h4>
-                  <button id="HtmlBTN" onClick={ArticlesHandler}></button>
-                </li>
+                  <div className="VerticalGaryLineSVG"></div>
+
+                  <li>
+                    <img src="/assets/icons/htmlIcon.png" alt="" />
+                    <h4>HTML</h4>
+                    <button id="HtmlBTN" onClick={ArticlesHandler}></button>
+                  </li>
 
                 <li>
                   <img src="/assets/icons/cssIcon.png" alt="" />
@@ -199,6 +201,8 @@ function LearnToCode(props) {
             <main>
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, molestiae illum amet reiciendis atque earum, similique eos quo explicabo possimus esse culpa nulla placeat aliquid nobis. Neque, incidunt! Ipsum, dicta.</p>
               <ul className='LearnTabs'>
+              <div className="VerticalGaryLineSVG"></div>
+
                 <li>
                   <img src="/assets/icons/reactIcon.png" alt="" />
                   <h4>React.js</h4>
@@ -235,6 +239,10 @@ function LearnToCode(props) {
             <main>
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, molestiae illum amet reiciendis atque earum, similique eos quo explicabo possimus esse culpa nulla placeat aliquid nobis. Neque, incidunt! Ipsum, dicta.</p>
               <ul className='LearnTabs'>
+
+              <div className="VerticalGaryLineSVG"></div>
+
+              {/* <div className="HorizontalGaryLineSVG"></div> */}
 
                 <li>
                   <img src="/assets/icons/cSharpIcon.png" alt="" />
