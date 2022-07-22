@@ -188,6 +188,11 @@ a:active { text-decoration: none; }
         height: 30vh;
     }
 
+    .Service-Container>main p{
+        max-width: 250px;
+    }
+    
+
 }
 
 .Hero-Container iframe{
@@ -269,9 +274,6 @@ iframe ::-webkit-scrollbar{
     font: 1.5em sans-serif;
 }
 
-.Service-Container>main p{
-    max-width: 250px;
-}
 
 
 .Service-Container>main header section{
