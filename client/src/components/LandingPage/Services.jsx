@@ -15,9 +15,11 @@ function Services(props) {
       <main>
 
         <aside className='ServiceFraise'>
-            <p>Helping businesses with</p>
-            <p>mobile websites and apps</p>
+            <p>Helping businesses </p>
+            <p>with mobile websites </p>
         </aside>
+
+        <p>My focus it to design and develop a pixel perfect mobile website that works on all screen.</p>
 
         <section>
           <Estimate></Estimate>
@@ -26,48 +28,27 @@ function Services(props) {
 
           <header>
             <h1>My Process</h1>
-            {/* <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laborum consectetur distinctio neque provident? Accusantium saepe, fuga delectus explicabo inventore libero iste quod fugit assumenda aperiam quidem provident vitae sapiente!</p> */}
-
-
             <section>
               <header>
                 <div className="DotIcon"></div>
-                <h2>Phase 1: Design</h2>
+                <h2>Design your website.</h2>
               </header>
-
-              <main>
-                <p>Website 1-2 days.</p>
-                <p>App 1-4 weeks.</p>
-              </main>
             </section>
 
 
             <section>
               <header>
                 <div className="DotIcon"></div>
-                <h2>Phase 2: Development</h2>
-              
-              </header>
-
-              <main>
-              <p>Website 1 day.</p>
-              <p>App 1-3 months.</p>
-              </main>
-          
+                <h2>Development your website.</h2> 
+              </header>          
             </section>
 
 
             <section>
               <header>
                 <div className="DotIcon"></div>
-                <h2>Phase 3: Deployment</h2>
-              </header>
-
-              <main>
-              <p>Website 1hr.</p>
-              <p>App 24-48hr.</p>
-              </main>
-          
+                <h2>Take your website online.</h2>
+              </header>        
             </section>
 
         
