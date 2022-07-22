@@ -19,12 +19,15 @@ function Services(props) {
             <p>with mobile websites </p>
         </aside>
 
+      
+
+
         <p>My focus it to design and develop a pixel perfect mobile website that works on all screen.</p>
+
 
         <section>
           <Estimate></Estimate>
         </section>
-
 
           <header>
             <h1>My Process</h1>
