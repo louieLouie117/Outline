@@ -252,14 +252,29 @@ iframe ::-webkit-scrollbar{
     padding: 10px 30px;
     background: white;
     justify-items: center;
-
-
-
+    row-gap: 30px;
 }
 
 .Service-Container>main header{
     max-width: 550px;
     padding: 10px 0;
+}
+
+.Service-Container>main header h1{
+    font: 1.5em sans-serif;
+
+}
+
+.Service-Container>main header section header h2{
+    font: 1.5em sans-serif;
+}
+
+
+
+.Service-Container>main header section{
+    background-color: white;
+
+
 }
 
 .Service-Container>main header section header{
@@ -325,7 +340,7 @@ iframe ::-webkit-scrollbar{
 
     .Service-Container>main>section{
         /* background: red; */
-        grid-row: 2/3;
+        grid-row: 3/4;
         grid-column: 1/2;
     }
 
