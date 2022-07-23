@@ -41,9 +41,10 @@ a:active { text-decoration: none; }
 .Hero-Container{
     display: grid;
     justify-content: center;
-    height: 80vh;
+    height: 60vh;
     align-content: center;
     width: 100vw;
+
 
 }
 
@@ -54,6 +55,8 @@ a:active { text-decoration: none; }
     font: 1em sans-serif;
     justify-items: left;
     align-content: center;
+    position: sticky;
+    top: 10px;
 }
 
 
