@@ -53,7 +53,7 @@ function AboutMe(props) {
     }
     
     
-    const [contactOptions, setContactOptions] = useState(true)
+    const [contactOptions, setContactOptions] = useState(false)
     
     const ContactMeHandler = e =>{
       if(e.target.innerText === "Contact me"){

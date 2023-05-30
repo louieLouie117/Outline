@@ -239,7 +239,7 @@ function LearnToCode(props) {
             <div className="GaryLineSVG"></div>
 
             <main>
-              <p>Once you get to the Advance level you will be able to code full stack web apps. In this level a person will be able to develop both client and server software. I mentor three different full-stack.</p>
+              <p>Once you get to the Advance level you will be able to code full stack web apps. There are three different full-stack technologies to develope web apps.</p>
               <button id="CSharpBTN" onClick={ArticlesHandler}>Learn more.</button>
 
               <ul className='LearnTabs'>
@@ -343,12 +343,12 @@ function LearnToCode(props) {
 
 
                     <footer>
-                    <p>The basics. Learn the fundamentals of MERN by developing application. The cost for 4 weeks is $500.00</p>
+                  
 
                       <div className="PopFooter-Container">
                         <img src="/assets/icons/calendarIcon.png" alt="" />
                         <a href="https://calendly.com/cardona-luis/15min">
-                          <button>View Enrolment Cost</button>
+                          <button>View Mentorship Cost</button>
                         </a>
                       </div>
                     </footer>
@@ -408,7 +408,7 @@ function LearnToCode(props) {
 
                   <header>
                     <img src={`/assets/icons/htmlIcon.png`} alt="" />
-                    <h1 onClick={ArticlesHandler}>What is React.js?</h1>
+                    <h1 onClick={ArticlesHandler}>React.js Mentorship</h1>
                   </header>
 
                   <section>
@@ -467,12 +467,12 @@ function LearnToCode(props) {
 
 
                     <footer>
-                    <p>The basics. Learn the fundamentals of MERN by developing application. The cost for 4 weeks is $500.00</p>
+                 
 
                       <div className="PopFooter-Container">
                         <img src="/assets/icons/calendarIcon.png" alt="" />
                         <a href="https://calendly.com/cardona-luis/15min">
-                          <button>View Enrolment Cost</button>
+                          <button>View Mentorship Cost</button>
                         </a>
                       </div>
                     </footer>
@@ -486,40 +486,9 @@ function LearnToCode(props) {
                   </footer>
                 </main>
 
-                <main style={{ height: Article2 ? "20px" : "auto" }}>
-
-                  <header>
-                    <img src={`/assets/icons/cssIcon.png`} alt="" />
-                    <h1 onClick={ArticlesHandler}>What is Vue.js?</h1>
-                  </header>
-
-                  <section>
-                    <p>Vue.js lets you extend HTML with HTML attributes called directives</p>
-                    <p>Vue.js directives offers functionality to HTML applications</p>
-                    <p>Vue.js provides built-in directives and user defined directives</p>
-                    <a href="https://www.w3schools.com/whatis/whatis_vue.asp">Learn more</a>
-                  </section>
-            
-
-                  
               
-                </main>
 
-                <main style={{ height: Article3 ? "20px" : "auto" }}>
-
-                  <header>
-                    <img src={`/assets/icons/jsIcon.png`} alt="" />
-                    <h1 onClick={ArticlesHandler}>What is Angular.js?</h1>
-                  </header>
-
-                  <section>
-                  <p>AngularJS lets you extend HTML with HTML attributes called directives</p>
-                    <p>AngularJS directives offers functionality to HTML applications</p>
-                    <p>AngularJS provides built-in directives and user defined directives</p>
-                    <a href="https://www.w3schools.com/whatis/whatis_angularjs.asp">Learn more</a>
-                  </section>
               
-                </main>
 
             
 
@@ -540,68 +509,69 @@ function LearnToCode(props) {
                     
                     <ul>
                       <header>
-                        <h2 >Week 1</h2>
+                        <h2 >Introduction</h2>
                         <div className="DotIcon"></div>
                       </header>
                       <div className="GaryLineSVG"></div>
                       <div className="SectionList">
-                        <li>CSharp Week 1</li>
-                        <li>React useState</li>
-                        <li>Save code to Github</li>
-                        <li>Deployment App</li>
+                        <li>Overview</li>
+                        <li>Environment setup</li>
+                        <li>Tool and Technologies</li>
                       </div>
                     </ul>
 
                     <ul>
                       <header>
-                        <h2 >Week 2</h2>
+                        <h2>Fundamental</h2>
                         <div className="DotIcon"></div>
                       </header>
                       <div className="GaryLineSVG"></div>
                       <div className="SectionList" >
-                        <li>CSharp Week 2</li>
-                        <li>React useState</li>
-                        <li>Save code to Github</li>
-                        <li>Deployment App</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                        <li>Git and Github</li>
                       </div>
                     </ul>
 
                     <ul>
                       <header>
-                        <h2 >Week 3</h2>
+                        <h2>Development</h2>
                         <div className="DotIcon"></div>
                       </header>
                       <div className="GaryLineSVG"></div>
                       <div className="SectionList" >
-                        <li>CSharp week 3</li>
-                        <li>React useState</li>
-                        <li>Save code to Github</li>
-                        <li>Deployment App</li>
+                        <li>Frontend</li>
+                        <li>Backend</li>
+                        <li>Database</li>
+                        <li>Server Communication</li>
+                     
                       </div>
                     </ul>
 
                     <ul>
                       <header>
-                        <h2 >Week 4</h2>
+                        <h2 >Publishing</h2>
                         <div className="DotIcon"></div>
                       </header>
                       <div className="GaryLineSVG"></div>
                       <div className="SectionList">
-                        <li>CSharp week 4</li>
-                        <li>React useState</li>
-                        <li>Save code to Github</li>
-                        <li>Deployment App</li>
+                      <li>Publish to AWS</li>
+                        <li>AWS Domain Setup</li>
+                        <li>AWS Load Balancer</li>
+                        <li>AWS SSL Certification</li>
+                        <li>Publishing to Microsoft App Store</li>
                       </div>
                     </ul>
 
-                    <p>Learn the fundamentals of C Sharp by developing application. The cost for 4 weeks is $500.00</p>
+                  
 
 
                     <footer>
                       <div className="PopFooter-Container">
                         <img src="/assets/icons/calendarIcon.png" alt="" />
                         <a href="https://calendly.com/cardona-luis/15min">
-                          <button>View Enrolment Cost</button>
+                          <button>View Mentorship Cost</button>
                         </a>
                       </div>
                     </footer>
@@ -615,7 +585,7 @@ function LearnToCode(props) {
                   </header>
                   <section className="SectionLayout-Container AdvanceMentorship">
                     
-                    <ul>
+                    {/* <ul>
                       <header>
                         <h2 >Week 1</h2>
                         <div className="DotIcon"></div>
@@ -671,16 +641,17 @@ function LearnToCode(props) {
                       </div>
                     </ul>
 
-                    <p>Learn the fundamentals of MERN by developing application. The cost for 4 weeks is $500.00</p>
 
                     <footer>
                       <div className="PopFooter-Container">
                         <img src="/assets/icons/calendarIcon.png" alt="" />
                         <a href="https://calendly.com/cardona-luis/15min">
-                          <button>View Enrolment Cost</button>
+                          <button>View Mentorship Cost</button>
                         </a>
                       </div>
-                    </footer>
+                    </footer> */}
+                    <p>This years MERN mentorship has ended. Please check back on other time. </p>
+
 
                   </section>
                 </main>
@@ -694,7 +665,7 @@ function LearnToCode(props) {
                     
                   
 
-                    <p>Python course has ended. Please check back on other time. </p>
+                    <p>This years Python mentorship has ended. Please check back on other time. </p>
 
 
 
