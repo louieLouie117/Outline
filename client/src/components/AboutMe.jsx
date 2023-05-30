@@ -118,33 +118,34 @@ function AboutMe(props) {
                   
                   <div className='Contact-Container' style={{display: contactOptions ? "grid" : "none"}}>
 
-                      <header>
-                        <button onClick={ContactMeHandler}>Close</button>
-                      </header>
 
                       <main>
-                      <a href="tel:931-401-7238">
-                        <img src="/img/Icons/IconPhone.png" alt="" />
-                      <button>Call</button>
-
-                      </a>
-
+                      {/* <a href="tel:931-401-7238">
+                        <img src="/assets/icons/IconPhone.png" alt="" />
+                      </a> */}
                       <a href="sms:931-401-7238">
-                        <img src="/img/Icons/IconText.png" alt="" />
-                      <button>Text</button>
+                        <img src="/assets/icons/IconText.png" alt="" />Text 931-401-7238
                       </a>
 
+
+                 
+                  
+
+                        <a href="https://www.instagram.com/garagesally.founder/">
+                        <img src="/assets/icons/IconInsta.png" alt="" />Instagram DM
+                      </a>
+
+                           
                       <a href="mailTo:LCwebsitesolutions@outlook.com?subject=Website&body= Hello Luis Cardona">
-                        <img src="/img/Icons/IconEmail.png" alt="" />
-                        <button>Email</button>
+                        <img src="/assets/icons/IconEmail.png" alt="" />Email
                       </a>
-                      <a href="https://www.instagram.com/garagesally.founder/">
-                        <img src="/img/Icons/IconInsta.png" alt="" />
-                      <button>DM</button>
-                      </a>
+
 
                       </main>
                
+                      <header>
+                        <button onClick={ContactMeHandler}>Close</button>
+                      </header>
 
                     </div>
 

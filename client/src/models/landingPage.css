@@ -251,6 +251,7 @@ iframe ::-webkit-scrollbar{
     color: white;
     padding: 5px;
     text-align: left;
+    border-radius: 10px 10px 0 0 ;
 }
 
 
@@ -267,7 +268,7 @@ iframe ::-webkit-scrollbar{
     justify-items: center;
     row-gap: 30px;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.235);
-    border-radius: 10px;
+    border-radius: 0 0 10px 10px ;
 
 }
 
@@ -327,6 +328,69 @@ iframe ::-webkit-scrollbar{
     position: sticky;
     top: -50px;
 }
+
+
+.ContactMeFooter{
+    display: grid;
+    justify-content: center;
+    background-color: #136DC0;
+    padding: 20px;
+}
+
+
+.Contact-Container{
+    display: grid;
+    position: relative;
+    row-gap: 10px;
+    column-gap: 10px;
+    padding: 20px;
+    align-items: center;
+    width: 340px;
+    background-color: whitesmoke;
+    border-radius:  30px 30px ;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.146);
+    margin-top: 20px;
+  }
+
+  
+
+  .Contact-Container>main{
+    display: grid;
+    row-gap: 10px;
+    padding-top: 5px;
+    align-content: center;
+
+  }
+
+  .Contact-Container>main>div{
+    display: flex;
+    align-items: center;
+  }
+
+  
+
+  .Contact-Container>h2{
+    font: 1.3em sans-serif;
+    justify-self: center;
+  }
+
+  .Contact-Container>main a{
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    
+
+  }
+
+  .Contact-Container>main a button{
+    cursor: pointer;
+    color: #0080BF;
+    font: .8em sans-serif;
+    border: none;
+    background-color: whitesmoke;
+
+  }
+
 
 
 @media screen and (min-width: 1100px) {

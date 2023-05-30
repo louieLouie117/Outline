@@ -40,10 +40,6 @@ function LandingPage(props) {
       <WorkExperience></WorkExperience>
       {/* <WorkProjects></WorkProjects> */}
 
-      <footer>
-    <a href="https://www.instagram.com/garagesally.founder/">Instagram</a>
-    </footer>
-
     
         
     </div>
