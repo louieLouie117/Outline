@@ -41,7 +41,7 @@ a:active { text-decoration: none; }
 .Hero-Container{
     display: grid;
     justify-content: center;
-    height: 60vh;
+    height: 30vh;
     align-content: center;
     width: 100vw;
 
@@ -53,10 +53,11 @@ a:active { text-decoration: none; }
 .Hero-Container header{
     display: grid;
     font: 1em sans-serif;
-    justify-items: left;
+    justify-items: center;
     align-content: center;
     position: sticky;
     top: 10px;
+
 }
 
 
@@ -64,6 +65,10 @@ a:active { text-decoration: none; }
 .Hero-Container header h1 {
     font-weight: normal;
     padding-left: 5px;
+}
+
+.Hero-Container>header>p{
+    font: 1.3em sans-serif;
 }
 
 .Hero-Container  aside{
@@ -168,8 +173,8 @@ a:active { text-decoration: none; }
         display: flex;
         max-width: 75em;
         justify-content: left;
-        justify-content: center;
-        justify-self: center;
+        /* justify-content: center; */
+        /* justify-self: center; */
         /* z-index: 45; */
         margin-top: 50px;
 
@@ -233,8 +238,8 @@ iframe ::-webkit-scrollbar{
     align-items: flex-start;
     align-content: flex-start;
     text-align: left;
-    justify-self: center;
     z-index: 0;
+ 
 }
 
 
@@ -261,6 +266,9 @@ iframe ::-webkit-scrollbar{
     background: white;
     justify-items: center;
     row-gap: 30px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.235);
+    border-radius: 10px;
+
 }
 
 .Service-Container>main header{
@@ -325,22 +333,19 @@ iframe ::-webkit-scrollbar{
     .OutlineLayout-Container, .Service-Container{
         border-radius: 10px;
         margin-bottom: 40px;
-        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.235);
-        max-width: 75em;
-        min-width: 75em;
+        min-width: 35em;
+        justify-content: center;
 
     }
 
-    .OutlineLayout-Container>header, .Service-Container>header{
-        border-radius: 10px 10px 0 0;
-    
-    
-    }
+
 
 
     .OutlineLayout-Container>main, .Service-Container>main {
-        grid-template-columns: 1fr 1fr;
+        /* grid-template-columns: 1fr 1fr; */
+        max-width: 40em;
         padding: 30px;
+
         
     }
 
@@ -704,7 +709,7 @@ iframe ::-webkit-scrollbar{
     overflow: scroll;
 }
 
-.ArticleState-Container>main header{
+.ArticleState-Container>main>header{
     display: flex;
     column-gap: 10px;
 }
