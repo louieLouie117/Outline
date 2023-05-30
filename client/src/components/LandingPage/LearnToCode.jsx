@@ -347,7 +347,7 @@ function LearnToCode(props) {
 
                       <div className="PopFooter-Container">
                         <img src="/assets/icons/calendarIcon.png" alt="" />
-                        <a href="https://calendly.com/cardona-luis/15min">
+                        <a href="https://buy.stripe.com/4gw17l7vefWP6xG28c">
                           <button>View Mentorship Cost</button>
                         </a>
                       </div>
@@ -471,7 +471,7 @@ function LearnToCode(props) {
 
                       <div className="PopFooter-Container">
                         <img src="/assets/icons/calendarIcon.png" alt="" />
-                        <a href="https://calendly.com/cardona-luis/15min">
+                        <a href="https://buy.stripe.com/6oE6rF2aU6mfbS08wz">
                           <button>View Mentorship Cost</button>
                         </a>
                       </div>
@@ -570,10 +570,13 @@ function LearnToCode(props) {
                     <footer>
                       <div className="PopFooter-Container">
                         <img src="/assets/icons/calendarIcon.png" alt="" />
-                        <a href="https://calendly.com/cardona-luis/15min">
+                        <a href="https://buy.stripe.com/6oE7vJ2aU25Z6xGbIK">
                           <button>View Mentorship Cost</button>
                         </a>
+                        
                       </div>
+                      <p>To provide a personalized experience full-stack mentorship is limited to first three mentees.</p>
+                      
                     </footer>
                   </section>
                 </main>

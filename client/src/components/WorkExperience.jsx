@@ -62,9 +62,7 @@ function WorkExperience(props) {
 
                       <img src="/assets/Portfolio/JournalPocketWebsite.png" alt=''/>
                             <footer className='CardFooter-Container'>
-                            <a href="https://github.com/louieLouie117/Responsive-ProgressLogger">
-                                  <button>Coming Soon</button>
-                                  </a>
+                                  <h2>Coming Soon</h2>
 
                             </footer>
                                             
