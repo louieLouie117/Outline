@@ -51,19 +51,7 @@ function AboutMe(props) {
         }
     
     }
-    
-    
-    const [contactOptions, setContactOptions] = useState(false)
-    
-    const ContactMeHandler = e =>{
-      if(e.target.innerText === "Contact me"){
-        setContactOptions(true)
-      }else{
-        setContactOptions(false)
-      }
-    
-    }
-    
+        
     
     
 
@@ -96,15 +84,44 @@ function AboutMe(props) {
 
                   </footer>
 
-                  <div className='GridContainer'>
-                    {/* <a href="https://buy.stripe.com/aEU6rFcPy7qj6xGeUV">
-                      <button>My Services</button>
-                    </a> */}
+                  <footer className="ContactMeFooter">
 
-                    <button onClick={ContactMeHandler}>Contact me</button>
+<div className='Contact-Container' >
 
-                    </div>
-         
+  <h2>Connect with me</h2>
+  
+      <main>
+      <a href="tel:931-401-7238">
+        <img src="/assets/icons/IconPhone.png" alt="" />
+      <button>Call</button>
+
+      </a>
+
+      <a href="sms:931-401-7238">
+        <img src="/assets/icons/IconText.png" alt="" />
+      <button>Text</button>
+      </a>
+
+
+      <a href="mailTo:LCwebsitesolutions@outlook.com?subject=Website&body= Hello Luis Cardona">
+        <img src="/assets/icons/IconEmail.png" alt="" />
+        <button>Email</button>
+      </a>
+      <a href="https://www.instagram.com/garagesally.founder/">
+        <img src="/assets/icons/IconInsta.png" alt="" />
+      <button>DM</button>
+      </a>
+
+      </main>
+
+      
+
+
+</div>  
+
+</footer>
+
+                 
 
                 
 
@@ -116,37 +133,7 @@ function AboutMe(props) {
 
          </header>
                   
-                  <div className='Contact-Container' style={{display: contactOptions ? "grid" : "none"}}>
-
-                      <header>
-                        <button onClick={ContactMeHandler}>Close</button>
-                      </header>
-
-                      <main>
-                      <a href="tel:931-401-7238">
-                        <img src="/img/Icons/IconPhone.png" alt="" />
-                      <button>Call</button>
-
-                      </a>
-
-                      <a href="sms:931-401-7238">
-                        <img src="/img/Icons/IconText.png" alt="" />
-                      <button>Text</button>
-                      </a>
-
-                      <a href="mailTo:LCwebsitesolutions@outlook.com?subject=Website&body= Hello Luis Cardona">
-                        <img src="/img/Icons/IconEmail.png" alt="" />
-                        <button>Email</button>
-                      </a>
-                      <a href="https://www.instagram.com/garagesally.founder/">
-                        <img src="/img/Icons/IconInsta.png" alt="" />
-                      <button>DM</button>
-                      </a>
-
-                      </main>
-               
-
-                    </div>
+                 
 
       
         <div className="mySkills-container">

@@ -30,6 +30,8 @@ function WorkExperience(props) {
                     <source media="(min-width: 725px)" srcset="/img/tabletImg.png" />
                     <img src="/img/mobileImgLarge.png" alt="" />
                 </picture> */}
+
+                <h2>My Portfolio</h2>
                
         
         <div className="cardItems">
@@ -45,7 +47,7 @@ function WorkExperience(props) {
 
                                 <footer className='CardFooter-Container'>                                  
                                 <a href="https://garagesallyapp.com/">
-                                  <button>Website</button>
+                                  <button>View</button>
                                   </a>
 
 
@@ -76,7 +78,7 @@ function WorkExperience(props) {
                                      
                                     <footer className='CardFooter-Container'>                                 
                                   <a href="https://www.thesugarayssweettea.com/">
-                                    <button>Visit</button> 
+                                    <button>View</button> 
                                     </a>
                                     </footer>
                                                 
@@ -91,7 +93,7 @@ function WorkExperience(props) {
                                   <footer className='CardFooter-Container'>                                 
 
                                   <a href="https://www.thehookup671islandbbq.com/">
-                                  <button>Visit</button> 
+                                  <button>View</button> 
                                   </a>
 
                               </footer>
@@ -106,7 +108,7 @@ function WorkExperience(props) {
                      
                                     <footer className='CardFooter-Container'>                                 
                                     <a href="https://www.ismaelbanuelosrealtor.com/">
-                                          <button>Visit</button>
+                                          <button>View</button>
                                         </a>
                                
                                 </footer>
@@ -122,7 +124,7 @@ function WorkExperience(props) {
                                 <footer className='CardFooter-Container'>                                 
 
                                 <a href="https://www.deltasportsbar.com/">
-                                      <button>Website</button>
+                                      <button>View</button>
                                     </a>
 
                             </footer>
@@ -139,7 +141,7 @@ function WorkExperience(props) {
 
                             <footer className='CardFooter-Container'>                                                                          
                                 <a href="https://www.jrprolandscaping.com/">
-                                  <button>Website</button>
+                                  <button>View</button>
                               </a>
                             </footer>
                         </li>
@@ -155,7 +157,7 @@ function WorkExperience(props) {
                                     <footer className='CardFooter-Container'>                                 
 
                                     <a href="https://www.stmichaeloakgrove.com/">
-                                          <button>Website</button>
+                                          <button>View</button>
                                         </a>
 
                                 </footer>
@@ -169,9 +171,9 @@ function WorkExperience(props) {
                         <img src="/assets/Portfolio/IBUpholsteryWebsite.png" alt=''/>
                   
 
-                                <footer>                                                                          
+                                <footer className='CardFooter-Container'>                                                                          
                                 <a href="https://www.ibupholstery.com/">
-                                  <button>Website</button>
+                                  <button>View</button>
                               </a>
                                 </footer>
                         </li>   
