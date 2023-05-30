@@ -355,14 +355,19 @@ iframe ::-webkit-scrollbar{
   
 
   .Contact-Container>main{
-    display: flex;
-    column-gap: 10px;
-    justify-self: center;
+    display: grid;
+    row-gap: 10px;
     padding-top: 5px;
     align-content: center;
-    justify-items: center;
 
   }
+
+  .Contact-Container>main>div{
+    display: flex;
+    align-items: center;
+  }
+
+  
 
   .Contact-Container>h2{
     font: 1.3em sans-serif;
@@ -370,12 +375,10 @@ iframe ::-webkit-scrollbar{
   }
 
   .Contact-Container>main a{
-    display: grid;
-    text-decoration: none;
-    justify-items: center;
-    row-gap: 3px;
-    padding: 5px;
-    width: 45px;
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    
 
   }
 
