@@ -60,7 +60,7 @@ function WorkExperience(props) {
                     <li>
                    
 
-                      <img src="/assets/Portfolio/JournalPocketWebsite.png" alt=''/>
+                      <img src="/assets/Portfolio/JournalPocketApp.png" alt=''/>
                             <footer className='CardFooter-Container'>
                                   <h2>Coming Soon</h2>
 
